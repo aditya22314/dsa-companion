@@ -1,0 +1,1134 @@
+<!doctype html><html><head><meta charset="utf-8"><title>DSA Daily Plan</title><style>
+@page { size: A4; margin: 16mm 15mm 18mm; }
+* { box-sizing: border-box; }
+body { font-family: 'Inter', -apple-system, 'Segoe UI', Roboto, Arial, sans-serif; color: #1c1c28; font-size: 10.5pt; line-height: 1.45; margin: 0; }
+h1 { font-size: 26pt; margin: 0 0 6px; letter-spacing: -0.02em; }
+h2 { font-size: 16pt; margin: 0 0 4px; color: #3b2f8f; }
+h3 { font-size: 12pt; margin: 0 0 2px; }
+code, pre { font-family: 'JetBrains Mono', 'SFMono-Regular', Consolas, monospace; font-size: 9pt; }
+code { background: #f1effa; padding: 0 3px; border-radius: 3px; }
+pre { background: #f6f5fb; border: 1px solid #e3e0f2; border-radius: 6px; padding: 8px 10px; white-space: pre-wrap; margin: 4px 0 8px; break-inside: avoid; }
+.page { break-after: page; }
+.cover { height: 250mm; display: flex; flex-direction: column; justify-content: center; }
+.cover .logo { width: 52px; height: 52px; border-radius: 12px; background: #6d5ae6; color: #fff; font: 700 20pt monospace; display: flex; align-items: center; justify-content: center; margin-bottom: 18px; }
+.muted { color: #5e5d70; }
+.small { font-size: 9pt; }
+.callout { border-left: 4px solid #6d5ae6; background: #f6f5fb; padding: 8px 12px; border-radius: 4px; margin: 10px 0; }
+ol.routine li { margin-bottom: 6px; }
+.week { break-before: page; }
+h2, h3 { break-after: avoid; }
+.sheet { border-top: 1px solid #dcd9ea; padding-top: 10px; margin-top: 12px; }
+.sheet.first { border-top: 0; margin-top: 0; padding-top: 0; }
+.week-head { break-after: avoid; border-bottom: 2px solid #6d5ae6; padding-bottom: 6px; margin-bottom: 10px; }
+.day { border: 1px solid #dcd9ea; border-radius: 8px; padding: 9px 12px; margin-bottom: 9px; break-inside: avoid; }
+.day.review { background: #f7faf7; border-color: #cfe3cf; }
+.day .meta { display: flex; justify-content: space-between; align-items: baseline; gap: 8px; }
+.day .num { font-size: 9pt; font-weight: 700; color: #6d5ae6; text-transform: uppercase; letter-spacing: 0.04em; }
+.day .date { font-size: 9pt; color: #8a89a0; white-space: nowrap; }
+.day ul { list-style: none; padding: 0; margin: 6px 0 0; }
+.day li { display: flex; gap: 8px; margin: 4px 0; }
+.box { flex: 0 0 11px; height: 11px; border: 1.3px solid #6d5ae6; border-radius: 2px; margin-top: 3px; }
+.tag { font-size: 8pt; text-transform: uppercase; letter-spacing: 0.05em; color: #77768c; }
+.core { color: #6d5ae6; font-weight: 600; text-transform: none; letter-spacing: 0; }
+.prob { break-inside: avoid-page; border-top: 1px solid #dcd9ea; padding-top: 10px; margin-top: 12px; }
+.prob .h { display: flex; justify-content: space-between; gap: 8px; align-items: baseline; }
+.pill { font-size: 8pt; border: 1px solid #cfcbe6; border-radius: 99px; padding: 0 7px; color: #4b4a63; white-space: nowrap; }
+.hints li { margin-bottom: 2px; }
+.sol { break-before: page; }
+table { border-collapse: collapse; width: 100%; font-size: 9.5pt; }
+td, th { border: 1px solid #dcd9ea; padding: 4px 6px; text-align: left; vertical-align: top; }
+.twocol { columns: 2; column-gap: 18px; }
+.track td { height: 18px; }
+a { color: #4b3cc4; text-decoration: none; }
+</style></head><body>
+<section class="page cover">
+<div class="logo">{}</div>
+<h1>DSA Daily Plan</h1>
+<p style="font-size:14pt" class="muted">55 days of JavaScript problem solving, alongside Namaste DSA</p>
+<p style="margin-top:28px">Made for Aditya · November 2026</p>
+<div class="callout" style="margin-top:28px">
+<b>What is inside</b><br>
+1. How to use this plan (one page)<br>
+2. The 55-day plan, week by week, with checkboxes<br>
+3. Topic sheets: the key idea of each pattern, with practice questions<br>
+4. 31 original practice problems with examples and 4 hints each<br>
+5. Full solutions, explained (at the back, so you don't see them by accident)<br>
+6. A tracker page for "can I solve it from memory?"
+</div>
+<p class="small" style="margin-top:24px">Course: <a href="https://namastedev.com/learn/namaste-dsa">namastedev.com/learn/namaste-dsa</a><br>App and source: <a href="https://github.com/aditya22314/dsa-companion">github.com/aditya22314/dsa-companion</a></p>
+<p class="small muted" style="margin-top:auto">Namaste DSA lessons are referred to by their public titles only (from https://namastedev.com/learn/namaste-dsa, 2026-11-26). No paid course content is included. All practice problems, hints, solutions and explanations in this booklet are original. Not affiliated with NamasteDev.</p>
+</section>
+<section class="page">
+<h2>How to use this plan</h2>
+<p>You already understand explanations. What you are building now is the ability to <b>start a problem on your own</b> and <b>still remember it a week later</b>. This plan trains exactly those two things.</p>
+<h3 style="margin-top:12px">Every study day has four steps (about 45–60 minutes)</h3>
+<ol class="routine">
+<li><b>Warm up (10 min).</b> Read a topic sheet, trace an example on paper, or solve an easy problem from this booklet.</li>
+<li><b>Namaste DSA lesson (15–20 min).</b> Watch the lesson(s) named for the day.</li>
+<li><b>Solve on your own (15 min).</b> Solve the practice problem in your editor or browser console. Wait 5 minutes before reading Hint 1. Read hints one at a time.</li>
+<li><b>Close (2 min).</b> Without looking, write today's key idea in one sentence in a notebook.</li>
+</ol>
+<h3 style="margin-top:12px">Words used in the plan</h3>
+<ul>
+<li><b>Try first</b>: attempt the problem for 10–15 honest minutes <i>before</i> watching the lesson. Getting stuck is the point. The lesson then answers a question you already have, so it sticks.</li>
+<li><b>Re-solve from memory</b>: blank file, no hints, no peeking. If you can't, read the solution once and try again in two days. That is still progress.</li>
+<li><b>★ core</b>: short on time? Do only the core steps (about 30 minutes). A short day beats a skipped day.</li>
+</ul>
+<h3 style="margin-top:12px">Remembering (so you don't forget after 4–5 days)</h3>
+<p>After you solve a problem, write its number and date on the tracker page at the back. Re-solve it from memory <b>1, 3, 7 and 14 days later</b>. If it went well, push the next one further out. If you couldn't, go back to a 1-day gap. Every 5th day in the plan is a review day for this.</p>
+<h3 style="margin-top:12px">How to practise without the app</h3>
+<p>Write each solution as a function in a <code>.js</code> file and test it with the examples:</p>
+<pre>function sumTo(n) { /* your code */ }
+console.log(sumTo(4), "expected 10");
+console.log(sumTo(0), "expected 0");</pre>
+<p>Run it with <code>node file.js</code> or paste it into the browser console. Always also test the edge cases: empty input, one element, all equal, negative numbers.</p>
+<div class="callout"><b>Rules that keep you honest.</b> Watching a video or reading a solution is not the same as being able to do it. A problem counts as "mine" only when you solve it from a blank file, from memory, days later. Missing a day never puts you behind: the days are numbered, not dated, so just do the next one.</div>
+</section>
+<section class="week"><div class="week-head"><h2>Week 1: Loops and number logic</h2><div class="muted">Goal: Write simple loops without looking anything up.</div></div>
+<div class="day"><div class="meta"><div><span class="num">Day 1</span> <h3 style="display:inline">Start: how loops think</h3></div><span class="date">Date: ____________</span></div>
+<div class="muted small">See a loop as "repeat this step, change one thing each time".</div><ul><li><span class="box"></span><div><div class="tag">1. Warm up <span class="core">★ core</span></div><b>Loops &amp; Number Logic</b> (Topic sheet T1). Read the topic sheet and trace its example on paper.</div></li><li><span class="box"></span><div><div class="tag">2. Namaste DSA · Introduction </div><b>Introduction + Which language?</b></div></li><li><span class="box"></span><div><div class="tag">3. Namaste DSA · Warm Up <span class="core">★ core</span></div><b>Warm Up - Introduction + Programming 101</b></div></li><li><span class="box"></span><div><div class="tag">4. Practice </div><b>P1. Sum from 1 to N</b>. Use the hints one at a time if you get stuck. That is normal on day 1.</div></li><li><span class="box"></span><div><div class="tag">5. Close</div>Write today's key idea in one sentence, from memory.</div></li></ul></div>
+<div class="day"><div class="meta"><div><span class="num">Day 2</span> <h3 style="display:inline">Functions, conditions, first loops</h3></div><span class="date">Date: ____________</span></div>
+<div class="muted small">Combine if/else with a loop to count things.</div><ul><li><span class="box"></span><div><div class="tag">1. Warm up </div><b>Loops &amp; Number Logic</b> (Topic sheet T1). Answer the topic sheet's Predict questions without running code.</div></li><li><span class="box"></span><div><div class="tag">2. Namaste DSA · Warm Up <span class="core">★ core</span></div><b>Function, if-else + Loops 01</b></div></li><li><span class="box"></span><div><div class="tag">3. Practice <span class="core">★ core</span></div><b>P2. Count Greater Than X</b>. Solve it in your editor. Wait 5 minutes before opening a hint.</div></li><li><span class="box"></span><div><div class="tag">4. Close</div>Write today's key idea in one sentence, from memory.</div></li></ul></div>
+<div class="day"><div class="meta"><div><span class="num">Day 3</span> <h3 style="display:inline">Loops over arrays</h3></div><span class="date">Date: ____________</span></div>
+<div class="muted small">Keep a "best so far" variable while you scan.</div><ul><li><span class="box"></span><div><div class="tag">1. Re-solve from memory </div><b>P1. Sum from 1 to N</b>. Blank editor, no hints. Two days later is when forgetting starts.</div></li><li><span class="box"></span><div><div class="tag">2. Namaste DSA · Warm Up <span class="core">★ core</span></div><b>Loops 02</b></div></li><li><span class="box"></span><div><div class="tag">3. Practice <span class="core">★ core</span></div><b>P3. Largest Element</b>. Solve it in your editor. Wait 5 minutes before opening a hint.</div></li><li><span class="box"></span><div><div class="tag">4. Close</div>Write today's key idea in one sentence, from memory.</div></li></ul></div>
+<div class="day"><div class="meta"><div><span class="num">Day 4</span> <h3 style="display:inline">Second largest: your first "real" problem</h3></div><span class="date">Date: ____________</span></div>
+<div class="muted small">Track two values at once and handle duplicates.</div><ul><li><span class="box"></span><div><div class="tag">1. Re-solve from memory </div><b>P3. Largest Element</b>. Clear the editor, no hints, no peeking. If you cannot, that is useful information: read the solution once, then try again tomorrow.</div></li><li><span class="box"></span><div><div class="tag">2. Try first, before the lesson <span class="core">★ core</span></div><b>P4. Second Largest Distinct</b>. Give it 15 honest minutes before the video, even if you get stuck.</div></li><li><span class="box"></span><div><div class="tag">3. Namaste DSA · Warm Up <span class="core">★ core</span></div><b>Second Largest</b>. Watch how the approach differs from yours.</div></li><li><span class="box"></span><div><div class="tag">4. Close</div>Write today's key idea in one sentence, from memory.</div></li></ul></div>
+<div class="day review"><div class="meta"><div><span class="num">Day 5 · review</span> <h3 style="display:inline">Review and catch-up day</h3></div><span class="date">Date: ____________</span></div>
+<div class="muted small">No new lessons. Remembering is the skill you are building today.</div><ul><li><span class="box"></span><div><div class="tag">1. On your own <span class="core">★ core</span></div>Re-solve every problem that is due on your recall tracker (back page). From memory, before peeking.</div></li><li><span class="box"></span><div><div class="tag">2. On your own </div>Re-read this week's mistakes in your notebook and write one sentence per mistake: "Next time I will…".</div></li><li><span class="box"></span><div><div class="tag">3. On your own </div>Behind on the plan? Use today to finish any unchecked step from this week instead. That is exactly what this day is for.</div></li><li><span class="box"></span><div><div class="tag">4. Close</div>Write today's key idea in one sentence, from memory.</div></li></ul></div>
+</section>
+<section class="week"><div class="week-head"><h2>Week 2: Patterns and digit tricks</h2><div class="muted">Goal: Break a number into digits with % and Math.floor.</div></div>
+<div class="day"><div class="meta"><div><span class="num">Day 6</span> <h3 style="display:inline">Loop inside a loop</h3></div><span class="date">Date: ____________</span></div>
+<div class="muted small">The outer loop picks a row, the inner loop fills it.</div><ul><li><span class="box"></span><div><div class="tag">1. Namaste DSA · Warm Up <span class="core">★ core</span></div><b>Loop in Loop + Star Pattern</b></div></li><li><span class="box"></span><div><div class="tag">2. On your own <span class="core">★ core</span></div>In the browser console, print a right triangle of 5 rows, then an upside-down one. Change one number at a time and predict the output before you run it.</div></li><li><span class="box"></span><div><div class="tag">3. Close</div>Write today's key idea in one sentence, from memory.</div></li></ul></div>
+<div class="day"><div class="meta"><div><span class="num">Day 7</span> <h3 style="display:inline">Counting digits</h3></div><span class="date">Date: ____________</span></div>
+<div class="muted small">n % 10 gives the last digit; Math.floor(n / 10) removes it.</div><ul><li><span class="box"></span><div><div class="tag">1. Try first, before the lesson <span class="core">★ core</span></div><b>P5. Count the Digits</b>. Give it 10–15 honest minutes before watching. Getting stuck is the point: the lesson will then answer your question.</div></li><li><span class="box"></span><div><div class="tag">2. Namaste DSA · Warm Up <span class="core">★ core</span></div><b>Count Digit</b></div></li><li><span class="box"></span><div><div class="tag">3. Close</div>Write today's key idea in one sentence, from memory.</div></li></ul></div>
+<div class="day"><div class="meta"><div><span class="num">Day 8</span> <h3 style="display:inline">Reversing a number</h3></div><span class="date">Date: ____________</span></div>
+<div class="muted small">Build a new number digit by digit: rev = rev * 10 + digit.</div><ul><li><span class="box"></span><div><div class="tag">1. Re-solve from memory </div><b>P5. Count the Digits</b>. Clear the editor, no hints, no peeking. If you cannot, that is useful information: read the solution once, then try again tomorrow.</div></li><li><span class="box"></span><div><div class="tag">2. Try first, before the lesson <span class="core">★ core</span></div><b>P6. Reverse a Number</b>. Give it 10–15 honest minutes before watching. Getting stuck is the point: the lesson will then answer your question.</div></li><li><span class="box"></span><div><div class="tag">3. Namaste DSA · Warm Up <span class="core">★ core</span></div><b>Reverse Integer</b></div></li><li><span class="box"></span><div><div class="tag">4. Close</div>Write today's key idea in one sentence, from memory.</div></li></ul></div>
+<div class="day"><div class="meta"><div><span class="num">Day 9</span> <h3 style="display:inline">Palindrome numbers</h3></div><span class="date">Date: ____________</span></div>
+<div class="muted small">Reuse yesterday's idea to solve a new problem.</div><ul><li><span class="box"></span><div><div class="tag">1. Try first, before the lesson <span class="core">★ core</span></div><b>P7. Palindrome Number</b>. Hint to yourself: you already know how to reverse a number.</div></li><li><span class="box"></span><div><div class="tag">2. Namaste DSA · Warm Up <span class="core">★ core</span></div><b>Palindrome</b></div></li><li><span class="box"></span><div><div class="tag">3. Close</div>Write today's key idea in one sentence, from memory.</div></li></ul></div>
+<div class="day review"><div class="meta"><div><span class="num">Day 10 · review</span> <h3 style="display:inline">Review and catch-up day</h3></div><span class="date">Date: ____________</span></div>
+<div class="muted small">No new lessons. Remembering is the skill you are building today.</div><ul><li><span class="box"></span><div><div class="tag">1. On your own <span class="core">★ core</span></div>Re-solve every problem that is due on your recall tracker (back page). From memory, before peeking.</div></li><li><span class="box"></span><div><div class="tag">2. Re-solve from memory </div><b>P6. Reverse a Number</b>. Clear the editor, no hints, no peeking. If you cannot, that is useful information: read the solution once, then try again tomorrow.</div></li><li><span class="box"></span><div><div class="tag">3. On your own </div>Re-read this week's mistakes in your notebook and write one sentence per mistake: "Next time I will…".</div></li><li><span class="box"></span><div><div class="tag">4. On your own </div>Behind on the plan? Use today to finish any unchecked step from this week instead. That is exactly what this day is for.</div></li><li><span class="box"></span><div><div class="tag">5. Close</div>Write today's key idea in one sentence, from memory.</div></li></ul></div>
+</section>
+<section class="week"><div class="week-head"><h2>Week 3: Complexity and first array problems</h2><div class="muted">Goal: Say the Big-O of any loop you write, and use two pointers.</div></div>
+<div class="day"><div class="meta"><div><span class="num">Day 11</span> <h3 style="display:inline">Time and space complexity</h3></div><span class="date">Date: ____________</span></div>
+<div class="muted small">Count how many times the innermost line runs.</div><ul><li><span class="box"></span><div><div class="tag">1. Warm up <span class="core">★ core</span></div><b>Time &amp; Space Complexity</b> (Topic sheet T2). Read the topic sheet and answer its Predict questions.</div></li><li><span class="box"></span><div><div class="tag">2. Namaste DSA · Time/Space Complexity <span class="core">★ core</span></div><b>Time &amp; Space Complexity</b></div></li><li><span class="box"></span><div><div class="tag">3. On your own </div>For three problems you solved this month, write their time and space complexity in one line each, in your notebook.</div></li><li><span class="box"></span><div><div class="tag">4. Close</div>Write today's key idea in one sentence, from memory.</div></li></ul></div>
+<div class="day"><div class="meta"><div><span class="num">Day 12</span> <h3 style="display:inline">Two pointers: remove duplicates</h3></div><span class="date">Date: ____________</span></div>
+<div class="muted small">One pointer reads, one pointer writes.</div><ul><li><span class="box"></span><div><div class="tag">1. Warm up <span class="core">★ core</span></div><b>Two Pointers</b> (Topic sheet T4). Read the topic sheet and trace its example on paper.</div></li><li><span class="box"></span><div><div class="tag">2. Practice </div><b>P8. Reverse an Array In Place</b>. Bridge: the simplest two-pointer problem.</div></li><li><span class="box"></span><div><div class="tag">3. Namaste DSA · Arrays - Easy/Medium <span class="core">★ core</span></div><b>Remove Duplicates</b></div></li><li><span class="box"></span><div><div class="tag">4. Practice <span class="core">★ core</span></div><b>P9. Compact a Sorted Array</b>. Solve it in your editor. Wait 5 minutes before opening a hint.</div></li><li><span class="box"></span><div><div class="tag">5. Close</div>Write today's key idea in one sentence, from memory.</div></li></ul></div>
+<div class="day"><div class="meta"><div><span class="num">Day 13</span> <h3 style="display:inline">Remove element, reverse string</h3></div><span class="date">Date: ____________</span></div>
+<div class="muted small">Same read/write pointer idea, new problems.</div><ul><li><span class="box"></span><div><div class="tag">1. Re-solve from memory </div><b>P8. Reverse an Array In Place</b>. Clear the editor, no hints, no peeking. If you cannot, that is useful information: read the solution once, then try again tomorrow.</div></li><li><span class="box"></span><div><div class="tag">2. Namaste DSA · Arrays - Easy/Medium <span class="core">★ core</span></div><b>Remove Element + Reverse String</b></div></li><li><span class="box"></span><div><div class="tag">3. Practice <span class="core">★ core</span></div><b>P10. Zeros to the End</b>. Close cousin of Remove Element.</div></li><li><span class="box"></span><div><div class="tag">4. Close</div>Write today's key idea in one sentence, from memory.</div></li></ul></div>
+<div class="day"><div class="meta"><div><span class="num">Day 14</span> <h3 style="display:inline">Best time to buy and sell</h3></div><span class="date">Date: ____________</span></div>
+<div class="muted small">Remember the cheapest price seen so far.</div><ul><li><span class="box"></span><div><div class="tag">1. Warm up </div><b>Array Traversal</b> (Topic sheet T3). Answer the topic sheet's Predict questions.</div></li><li><span class="box"></span><div><div class="tag">2. Try first, before the lesson <span class="core">★ core</span></div><b>P11. Best Single Trade</b>. Give it 10–15 honest minutes before watching. Getting stuck is the point: the lesson will then answer your question.</div></li><li><span class="box"></span><div><div class="tag">3. Namaste DSA · Arrays - Easy/Medium <span class="core">★ core</span></div><b>Best Time to Buy and Sell Stocks</b></div></li><li><span class="box"></span><div><div class="tag">4. Close</div>Write today's key idea in one sentence, from memory.</div></li></ul></div>
+<div class="day review"><div class="meta"><div><span class="num">Day 15 · review</span> <h3 style="display:inline">Review and catch-up day</h3></div><span class="date">Date: ____________</span></div>
+<div class="muted small">No new lessons. Remembering is the skill you are building today.</div><ul><li><span class="box"></span><div><div class="tag">1. On your own <span class="core">★ core</span></div>Re-solve every problem that is due on your recall tracker (back page). From memory, before peeking.</div></li><li><span class="box"></span><div><div class="tag">2. Re-solve from memory </div><b>P9. Compact a Sorted Array</b>. Clear the editor, no hints, no peeking. If you cannot, that is useful information: read the solution once, then try again tomorrow.</div></li><li><span class="box"></span><div><div class="tag">3. On your own </div>Re-read this week's mistakes in your notebook and write one sentence per mistake: "Next time I will…".</div></li><li><span class="box"></span><div><div class="tag">4. On your own </div>Behind on the plan? Use today to finish any unchecked step from this week instead. That is exactly what this day is for.</div></li><li><span class="box"></span><div><div class="tag">5. Close</div>Write today's key idea in one sentence, from memory.</div></li></ul></div>
+</section>
+<section class="week"><div class="week-head"><h2>Week 4: More arrays, then recursion begins</h2><div class="muted">Goal: Solve easy array problems on your own.</div></div>
+<div class="day"><div class="meta"><div><span class="num">Day 16</span> <h3 style="display:inline">Merge sorted arrays</h3></div><span class="date">Date: ____________</span></div>
+<div class="muted small">Compare the fronts, take the smaller, move that pointer.</div><ul><li><span class="box"></span><div><div class="tag">1. Try first, before the lesson <span class="core">★ core</span></div><b>P12. Merge Two Sorted Lists of Numbers</b>. Give it 10–15 honest minutes before watching. Getting stuck is the point: the lesson will then answer your question.</div></li><li><span class="box"></span><div><div class="tag">2. Namaste DSA · Arrays - Easy/Medium <span class="core">★ core</span></div><b>Merge Sorted Arrays</b></div></li><li><span class="box"></span><div><div class="tag">3. Close</div>Write today's key idea in one sentence, from memory.</div></li></ul></div>
+<div class="day"><div class="meta"><div><span class="num">Day 17</span> <h3 style="display:inline">Move zeros, max consecutive ones</h3></div><span class="date">Date: ____________</span></div>
+<div class="muted small">Reset a counter when the streak breaks.</div><ul><li><span class="box"></span><div><div class="tag">1. Try first, before the lesson <span class="core">★ core</span></div><b>P13. Longest Run of Ones</b>. Give it 10–15 honest minutes before watching. Getting stuck is the point: the lesson will then answer your question.</div></li><li><span class="box"></span><div><div class="tag">2. Namaste DSA · Arrays - Easy/Medium <span class="core">★ core</span></div><b>Move Zeros + Max Consecutive Ones</b></div></li><li><span class="box"></span><div><div class="tag">3. Re-solve from memory </div><b>P10. Zeros to the End</b>. Clear the editor, no hints, no peeking. If you cannot, that is useful information: read the solution once, then try again tomorrow.</div></li><li><span class="box"></span><div><div class="tag">4. Close</div>Write today's key idea in one sentence, from memory.</div></li></ul></div>
+<div class="day"><div class="meta"><div><span class="num">Day 18</span> <h3 style="display:inline">Missing number, single number</h3></div><span class="date">Date: ____________</span></div>
+<div class="muted small">Sometimes maths (expected sum minus actual sum) beats searching.</div><ul><li><span class="box"></span><div><div class="tag">1. Try first, before the lesson <span class="core">★ core</span></div><b>P14. The Missing Number</b>. Give it 10–15 honest minutes before watching. Getting stuck is the point: the lesson will then answer your question.</div></li><li><span class="box"></span><div><div class="tag">2. Namaste DSA · Arrays - Easy/Medium <span class="core">★ core</span></div><b>Missing Number + Single Number</b></div></li><li><span class="box"></span><div><div class="tag">3. Close</div>Write today's key idea in one sentence, from memory.</div></li></ul></div>
+<div class="day"><div class="meta"><div><span class="num">Day 19</span> <h3 style="display:inline">Recursion 101</h3></div><span class="date">Date: ____________</span></div>
+<div class="muted small">A function that solves a smaller copy of the same problem.</div><ul><li><span class="box"></span><div><div class="tag">1. Warm up <span class="core">★ core</span></div><b>Recursion Basics</b> (Topic sheet T5). Read the topic sheet, then trace the call stack of its example on paper.</div></li><li><span class="box"></span><div><div class="tag">2. Namaste DSA · Recursion - Easy/Medium <span class="core">★ core</span></div><b>Recursion 101 + Sum of first n numbers</b></div></li><li><span class="box"></span><div><div class="tag">3. Practice <span class="core">★ core</span></div><b>P15. Factorial, Recursively</b>. Solve it in your editor. Wait 5 minutes before opening a hint.</div></li><li><span class="box"></span><div><div class="tag">4. Close</div>Write today's key idea in one sentence, from memory.</div></li></ul></div>
+<div class="day review"><div class="meta"><div><span class="num">Day 20 · review</span> <h3 style="display:inline">Review and catch-up day</h3></div><span class="date">Date: ____________</span></div>
+<div class="muted small">No new lessons. Remembering is the skill you are building today.</div><ul><li><span class="box"></span><div><div class="tag">1. On your own <span class="core">★ core</span></div>Re-solve every problem that is due on your recall tracker (back page). From memory, before peeking.</div></li><li><span class="box"></span><div><div class="tag">2. Re-solve from memory </div><b>P11. Best Single Trade</b>. Clear the editor, no hints, no peeking. If you cannot, that is useful information: read the solution once, then try again tomorrow.</div></li><li><span class="box"></span><div><div class="tag">3. On your own </div>Re-read this week's mistakes in your notebook and write one sentence per mistake: "Next time I will…".</div></li><li><span class="box"></span><div><div class="tag">4. On your own </div>Behind on the plan? Use today to finish any unchecked step from this week instead. That is exactly what this day is for.</div></li><li><span class="box"></span><div><div class="tag">5. Close</div>Write today's key idea in one sentence, from memory.</div></li></ul></div>
+</section>
+<section class="week"><div class="week-head"><h2>Week 5: Recursion and searching</h2><div class="muted">Goal: Trust the recursive call, and halve a search space.</div></div>
+<div class="day"><div class="meta"><div><span class="num">Day 21</span> <h3 style="display:inline">Recursion on arrays</h3></div><span class="date">Date: ____________</span></div>
+<div class="muted small">First element + the answer for the rest.</div><ul><li><span class="box"></span><div><div class="tag">1. Warm up </div><b>Recursion Basics</b> (Topic sheet T5). Answer the topic sheet's Predict questions.</div></li><li><span class="box"></span><div><div class="tag">2. Namaste DSA · Recursion - Easy/Medium <span class="core">★ core</span></div><b>Sum of all numbers in Array + Factorial of n</b></div></li><li><span class="box"></span><div><div class="tag">3. Practice <span class="core">★ core</span></div><b>P16. Sum an Array, Recursively</b>. Solve it in your editor. Wait 5 minutes before opening a hint.</div></li><li><span class="box"></span><div><div class="tag">4. Close</div>Write today's key idea in one sentence, from memory.</div></li></ul></div>
+<div class="day"><div class="meta"><div><span class="num">Day 22</span> <h3 style="display:inline">Power of two</h3></div><span class="date">Date: ____________</span></div>
+<div class="muted small">Decide the base case before the recursive case.</div><ul><li><span class="box"></span><div><div class="tag">1. Re-solve from memory </div><b>P15. Factorial, Recursively</b>. Clear the editor, no hints, no peeking. If you cannot, that is useful information: read the solution once, then try again tomorrow.</div></li><li><span class="box"></span><div><div class="tag">2. Try first, before the lesson <span class="core">★ core</span></div><b>P17. Is It a Power of Two?</b>. Give it 10–15 honest minutes before watching. Getting stuck is the point: the lesson will then answer your question.</div></li><li><span class="box"></span><div><div class="tag">3. Namaste DSA · Recursion - Easy/Medium <span class="core">★ core</span></div><b>Power of Two</b></div></li><li><span class="box"></span><div><div class="tag">4. Close</div>Write today's key idea in one sentence, from memory.</div></li></ul></div>
+<div class="day"><div class="meta"><div><span class="num">Day 23</span> <h3 style="display:inline">Recursion masterclass</h3></div><span class="date">Date: ____________</span></div>
+<div class="muted small">A longer lesson. Pause often and trace on paper.</div><ul><li><span class="box"></span><div><div class="tag">1. Namaste DSA · Recursion - Easy/Medium <span class="core">★ core</span></div><b>Recursion Masterclass</b>. Split it across two sittings if you need to.</div></li><li><span class="box"></span><div><div class="tag">2. On your own </div>Draw the call stack for factorial(4) on paper, including what each call returns.</div></li><li><span class="box"></span><div><div class="tag">3. Close</div>Write today's key idea in one sentence, from memory.</div></li></ul></div>
+<div class="day"><div class="meta"><div><span class="num">Day 24</span> <h3 style="display:inline">Linear and binary search</h3></div><span class="date">Date: ____________</span></div>
+<div class="muted small">Sorted data lets you throw away half each step.</div><ul><li><span class="box"></span><div><div class="tag">1. Warm up <span class="core">★ core</span></div><b>Binary Search</b> (Topic sheet T6). Read the topic sheet and trace its example on paper.</div></li><li><span class="box"></span><div><div class="tag">2. Namaste DSA · Searching &amp; Sorting - Easy/Medium <span class="core">★ core</span></div><b>Linear Search + Binary Search</b></div></li><li><span class="box"></span><div><div class="tag">3. Practice <span class="core">★ core</span></div><b>P18. Classic Binary Search</b>. Solve it in your editor. Wait 5 minutes before opening a hint.</div></li><li><span class="box"></span><div><div class="tag">4. Close</div>Write today's key idea in one sentence, from memory.</div></li></ul></div>
+<div class="day review"><div class="meta"><div><span class="num">Day 25 · review</span> <h3 style="display:inline">Review and catch-up day</h3></div><span class="date">Date: ____________</span></div>
+<div class="muted small">No new lessons. Remembering is the skill you are building today.</div><ul><li><span class="box"></span><div><div class="tag">1. On your own <span class="core">★ core</span></div>Re-solve every problem that is due on your recall tracker (back page). From memory, before peeking.</div></li><li><span class="box"></span><div><div class="tag">2. Re-solve from memory </div><b>P16. Sum an Array, Recursively</b>. Clear the editor, no hints, no peeking. If you cannot, that is useful information: read the solution once, then try again tomorrow.</div></li><li><span class="box"></span><div><div class="tag">3. On your own </div>Re-read this week's mistakes in your notebook and write one sentence per mistake: "Next time I will…".</div></li><li><span class="box"></span><div><div class="tag">4. On your own </div>Behind on the plan? Use today to finish any unchecked step from this week instead. That is exactly what this day is for.</div></li><li><span class="box"></span><div><div class="tag">5. Close</div>Write today's key idea in one sentence, from memory.</div></li></ul></div>
+</section>
+<section class="week"><div class="week-head"><h2>Week 6: Sorting, then strings begin</h2><div class="muted">Goal: Write bubble, selection and insertion sort from memory.</div></div>
+<div class="day"><div class="meta"><div><span class="num">Day 26</span> <h3 style="display:inline">Bubble and selection sort</h3></div><span class="date">Date: ____________</span></div>
+<div class="muted small">Know what is guaranteed sorted after each pass.</div><ul><li><span class="box"></span><div><div class="tag">1. Namaste DSA · Searching &amp; Sorting - Easy/Medium <span class="core">★ core</span></div><b>Bubble Sort + Selection Sort</b></div></li><li><span class="box"></span><div><div class="tag">2. On your own <span class="core">★ core</span></div>Write bubble sort in the console without the video. Test it on [5, 1, 4, 2, 8] and on [] and [1].</div></li><li><span class="box"></span><div><div class="tag">3. Close</div>Write today's key idea in one sentence, from memory.</div></li></ul></div>
+<div class="day"><div class="meta"><div><span class="num">Day 27</span> <h3 style="display:inline">Insertion sort</h3></div><span class="date">Date: ____________</span></div>
+<div class="muted small">Like sorting playing cards in your hand.</div><ul><li><span class="box"></span><div><div class="tag">1. On your own </div>Write selection sort from memory first (5 minutes).</div></li><li><span class="box"></span><div><div class="tag">2. Namaste DSA · Searching &amp; Sorting - Easy/Medium <span class="core">★ core</span></div><b>Insertion Sort</b></div></li><li><span class="box"></span><div><div class="tag">3. On your own <span class="core">★ core</span></div>Write insertion sort yourself and test it on the same three inputs.</div></li><li><span class="box"></span><div><div class="tag">4. Close</div>Write today's key idea in one sentence, from memory.</div></li></ul></div>
+<div class="day"><div class="meta"><div><span class="num">Day 28</span> <h3 style="display:inline">Merge sort</h3></div><span class="date">Date: ____________</span></div>
+<div class="muted small">Split until trivial, then merge. You already know merging.</div><ul><li><span class="box"></span><div><div class="tag">1. Re-solve from memory </div><b>P12. Merge Two Sorted Lists of Numbers</b>. The merge step is the heart of merge sort.</div></li><li><span class="box"></span><div><div class="tag">2. Namaste DSA · Searching &amp; Sorting - Easy/Medium <span class="core">★ core</span></div><b>Merge Sort</b></div></li><li><span class="box"></span><div><div class="tag">3. Close</div>Write today's key idea in one sentence, from memory.</div></li></ul></div>
+<div class="day"><div class="meta"><div><span class="num">Day 29</span> <h3 style="display:inline">Strings begin</h3></div><span class="date">Date: ____________</span></div>
+<div class="muted small">A string is an array of characters you cannot change in place.</div><ul><li><span class="box"></span><div><div class="tag">1. Warm up <span class="core">★ core</span></div><b>Strings</b> (Topic sheet T7). Read the topic sheet and trace its example on paper.</div></li><li><span class="box"></span><div><div class="tag">2. Practice </div><b>P19. Count the Vowels</b>. Bridge exercise.</div></li><li><span class="box"></span><div><div class="tag">3. Namaste DSA · Strings - Easy/Medium <span class="core">★ core</span></div><b>Length of Last Word - Approach 1 - Two Loops + Length of Last Word - Approach 2 - One Loop</b></div></li><li><span class="box"></span><div><div class="tag">4. Close</div>Write today's key idea in one sentence, from memory.</div></li></ul></div>
+<div class="day review"><div class="meta"><div><span class="num">Day 30 · review</span> <h3 style="display:inline">Review and catch-up day</h3></div><span class="date">Date: ____________</span></div>
+<div class="muted small">No new lessons. Remembering is the skill you are building today.</div><ul><li><span class="box"></span><div><div class="tag">1. On your own <span class="core">★ core</span></div>Re-solve every problem that is due on your recall tracker (back page). From memory, before peeking.</div></li><li><span class="box"></span><div><div class="tag">2. On your own </div>Write bubble, selection and insertion sort from memory, one after another.</div></li><li><span class="box"></span><div><div class="tag">3. On your own </div>Re-read this week's mistakes in your notebook and write one sentence per mistake: "Next time I will…".</div></li><li><span class="box"></span><div><div class="tag">4. On your own </div>Behind on the plan? Use today to finish any unchecked step from this week instead. That is exactly what this day is for.</div></li><li><span class="box"></span><div><div class="tag">5. Close</div>Write today's key idea in one sentence, from memory.</div></li></ul></div>
+</section>
+<section class="week"><div class="week-head"><h2>Week 7: Strings and counting with objects</h2><div class="muted">Goal: Count things with an object or Map in one pass.</div></div>
+<div class="day"><div class="meta"><div><span class="num">Day 31</span> <h3 style="display:inline">Counting with objects</h3></div><span class="date">Date: ____________</span></div>
+<div class="muted small">An object or Map answers "have I seen this?" instantly.</div><ul><li><span class="box"></span><div><div class="tag">1. Warm up <span class="core">★ core</span></div><b>Hash Maps &amp; Sets</b> (Topic sheet T8). Read the topic sheet and trace its example on paper.</div></li><li><span class="box"></span><div><div class="tag">2. Namaste DSA · Strings - Easy/Medium <span class="core">★ core</span></div><b>Find Words Containing Character + Jewels and Stones</b></div></li><li><span class="box"></span><div><div class="tag">3. Practice <span class="core">★ core</span></div><b>P20. First Repeated Value</b>. Solve it in your editor. Wait 5 minutes before opening a hint.</div></li><li><span class="box"></span><div><div class="tag">4. Close</div>Write today's key idea in one sentence, from memory.</div></li></ul></div>
+<div class="day"><div class="meta"><div><span class="num">Day 32</span> <h3 style="display:inline">Most frequent character</h3></div><span class="date">Date: ____________</span></div>
+<div class="muted small">First count everything, then pick the winner.</div><ul><li><span class="box"></span><div><div class="tag">1. Try first, before the lesson <span class="core">★ core</span></div><b>P21. Most Frequent Character</b>. Give it 10–15 honest minutes before watching. Getting stuck is the point: the lesson will then answer your question.</div></li><li><span class="box"></span><div><div class="tag">2. Namaste DSA · Strings - Easy/Medium <span class="core">★ core</span></div><b>Find Most Frequent Vowel and Consonant + Split a String in Balanced Strings</b></div></li><li><span class="box"></span><div><div class="tag">3. Close</div>Write today's key idea in one sentence, from memory.</div></li></ul></div>
+<div class="day"><div class="meta"><div><span class="num">Day 33</span> <h3 style="display:inline">Reversing parts of strings</h3></div><span class="date">Date: ____________</span></div>
+<div class="muted small">split, reverse, join, and when to do it by hand.</div><ul><li><span class="box"></span><div><div class="tag">1. Re-solve from memory </div><b>P8. Reverse an Array In Place</b>. Clear the editor, no hints, no peeking. If you cannot, that is useful information: read the solution once, then try again tomorrow.</div></li><li><span class="box"></span><div><div class="tag">2. Namaste DSA · Strings - Easy/Medium <span class="core">★ core</span></div><b>Reverse String II</b></div></li><li><span class="box"></span><div><div class="tag">3. Practice <span class="core">★ core</span></div><b>P22. Reverse Word Order</b>. Solve it in your editor. Wait 5 minutes before opening a hint.</div></li><li><span class="box"></span><div><div class="tag">4. Close</div>Write today's key idea in one sentence, from memory.</div></li></ul></div>
+<div class="day"><div class="meta"><div><span class="num">Day 34</span> <h3 style="display:inline">Valid palindrome</h3></div><span class="date">Date: ____________</span></div>
+<div class="muted small">Skip what does not count, compare what does.</div><ul><li><span class="box"></span><div><div class="tag">1. Try first, before the lesson <span class="core">★ core</span></div><b>P23. Clean Palindrome Check</b>. Give it 10–15 honest minutes before watching. Getting stuck is the point: the lesson will then answer your question.</div></li><li><span class="box"></span><div><div class="tag">2. Namaste DSA · Strings - Easy/Medium <span class="core">★ core</span></div><b>Valid Palindrome - Approach 1 - Extra Space + Valid Palindrome - Approach 2 - Two Pointers</b></div></li><li><span class="box"></span><div><div class="tag">3. Close</div>Write today's key idea in one sentence, from memory.</div></li></ul></div>
+<div class="day review"><div class="meta"><div><span class="num">Day 35 · review</span> <h3 style="display:inline">Review and catch-up day</h3></div><span class="date">Date: ____________</span></div>
+<div class="muted small">No new lessons. Remembering is the skill you are building today.</div><ul><li><span class="box"></span><div><div class="tag">1. On your own <span class="core">★ core</span></div>Re-solve every problem that is due on your recall tracker (back page). From memory, before peeking.</div></li><li><span class="box"></span><div><div class="tag">2. Re-solve from memory </div><b>P21. Most Frequent Character</b>. Clear the editor, no hints, no peeking. If you cannot, that is useful information: read the solution once, then try again tomorrow.</div></li><li><span class="box"></span><div><div class="tag">3. On your own </div>Re-read this week's mistakes in your notebook and write one sentence per mistake: "Next time I will…".</div></li><li><span class="box"></span><div><div class="tag">4. On your own </div>Behind on the plan? Use today to finish any unchecked step from this week instead. That is exactly what this day is for.</div></li><li><span class="box"></span><div><div class="tag">5. Close</div>Write today's key idea in one sentence, from memory.</div></li></ul></div>
+</section>
+<section class="week"><div class="week-head"><h2>Week 8: Palindromes, anagrams, prefixes</h2><div class="muted">Goal: Pick between two pointers and a frequency map.</div></div>
+<div class="day"><div class="meta"><div><span class="num">Day 36</span> <h3 style="display:inline">Longest common prefix</h3></div><span class="date">Date: ____________</span></div>
+<div class="muted small">Compare column by column and stop at the first mismatch.</div><ul><li><span class="box"></span><div><div class="tag">1. Namaste DSA · Strings - Easy/Medium </div><b>Largest Odd Number in a String</b></div></li><li><span class="box"></span><div><div class="tag">2. Try first, before the lesson <span class="core">★ core</span></div><b>P24. Shared Starting Letters</b>. Give it 10–15 honest minutes before watching. Getting stuck is the point: the lesson will then answer your question.</div></li><li><span class="box"></span><div><div class="tag">3. Namaste DSA · Strings - Easy/Medium <span class="core">★ core</span></div><b>Longest Common Prefix</b></div></li><li><span class="box"></span><div><div class="tag">4. Close</div>Write today's key idea in one sentence, from memory.</div></li></ul></div>
+<div class="day"><div class="meta"><div><span class="num">Day 37</span> <h3 style="display:inline">Anagrams and isomorphic strings</h3></div><span class="date">Date: ____________</span></div>
+<div class="muted small">Same counts means same letters.</div><ul><li><span class="box"></span><div><div class="tag">1. Try first, before the lesson <span class="core">★ core</span></div><b>P25. Same Letters, Different Order</b>. Give it 10–15 honest minutes before watching. Getting stuck is the point: the lesson will then answer your question.</div></li><li><span class="box"></span><div><div class="tag">2. Namaste DSA · Strings - Easy/Medium <span class="core">★ core</span></div><b>Valid Anagram + Isomorphic Strings</b></div></li><li><span class="box"></span><div><div class="tag">3. Close</div>Write today's key idea in one sentence, from memory.</div></li></ul></div>
+<div class="day"><div class="meta"><div><span class="num">Day 38</span> <h3 style="display:inline">Group anagrams</h3></div><span class="date">Date: ____________</span></div>
+<div class="muted small">Turn each word into a key, then group by key.</div><ul><li><span class="box"></span><div><div class="tag">1. Re-solve from memory </div><b>P25. Same Letters, Different Order</b>. Clear the editor, no hints, no peeking. If you cannot, that is useful information: read the solution once, then try again tomorrow.</div></li><li><span class="box"></span><div><div class="tag">2. Namaste DSA · Strings - Easy/Medium <span class="core">★ core</span></div><b>Group Anagrams - Approach 1 - Sorted Key + Group Anagrams - Approach 2 - Hashed Key</b></div></li><li><span class="box"></span><div><div class="tag">3. Close</div>Write today's key idea in one sentence, from memory.</div></li></ul></div>
+<div class="day"><div class="meta"><div><span class="num">Day 39</span> <h3 style="display:inline">Square root with binary search</h3></div><span class="date">Date: ____________</span></div>
+<div class="muted small">Binary search works on answers, not just arrays.</div><ul><li><span class="box"></span><div><div class="tag">1. Warm up </div><b>Binary Search</b> (Topic sheet T6). Answer the topic sheet's Predict questions.</div></li><li><span class="box"></span><div><div class="tag">2. Try first, before the lesson <span class="core">★ core</span></div><b>P26. Integer Square Root</b>. Give it 10–15 honest minutes before watching. Getting stuck is the point: the lesson will then answer your question.</div></li><li><span class="box"></span><div><div class="tag">3. Namaste DSA · Binary Search Algorithm <span class="core">★ core</span></div><b>Square Root of X + Best Practice - Finding Middle Element + Guess Higher or Lower</b></div></li><li><span class="box"></span><div><div class="tag">4. Close</div>Write today's key idea in one sentence, from memory.</div></li></ul></div>
+<div class="day review"><div class="meta"><div><span class="num">Day 40 · review</span> <h3 style="display:inline">Review and catch-up day</h3></div><span class="date">Date: ____________</span></div>
+<div class="muted small">No new lessons. Remembering is the skill you are building today.</div><ul><li><span class="box"></span><div><div class="tag">1. On your own <span class="core">★ core</span></div>Re-solve every problem that is due on your recall tracker (back page). From memory, before peeking.</div></li><li><span class="box"></span><div><div class="tag">2. Re-solve from memory </div><b>P18. Classic Binary Search</b>. Clear the editor, no hints, no peeking. If you cannot, that is useful information: read the solution once, then try again tomorrow.</div></li><li><span class="box"></span><div><div class="tag">3. On your own </div>Re-read this week's mistakes in your notebook and write one sentence per mistake: "Next time I will…".</div></li><li><span class="box"></span><div><div class="tag">4. On your own </div>Behind on the plan? Use today to finish any unchecked step from this week instead. That is exactly what this day is for.</div></li><li><span class="box"></span><div><div class="tag">5. Close</div>Write today's key idea in one sentence, from memory.</div></li></ul></div>
+</section>
+<section class="week"><div class="week-head"><h2>Week 9: Binary search, properly</h2><div class="muted">Goal: Write binary search with correct boundaries every time.</div></div>
+<div class="day"><div class="meta"><div><span class="num">Day 41</span> <h3 style="display:inline">First and last position</h3></div><span class="date">Date: ____________</span></div>
+<div class="muted small">When you find the target, keep searching left.</div><ul><li><span class="box"></span><div><div class="tag">1. Try first, before the lesson <span class="core">★ core</span></div><b>P27. First Position of a Value</b>. Give it 10–15 honest minutes before watching. Getting stuck is the point: the lesson will then answer your question.</div></li><li><span class="box"></span><div><div class="tag">2. Namaste DSA · Binary Search Algorithm <span class="core">★ core</span></div><b>First Bad Version + Find First &amp; Last Position in Sorted Array + Find First &amp; Last Position in Sorted Array - Approach 2</b></div></li><li><span class="box"></span><div><div class="tag">3. Close</div>Write today's key idea in one sentence, from memory.</div></li></ul></div>
+<div class="day"><div class="meta"><div><span class="num">Day 42</span> <h3 style="display:inline">Rotated sorted arrays</h3></div><span class="date">Date: ____________</span></div>
+<div class="muted small">One half is always sorted. Find which.</div><ul><li><span class="box"></span><div><div class="tag">1. Re-solve from memory </div><b>P18. Classic Binary Search</b>. Clear the editor, no hints, no peeking. If you cannot, that is useful information: read the solution once, then try again tomorrow.</div></li><li><span class="box"></span><div><div class="tag">2. Namaste DSA · Binary Search Algorithm <span class="core">★ core</span></div><b>Search in Rotated Sorted Array + Find Minimum in Rotated Sorted Array</b></div></li><li><span class="box"></span><div><div class="tag">3. On your own </div>Pick one of the two problems and re-code it yourself the next morning without the video.</div></li><li><span class="box"></span><div><div class="tag">4. Close</div>Write today's key idea in one sentence, from memory.</div></li></ul></div>
+<div class="day"><div class="meta"><div><span class="num">Day 43</span> <h3 style="display:inline">Peaks</h3></div><span class="date">Date: ____________</span></div>
+<div class="muted small">Walk uphill: compare mid with its neighbour.</div><ul><li><span class="box"></span><div><div class="tag">1. Namaste DSA · Binary Search Algorithm <span class="core">★ core</span></div><b>Find Peak Element + Find Peak in a Mountain Array</b></div></li><li><span class="box"></span><div><div class="tag">2. On your own </div>Write one sentence: how is "find peak" still binary search when the array is not sorted?</div></li><li><span class="box"></span><div><div class="tag">3. Close</div>Write today's key idea in one sentence, from memory.</div></li></ul></div>
+<div class="day"><div class="meta"><div><span class="num">Day 44</span> <h3 style="display:inline">Single element, k closest</h3></div><span class="date">Date: ____________</span></div>
+<div class="muted small">Use index parity, or search for the left edge of a window.</div><ul><li><span class="box"></span><div><div class="tag">1. Re-solve from memory </div><b>P27. First Position of a Value</b>. Clear the editor, no hints, no peeking. If you cannot, that is useful information: read the solution once, then try again tomorrow.</div></li><li><span class="box"></span><div><div class="tag">2. Namaste DSA · Binary Search Algorithm <span class="core">★ core</span></div><b>Single Element in a Sorted Array + Find k Closest Elements</b></div></li><li><span class="box"></span><div><div class="tag">3. Close</div>Write today's key idea in one sentence, from memory.</div></li></ul></div>
+<div class="day review"><div class="meta"><div><span class="num">Day 45 · review</span> <h3 style="display:inline">Review and catch-up day</h3></div><span class="date">Date: ____________</span></div>
+<div class="muted small">No new lessons. Remembering is the skill you are building today.</div><ul><li><span class="box"></span><div><div class="tag">1. On your own <span class="core">★ core</span></div>Re-solve every problem that is due on your recall tracker (back page). From memory, before peeking.</div></li><li><span class="box"></span><div><div class="tag">2. Re-solve from memory </div><b>P26. Integer Square Root</b>. Clear the editor, no hints, no peeking. If you cannot, that is useful information: read the solution once, then try again tomorrow.</div></li><li><span class="box"></span><div><div class="tag">3. On your own </div>Re-read this week's mistakes in your notebook and write one sentence per mistake: "Next time I will…".</div></li><li><span class="box"></span><div><div class="tag">4. On your own </div>Behind on the plan? Use today to finish any unchecked step from this week instead. That is exactly what this day is for.</div></li><li><span class="box"></span><div><div class="tag">5. Close</div>Write today's key idea in one sentence, from memory.</div></li></ul></div>
+</section>
+<section class="week"><div class="week-head"><h2>Week 10: Two pointers and lookups</h2><div class="muted">Goal: Spot when a sorted array means "use two pointers".</div></div>
+<div class="day"><div class="meta"><div><span class="num">Day 46</span> <h3 style="display:inline">Two Sum</h3></div><span class="date">Date: ____________</span></div>
+<div class="muted small">Ask "have I already seen target - x?"</div><ul><li><span class="box"></span><div><div class="tag">1. Re-solve from memory </div><b>P20. First Repeated Value</b>. Same "seen" idea.</div></li><li><span class="box"></span><div><div class="tag">2. Try first, before the lesson <span class="core">★ core</span></div><b>P28. Pair With Target (Unsorted)</b>. Give it 10–15 honest minutes before watching. Getting stuck is the point: the lesson will then answer your question.</div></li><li><span class="box"></span><div><div class="tag">3. Namaste DSA · Two Pointers &amp; Sliding Window <span class="core">★ core</span></div><b>Two Sum</b></div></li><li><span class="box"></span><div><div class="tag">4. Close</div>Write today's key idea in one sentence, from memory.</div></li></ul></div>
+<div class="day"><div class="meta"><div><span class="num">Day 47</span> <h3 style="display:inline">Two Sum on a sorted array</h3></div><span class="date">Date: ____________</span></div>
+<div class="muted small">Too small? Move left. Too big? Move right.</div><ul><li><span class="box"></span><div><div class="tag">1. Try first, before the lesson <span class="core">★ core</span></div><b>P29. Pair With Target (Sorted)</b>. Give it 10–15 honest minutes before watching. Getting stuck is the point: the lesson will then answer your question.</div></li><li><span class="box"></span><div><div class="tag">2. Namaste DSA · Two Pointers &amp; Sliding Window <span class="core">★ core</span></div><b>Two Sum II - Input Array Is Sorted + Is Subsequence</b></div></li><li><span class="box"></span><div><div class="tag">3. Close</div>Write today's key idea in one sentence, from memory.</div></li></ul></div>
+<div class="day"><div class="meta"><div><span class="num">Day 48</span> <h3 style="display:inline">Substrings and container with most water</h3></div><span class="date">Date: ____________</span></div>
+<div class="muted small">Move the pointer that limits you.</div><ul><li><span class="box"></span><div><div class="tag">1. Namaste DSA · Two Pointers &amp; Sliding Window <span class="core">★ core</span></div><b>Find Index of First Occurrence in String + Container with Most Water</b></div></li><li><span class="box"></span><div><div class="tag">2. Namaste DSA · Two Pointers &amp; Sliding Window </div><b>KMP (Knuth-Morris-Pratt) Algorithm</b>. Optional. Skip it if your brain is full.</div></li><li><span class="box"></span><div><div class="tag">3. Close</div>Write today's key idea in one sentence, from memory.</div></li></ul></div>
+<div class="day"><div class="meta"><div><span class="num">Day 49</span> <h3 style="display:inline">Three Sum (stretch)</h3></div><span class="date">Date: ____________</span></div>
+<div class="muted small">Fix one number, then run Two Sum II on the rest.</div><ul><li><span class="box"></span><div><div class="tag">1. Re-solve from memory <span class="core">★ core</span></div><b>P29. Pair With Target (Sorted)</b>. Clear the editor, no hints, no peeking. If you cannot, that is useful information: read the solution once, then try again tomorrow.</div></li><li><span class="box"></span><div><div class="tag">2. Namaste DSA · Two Pointers &amp; Sliding Window <span class="core">★ core</span></div><b>Three Sum</b></div></li><li><span class="box"></span><div><div class="tag">3. Namaste DSA · Two Pointers &amp; Sliding Window </div><b>Trapping Rain Water</b>. Stretch. It is fine if this one feels hard.</div></li><li><span class="box"></span><div><div class="tag">4. Close</div>Write today's key idea in one sentence, from memory.</div></li></ul></div>
+<div class="day review"><div class="meta"><div><span class="num">Day 50 · review</span> <h3 style="display:inline">Review and catch-up day</h3></div><span class="date">Date: ____________</span></div>
+<div class="muted small">No new lessons. Remembering is the skill you are building today.</div><ul><li><span class="box"></span><div><div class="tag">1. On your own <span class="core">★ core</span></div>Re-solve every problem that is due on your recall tracker (back page). From memory, before peeking.</div></li><li><span class="box"></span><div><div class="tag">2. Re-solve from memory </div><b>P28. Pair With Target (Unsorted)</b>. Clear the editor, no hints, no peeking. If you cannot, that is useful information: read the solution once, then try again tomorrow.</div></li><li><span class="box"></span><div><div class="tag">3. On your own </div>Re-read this week's mistakes in your notebook and write one sentence per mistake: "Next time I will…".</div></li><li><span class="box"></span><div><div class="tag">4. On your own </div>Behind on the plan? Use today to finish any unchecked step from this week instead. That is exactly what this day is for.</div></li><li><span class="box"></span><div><div class="tag">5. Close</div>Write today's key idea in one sentence, from memory.</div></li></ul></div>
+</section>
+<section class="week"><div class="week-head"><h2>Week 11: Sliding window</h2><div class="muted">Goal: Grow and shrink a window instead of re-scanning.</div></div>
+<div class="day"><div class="meta"><div><span class="num">Day 51</span> <h3 style="display:inline">Sliding window basics</h3></div><span class="date">Date: ____________</span></div>
+<div class="muted small">Add the new element, remove the old one, never re-scan.</div><ul><li><span class="box"></span><div><div class="tag">1. Warm up <span class="core">★ core</span></div><b>Sliding Window</b> (Topic sheet T9). Read the topic sheet and trace its example on paper.</div></li><li><span class="box"></span><div><div class="tag">2. Practice <span class="core">★ core</span></div><b>P30. Best Window of Size K</b>. Fixed-size window first.</div></li><li><span class="box"></span><div><div class="tag">3. Close</div>Write today's key idea in one sentence, from memory.</div></li></ul></div>
+<div class="day"><div class="meta"><div><span class="num">Day 52</span> <h3 style="display:inline">Longest substring without repeats</h3></div><span class="date">Date: ____________</span></div>
+<div class="muted small">Grow the right side; shrink the left side when a rule breaks.</div><ul><li><span class="box"></span><div><div class="tag">1. Try first, before the lesson <span class="core">★ core</span></div><b>P31. Longest Stretch Without Repeats</b>. Give it 10–15 honest minutes before watching. Getting stuck is the point: the lesson will then answer your question.</div></li><li><span class="box"></span><div><div class="tag">2. Namaste DSA · Two Pointers &amp; Sliding Window <span class="core">★ core</span></div><b>Longest Substring Without Repeating Characters</b></div></li><li><span class="box"></span><div><div class="tag">3. Close</div>Write today's key idea in one sentence, from memory.</div></li></ul></div>
+<div class="day"><div class="meta"><div><span class="num">Day 53</span> <h3 style="display:inline">Character replacement, permutation in string</h3></div><span class="date">Date: ____________</span></div>
+<div class="muted small">A window plus a frequency map.</div><ul><li><span class="box"></span><div><div class="tag">1. Re-solve from memory </div><b>P30. Best Window of Size K</b>. Clear the editor, no hints, no peeking. If you cannot, that is useful information: read the solution once, then try again tomorrow.</div></li><li><span class="box"></span><div><div class="tag">2. Namaste DSA · Two Pointers &amp; Sliding Window <span class="core">★ core</span></div><b>Longest Repeating Character Replacement + Permutation in String</b></div></li><li><span class="box"></span><div><div class="tag">3. Close</div>Write today's key idea in one sentence, from memory.</div></li></ul></div>
+<div class="day"><div class="meta"><div><span class="num">Day 54</span> <h3 style="display:inline">Mixed recall</h3></div><span class="date">Date: ____________</span></div>
+<div class="muted small">Real interviews do not tell you the topic.</div><ul><li><span class="box"></span><div><div class="tag">1. Re-solve from memory <span class="core">★ core</span></div><b>P14. The Missing Number</b>. Clear the editor, no hints, no peeking. If you cannot, that is useful information: read the solution once, then try again tomorrow.</div></li><li><span class="box"></span><div><div class="tag">2. Re-solve from memory <span class="core">★ core</span></div><b>P23. Clean Palindrome Check</b>. Clear the editor, no hints, no peeking. If you cannot, that is useful information: read the solution once, then try again tomorrow.</div></li><li><span class="box"></span><div><div class="tag">3. Re-solve from memory </div><b>P31. Longest Stretch Without Repeats</b>. Clear the editor, no hints, no peeking. If you cannot, that is useful information: read the solution once, then try again tomorrow.</div></li><li><span class="box"></span><div><div class="tag">4. Namaste DSA · Two Pointers &amp; Sliding Window </div><b>Sliding Window Maximum</b>. Stretch.</div></li><li><span class="box"></span><div><div class="tag">5. Close</div>Write today's key idea in one sentence, from memory.</div></li></ul></div>
+<div class="day review"><div class="meta"><div><span class="num">Day 55 · review</span> <h3 style="display:inline">Review and catch-up day</h3></div><span class="date">Date: ____________</span></div>
+<div class="muted small">No new lessons. Remembering is the skill you are building today.</div><ul><li><span class="box"></span><div><div class="tag">1. On your own <span class="core">★ core</span></div>Re-solve every problem that is due on your recall tracker (back page). From memory, before peeking.</div></li><li><span class="box"></span><div><div class="tag">2. On your own </div>Look at your recall tracker. Write down the two topics that feel weakest and redo one problem from each.</div></li><li><span class="box"></span><div><div class="tag">3. On your own </div>Re-read this week's mistakes in your notebook and write one sentence per mistake: "Next time I will…".</div></li><li><span class="box"></span><div><div class="tag">4. On your own </div>Behind on the plan? Use today to finish any unchecked step from this week instead. That is exactly what this day is for.</div></li><li><span class="box"></span><div><div class="tag">5. Close</div>Write today's key idea in one sentence, from memory.</div></li></ul></div>
+</section>
+<section class="week"><div class="week-head"><h2>After Day 55</h2><div class="muted">Keep the same rhythm for the rest of the course.</div></div>
+<p>After Day 55 you have covered the foundations. Continue with the Namaste DSA modules below in order, one or two lessons a day, keeping the same rhythm: try the problem first for 15 minutes, watch the lesson, re-code it the next day from memory, and keep one review day each week. For these modules, do the "re-code it from memory" step in your editor or on LeetCode.</p>
+<div class="callout"><b>A good pace:</b> one or two lessons a day, a review day every 5th day, and each problem re-solved from memory 1, 3, 7 and 14 days later. Linked List and Stack &amp; Queues come next. They build on the array and two-pointer work you have already done.</div>
+<div class="day"><div class="num">Module 7</div><h3>Linked List - Easy/Medium <span class="muted small">(20 lessons)</span></h3><div class="small muted">Introduction to Linked List · Design Linked List · Adding Nodes to Linked List · Deleting Nodes in Linked List · Middle of Linked List · Reverse Linked List · Linked List Cycle - Hash Table · Linked List Cycle - Floyd's Algorithm · Palindrome Linked List · Intersection of two Linked Lists · Remove Linked List Elements · Remove nth node from end of List - Two Pass · Remove nth Node from end - One Pass · Remove Duplicates from Sorted List · Odd Even Linked List · Add Two Numbers · Merge Two Sorted Lists · Rotate List · Swap Nodes in Pairs - Iterative Approach · Swap Nodes in Pair - Recursive Approach</div></div><div class="day"><div class="num">Module 9</div><h3>Stack and Queues <span class="muted small">(14 lessons)</span></h3><div class="small muted">Introduction to Stacks &amp; Queues · Playing with Stacks &amp; Queues · Implement Stack using Two Queues · Implement Stack using One Queue · Implement Queue using Stacks · Valid Parentheses · Min Stack · Remove Outermost Parentheses - Using Stack · Remove Outermost Parentheses - without Stack · Evaluate Reverse Polish Notation · Next Greater Element · Daily Temperatures · Next Greater Element - II · Rotting Oranges</div></div><div class="day"><div class="num">Module 12</div><h3>Binary Tree <span class="muted small">(26 lessons)</span></h3><div class="small muted">Introduction to Trees · Binary Tree - Traversals Explained · Preorder Traversal - Recursive Approach · Inorder &amp; PostOrder - Recursive Approach · Preorder Traversal - Iterative Approach · Inorder Traversal - Iterative Approach · Postorder - Iterative Approach - 2 Stacks · Postorder - Iterative Approach - One Stack · DFS and BFS in Binary Tree · Level Order Traversal - Queue - BFS · Level Order Traversal - Recursive Approach · Maximum Depth of Binary Tree · Path Sum · Symmetric Tree - Recursive Approach · Symmetric Tree - Iterative Approach · Invert a Binary Tree · Same Tree · Balanced Binary Tree · Diameter of a Binary Tree · Zigzag Level Order Traversal · Subtree of another Tree · Lowest Common Ancestor · Binary Tree Right Side View · Count Good Nodes in Binary Tree · Populating Next Right Pointers in Each Node · Binary Tree Maximum Path Sum</div></div><div class="day"><div class="num">Module 13</div><h3>Binary Search Tree <span class="muted small">(6 lessons)</span></h3><div class="small muted">Binary Search Tree - Introduction · Valid Binary Search Tree · Search in a BST · Insert into a BST · Kth Smallest Element · Lowest Common Ancestor of a BST</div></div><div class="day"><div class="num">Module 14</div><h3>Heap / Priority Queue <span class="muted small">(14 lessons)</span></h3><div class="small muted">Introduction to Heaps · Creating a Heap · Inserting a node in Heap · Extracting Values in Heap &amp; HeapifyDown · Heap Sort Algorithm · Heap Sort Code · Heap Sort - Dive Deep · Priority Queues - Introduction · Priority Queue Code · Kth Largest Element in an Array · Kth Largest Element in a Stream · Last Stone Weight · Top K Frequent Elements · Kth Smallest Element in a Sorted Matrix</div></div><div class="day"><div class="num">Module 15</div><h3>Hashing <span class="muted small">(19 lessons)</span></h3><div class="small muted">Linked List Cycle - Hash Table · Palindrome Linked List · Intersection of Two Linked Lists - Two Pointers · Remove Duplicates from Sorted List · Find Words Containing Character · Jewels and Stones · Find Most Frequent Vowel and Consonant · Valid Palindrome - Approach 1 - Extra Space · Valid Anagram · Isomorphic Strings · Group Anagrams - Approach 1 - Sorted Key · Group Anagrams - Approach 2 - Hashed Key · Next Greater Element · Two Sum II - Input Array Is Sorted · Find Index of First Occurrence in String · KMP (Knuth-Morris-Pratt) Algorithm · Permutation in String · Longest Substring Without Repeating Characters · Sliding Window Maximum</div></div><div class="day"><div class="num">Module 16</div><h3>Backtracking <span class="muted small">(13 lessons)</span></h3><div class="small muted">Introduction to Backtracking · Subsets - The Power Set · Combinations · Permutations · Subset - II · Combination Sum · Combination Sum - II · Combination Sum - III · Letter Combinations of a Phone Number · Permutations - II · Palindrome Partitioning · Word Search · N Queens</div></div><div class="day"><div class="num">Module 17</div><h3>Greedy Algorithm <span class="muted small">(14 lessons)</span></h3><div class="small muted">Introduction to Greedy Algorithm · Two City Scheduling · Assign Cookies · Lemonade Change · Best Time to Buy and Sell Stock - II · Insert Interval · Merge Intervals · Partition Labels · Non Overlapping Intervals · Task Scheduler · Gas Station · Car Pooling · Candy - Two Pass - O(n) Space · Candy - One Pass - O(1) Space</div></div><div class="day"><div class="num">Module 18</div><h3>Dynamic Programming <span class="muted small">(20 lessons)</span></h3><div class="small muted">Introduction to Dynamic Programming · Fibonacci Numbers using DP · Top Down &amp; Bottom Up - DP approach · Climbing Stairs · Minimum Cost Climbing Stairs · House Robber · House Robber II · Coin Change - Top Down - Recursive · Coin Change - Bottom Up - Iterative · Palindromic Substrings · Longest Palindromic Substring · Decode Ways · Maximum Subarray - Kadane's Algorithm · Maximum Product Subarray - Approach 1 · Maximum Product Subarray - Approach 2 · Word Break · Longest Increasing Subsequence · Partition Equal Subset Sum · Coin Change II · Unique Paths</div></div><div class="day"><div class="num">Module 19</div><h3>Graphs <span class="muted small">(30 lessons)</span></h3><div class="small muted">Introduction to Graphs · Breadth First Search (BFS) · Depth First Search (DFS) · Find if Path Exists - BFS · DFS Recursive · All Paths from Source to Target · Reconstruct Itinerary · Detect Cycle in Undirected Connected Graph · Topological Sort - DFS · Kahn's Algorithm - Topological Sort - BFS · Shortest Path Algorithms in Graphs · Shortest Path in Unweighted Graph - BFS · Dijkstra's Algorithm - Shortest Path Weighted Graph · Dijkstra's Algorithm - Code · Bellman Ford Algorithm - Shortest Path with Negative Weights · Bellman Ford Algorithm - Code · Floyd Warshall Algorithm - All Pairs Shortest Path · Floyd Warshall - Code · Comparing all Shortest Path Graph Algorithms · Minimum Spanning Tree · Prim's Algorithm · Prim's Algorithm - Code · Disjoint Set - Union Find · Kruskal's Algorithm · Kruskal + Union Find - Code · Comparison - Prim’s vs Kruskal Algorithm · Number of Operations to Make Network Connected · Cheapest Flight with K Stops · Number of Ways to Arrive at Destination · Min Cost to Connect All Points</div></div><div class="day"><div class="num">Module 20</div><h3>Tries <span class="muted small">(4 lessons)</span></h3><div class="small muted">Introduction to Tries · Trie and TrieNode Structure · Insert, Search, PrefixFind - Trie Code · Time &amp; Space Complexity in Tries</div></div><div class="day"><div class="num">Module 21</div><h3>Searching &amp; Sorting - Advanced <span class="muted small">(7 lessons)</span></h3><div class="small muted">Quick Sort · Counting Sort · Counting Sort - Stable - Logic · Counting Sort - Stable - Code · Radix Sort · Bucket Sort · Interview Cheatsheet</div></div>
+</section>
+<section class="week"><div class="week-head"><h2>Topic sheets</h2><div class="muted">Read these on "warm up" days. The answers to the Predict questions are at the bottom of each sheet.</div></div>
+<div class="sheet first"><div class="h"><h3>T1. Loops &amp; Number Logic</h3><span class="pill">Namaste module 2</span></div>
+<p class="muted">Make the computer repeat a small, clear step.</p>
+<p>Almost every DSA solution is a loop that repeats one small decision. If you can describe that one step in plain words, the loop writes itself.</p><p>For number problems, <code>n % 10</code> gives the last digit and <code>Math.floor(n / 10)</code> drops it. Repeat until the number is 0 and you have visited every digit.</p>
+<p><b>Analogy.</b> Peeling a stack of plates: look at the top plate (n % 10), do something with it, remove it (Math.floor(n / 10)), and stop when no plates remain.</p>
+<div class="callout"><b>Key idea.</b> Decide: what changes each step, what you keep track of, and when you stop.</div>
+<p><b>When you see… think of…</b></p><ul><li>"digits of a number" → loop with % 10 and / 10</li><li>"for every element" → one loop over the input</li><li>"every pair" → loop inside a loop</li></ul>
+<p><b>Complexity.</b> One loop over n items is O(n). A loop inside a loop over the same items is O(n²). Digit loops are O(number of digits).</p>
+<p><b>Predict the output</b> (answer before you run anything):</p>
+<div style="break-inside:avoid"><p style="margin:4px 0">1. What gets logged?</p><pre>let total = 0;
+for (let i = 1; i &lt;= 4; i++) {
+  total += i;
+}
+console.log(total);</pre><p class="small">Options: (a) 4   (b) 10   (c) 6   (d) 15</p></div><div style="break-inside:avoid"><p style="margin:4px 0">2. What gets logged?</p><pre>let n = 507;
+let count = 0;
+while (n &gt; 0) {
+  n = Math.floor(n / 10);
+  count++;
+}
+console.log(count);</pre><p class="small">Options: (a) 2   (b) 3   (c) 507   (d) 0</p></div><div style="break-inside:avoid"><p style="margin:4px 0">3. What gets logged?</p><pre>let out = "";
+for (let i = 0; i &lt; 3; i++) {
+  for (let j = 0; j &lt;= i; j++) out += "*";
+  out += "|";
+}
+console.log(out);</pre><p class="small">Options: (a) ***|***|***|   (b) *|**|***|   (c) |*|**|   (d) *|*|*|</p></div>
+<p class="small muted">Answers: 1. (b) i takes 1, 2, 3, 4. Adding them gives 1 + 2 + 3 + 4 = 10. 2. (b) 507 → 50 → 5 → 0. The loop body ran 3 times, once per digit. 3. (b) The inner loop runs i + 1 times: 1, then 2, then 3 stars, each followed by a bar.</p>
+</div>
+<div class="sheet"><div class="h"><h3>T2. Time &amp; Space Complexity</h3><span class="pill">Namaste module 3</span></div>
+<p class="muted">How does the work grow when the input grows?</p>
+<p>Big-O ignores exact timings and asks one question: if the input doubles, roughly how much more work happens?</p><p>Count the loops that depend on n. One loop: O(n). Nested loops over n: O(n²). Halving the range each step: O(log n).</p>
+<p><b>Analogy.</b> Finding a name in a phone book: reading every page is O(n); opening in the middle and discarding half each time is O(log n).</p>
+<div class="callout"><b>Key idea.</b> Count how many times the innermost line runs as a function of n.</div>
+<p><b>When you see… think of…</b></p><ul><li>"input up to 10⁵" → you need about O(n log n) or better</li><li>"halve the search space" → O(log n)</li><li>"extra array/map of size n" → O(n) space</li></ul>
+<p><b>Complexity.</b> Drop constants and smaller terms: O(2n + 5) is O(n).</p>
+<p><b>Predict the output</b> (answer before you run anything):</p>
+<div style="break-inside:avoid"><p style="margin:4px 0">1. Time complexity?</p><pre>function f(arr) {
+  for (let i = 0; i &lt; arr.length; i++) {
+    for (let j = 0; j &lt; arr.length; j++) {
+      // constant work
+    }
+  }
+}</pre><p class="small">Options: (a) O(n)   (b) O(log n)   (c) O(n²)   (d) O(1)</p></div><div style="break-inside:avoid"><p style="margin:4px 0">2. Time complexity?</p><pre>function g(n) {
+  let steps = 0;
+  while (n &gt; 1) {
+    n = Math.floor(n / 2);
+    steps++;
+  }
+  return steps;
+}</pre><p class="small">Options: (a) O(n)   (b) O(log n)   (c) O(n²)   (d) O(√n)</p></div><div style="break-inside:avoid"><p style="margin:4px 0">3. Extra space complexity?</p><pre>function h(arr) {
+  const seen = new Set();
+  for (const x of arr) seen.add(x);
+  return seen.size;
+}</pre><p class="small">Options: (a) O(1)   (b) O(n)   (c) O(log n)   (d) O(n²)</p></div>
+<p class="small muted">Answers: 1. (c) For each of n values of i, the inner loop runs n times: n × n. 2. (b) n is halved every step, so the loop runs about log₂(n) times. 3. (b) In the worst case every element is distinct and the Set stores all n of them.</p>
+</div>
+<div class="sheet"><div class="h"><h3>T3. Array Traversal</h3><span class="pill">Namaste module 2, 4</span></div>
+<p class="muted">Walk the array once while remembering what matters.</p>
+<p>Most easy array problems are one pass where you carry a few variables: the best so far, a count, a running sum.</p><p>Before coding, ask: "If I could only remember one or two numbers while walking left to right, which numbers would they be?"</p>
+<p><b>Analogy.</b> Walking past a row of shops and remembering only the cheapest price you have seen so far. You never need to walk back.</p>
+<div class="callout"><b>Key idea.</b> Pick the state you carry, update it at each element, read the answer at the end.</div>
+<p><b>When you see… think of…</b></p><ul><li>"largest / smallest / count" → single pass with a tracker variable</li><li>"second largest" → carry two trackers</li><li>"consecutive streak" → carry current streak and best streak</li></ul>
+<p><b>Complexity.</b> A single pass is O(n) time. Carrying a few variables is O(1) extra space.</p>
+<p><b>Predict the output</b> (answer before you run anything):</p>
+<div style="break-inside:avoid"><p style="margin:4px 0">1. What gets logged?</p><pre>const a = [3, 8, 1, 9, 4];
+let best = a[0];
+for (const x of a) {
+  if (x &gt; best) best = x;
+}
+console.log(best);</pre><p class="small">Options: (a) 3   (b) 8   (c) 9   (d) 4</p></div><div style="break-inside:avoid"><p style="margin:4px 0">2. What gets logged?</p><pre>const a = [1, 1, 0, 1, 1, 1];
+let cur = 0, best = 0;
+for (const x of a) {
+  cur = x === 1 ? cur + 1 : 0;
+  best = Math.max(best, cur);
+}
+console.log(best);</pre><p class="small">Options: (a) 5   (b) 2   (c) 3   (d) 6</p></div><div style="break-inside:avoid"><p style="margin:4px 0">3. What gets logged?</p><pre>const a = [5, 5, 4];
+let first = -Infinity, second = -Infinity;
+for (const x of a) {
+  if (x &gt; first) { second = first; first = x; }
+  else if (x &gt; second &amp;&amp; x !== first) second = x;
+}
+console.log(second);</pre><p class="small">Options: (a) 5   (b) 4   (c) -Infinity   (d) undefined</p></div>
+<p class="small muted">Answers: 1. (c) best goes 3 → 8 → 8 → 9 → 9. 2. (c) The streak resets at the 0. The second streak has length 3. 3. (b) The duplicate 5 is skipped by x !== first, so second becomes 4.</p>
+</div>
+<div class="sheet"><div class="h"><h3>T4. Two Pointers</h3><span class="pill">Namaste module 4, 8, 11</span></div>
+<p class="muted">Two indexes moving with purpose instead of checking every pair.</p>
+<p>Checking every pair costs O(n²). Two pointers often get the same answer in O(n) because each pointer only moves forward (or inward).</p><p>Two common shapes: opposite ends moving inward (palindromes, sorted pair sums), and slow/fast moving the same way (removing or compacting elements in place).</p>
+<p><b>Analogy.</b> Two people reading a word from both ends toward the middle, comparing letters as they go. They meet in the middle having done half the work each.</p>
+<div class="callout"><b>Key idea.</b> Each step, use a comparison to decide which pointer moves. Never move both blindly.</div>
+<p><b>When you see… think of…</b></p><ul><li>"sorted array" + "pair" → left/right pointers</li><li>"in place" + "remove/move" → slow (write) and fast (read) pointers</li><li>"palindrome" → compare from both ends</li></ul>
+<p><b>Complexity.</b> Each pointer moves at most n times, so the whole loop is O(n) with O(1) extra space.</p>
+<p><b>Predict the output</b> (answer before you run anything):</p>
+<div style="break-inside:avoid"><p style="margin:4px 0">1. What gets logged?</p><pre>const s = "level";
+let l = 0, r = s.length - 1, ok = true;
+while (l &lt; r) {
+  if (s[l] !== s[r]) ok = false;
+  l++; r--;
+}
+console.log(ok);</pre><p class="small">Options: (a) true   (b) false   (c) undefined   (d) Error</p></div><div style="break-inside:avoid"><p style="margin:4px 0">2. What gets logged?</p><pre>const a = [0, 2, 0, 3];
+let w = 0;
+for (let r = 0; r &lt; a.length; r++) {
+  if (a[r] !== 0) a[w++] = a[r];
+}
+console.log(w);</pre><p class="small">Options: (a) 2   (b) 4   (c) 1   (d) 3</p></div><div style="break-inside:avoid"><p style="margin:4px 0">3. What gets logged?</p><pre>const a = [1, 2, 4, 7];
+let l = 0, r = 3;
+while (a[l] + a[r] !== 6) {
+  if (a[l] + a[r] &lt; 6) l++; else r--;
+}
+console.log(l, r);</pre><p class="small">Options: (a) 0 3   (b) 1 2   (c) 0 2   (d) 1 3</p></div>
+<p class="small muted">Answers: 1. (a) l/e pairs match: l=l, e=e, and the middle v is never compared with anything. 2. (a) Only 2 and 3 are non-zero, so the write pointer advances twice. 3. (b) 1+7=8 too big → r=2. 1+4=5 too small → l=1. 2+4=6 → stop at 1 2.</p>
+</div>
+<div class="sheet"><div class="h"><h3>T5. Recursion Basics</h3><span class="pill">Namaste module 5</span></div>
+<p class="muted">Solve a small piece, trust the function for the rest.</p>
+<p>A recursive function answers a big question by asking itself a smaller version of the same question, plus a base case that answers the tiniest version directly.</p><p>Do not trace every call in your head. Write: "If f(n - 1) is already correct, how do I build f(n) from it?"</p>
+<p><b>Analogy.</b> Russian nesting dolls: to count the dolls, open one, count 1, and ask the doll inside to count itself. The smallest doll just says 1.</p>
+<div class="callout"><b>Key idea.</b> Base case + one step that shrinks the problem + combine.</div>
+<p><b>When you see… think of…</b></p><ul><li>"defined in terms of a smaller version" (factorial, sum of n) → recursion</li><li>"trees / nested structures" → recursion is natural</li><li>Every recursive call must move toward the base case</li></ul>
+<p><b>Complexity.</b> A function that calls itself once per level with n levels is O(n) time and O(n) call-stack space.</p>
+<p><b>Predict the output</b> (answer before you run anything):</p>
+<div style="break-inside:avoid"><p style="margin:4px 0">1. What gets logged?</p><pre>function f(n) {
+  if (n === 0) return 0;
+  return n + f(n - 1);
+}
+console.log(f(3));</pre><p class="small">Options: (a) 3   (b) 6   (c) 0   (d) Stack overflow</p></div><div style="break-inside:avoid"><p style="margin:4px 0">2. What is printed, in order?</p><pre>function f(n) {
+  if (n === 1) return;
+  console.log(n);
+  f(n - 1);
+}
+f(3);</pre><p class="small">Options: (a) 3 2 1   (b) 3 2   (c) 1 2 3   (d) 2 3</p></div><div style="break-inside:avoid"><p style="margin:4px 0">3. What gets logged?</p><pre>function f(n) {
+  if (n &lt;= 0) return 1;
+  return 2 * f(n - 1);
+}
+console.log(f(3));</pre><p class="small">Options: (a) 6   (b) 8   (c) 4   (d) 16</p></div>
+<p class="small muted">Answers: 1. (b) f(3) = 3 + f(2) = 3 + 2 + f(1) = 3 + 2 + 1 + f(0) = 6. 2. (b) f(1) returns immediately before printing, so only 3 and 2 are printed. 3. (b) f(0)=1, f(1)=2, f(2)=4, f(3)=8. It computes 2ⁿ.</p>
+</div>
+<div class="sheet"><div class="h"><h3>T6. Binary Search</h3><span class="pill">Namaste module 6, 10</span></div>
+<p class="muted">Throw away half of the possibilities every step.</p>
+<p>Binary search works whenever you can look at the middle and know for sure which half cannot contain the answer. Sorted arrays are the classic case.</p><p>Most bugs are boundary bugs. Pick one convention (we use <code>while (lo &lt;= hi)</code>) and stick with it.</p>
+<p><b>Analogy.</b> Guessing a number between 1 and 100 when someone says "higher" or "lower". Guessing 50 first eliminates half the numbers in one question.</p>
+<div class="callout"><b>Key idea.</b> Keep [lo, hi] as the range where the answer can still be. Shrink it using the middle.</div>
+<p><b>When you see… think of…</b></p><ul><li>"sorted" + "find" → binary search</li><li>"smallest x such that..." with a yes/no check → binary search on the answer</li><li>Need better than O(n) on sorted data → O(log n)</li></ul>
+<p><b>Complexity.</b> The range halves each step: O(log n) time, O(1) space.</p>
+<p><b>Predict the output</b> (answer before you run anything):</p>
+<div style="break-inside:avoid"><p style="margin:4px 0">1. What gets logged?</p><pre>const a = [1, 3, 5, 7, 9];
+let lo = 0, hi = 4;
+const mid = Math.floor((lo + hi) / 2);
+console.log(a[mid]);</pre><p class="small">Options: (a) 3   (b) 5   (c) 7   (d) 9</p></div><div style="break-inside:avoid"><p style="margin:4px 0">2. How many steps to find 9?</p><pre>const a = [1, 3, 5, 7, 9];
+let lo = 0, hi = 4, steps = 0;
+while (lo &lt;= hi) {
+  steps++;
+  const m = Math.floor((lo + hi) / 2);
+  if (a[m] === 9) break;
+  if (a[m] &lt; 9) lo = m + 1; else hi = m - 1;
+}
+console.log(steps);</pre><p class="small">Options: (a) 1   (b) 2   (c) 3   (d) 5</p></div><div style="break-inside:avoid"><p style="margin:4px 0">3. Final lo and hi?</p><pre>// Searching for 4 in [1, 3, 5, 7]
+// with while (lo &lt;= hi)
+// What are lo and hi when the loop ends?</pre><p class="small">Options: (a) lo=2, hi=1   (b) lo=1, hi=2   (c) lo=0, hi=3   (d) lo=3, hi=2</p></div>
+<p class="small muted">Answers: 1. (b) mid = floor(4 / 2) = 2, and a[2] is 5. 2. (c) m=2 (5) → lo=3; m=3 (7) → lo=4; m=4 (9) found. Three steps. 3. (a) m=1 (3&lt;4) → lo=2; m=2 (5&gt;4) → hi=1. Loop ends with lo=2: the index where 4 would be inserted.</p>
+</div>
+<div class="sheet"><div class="h"><h3>T7. Strings</h3><span class="pill">Namaste module 8</span></div>
+<p class="muted">Strings are arrays of characters with extra rules.</p>
+<p>Treat a string like a read-only array: <code>s[i]</code>, <code>s.length</code>, loop over it. JavaScript strings are immutable, so build results in an array or a new string.</p><p>Many string problems are array problems in disguise: counting, two pointers from both ends, or comparing character by character.</p>
+<p><b>Analogy.</b> A string is a necklace of beads. You can look at any bead, but to change one you string a new necklace.</p>
+<div class="callout"><b>Key idea.</b> Break the string into characters or words, apply an array technique, join back if needed.</div>
+<p><b>When you see… think of…</b></p><ul><li>"words" → split on spaces (watch for extra spaces)</li><li>"same characters / counts" → frequency counting</li><li>"reads the same backward" → two pointers</li></ul>
+<p><b>Complexity.</b> Building a string with += in a loop can be costly; pushing into an array and joining once is O(n).</p>
+<p><b>Predict the output</b> (answer before you run anything):</p>
+<div style="break-inside:avoid"><p style="margin:4px 0">1. What gets logged?</p><pre>const s = "hello";
+console.log(s.split("").reverse().join(""));</pre><p class="small">Options: (a) hello   (b) olleh   (c) h,e,l,l,o   (d) Error</p></div><div style="break-inside:avoid"><p style="margin:4px 0">2. What gets logged?</p><pre>const s = "  fly me  ";
+console.log(s.trim().split(" ").length);</pre><p class="small">Options: (a) 2   (b) 4   (c) 3   (d) 6</p></div><div style="break-inside:avoid"><p style="margin:4px 0">3. What gets logged?</p><pre>const s = "abc";
+s[0] = "z";
+console.log(s);</pre><p class="small">Options: (a) zbc   (b) abc   (c) Error   (d) z</p></div>
+<p class="small muted">Answers: 1. (b) split → array of letters, reverse, join back into a string. 2. (a) trim removes outer spaces → "fly me", which splits into 2 words. 3. (b) Strings are immutable. The assignment is silently ignored (outside strict mode).</p>
+</div>
+<div class="sheet"><div class="h"><h3>T8. Hash Maps &amp; Sets</h3><span class="pill">Namaste module 8, 15</span></div>
+<p class="muted">Remember what you have seen, look it up in O(1).</p>
+<p>A Map or Set lets you answer "have I seen this before?" or "how many times?" instantly, trading memory for speed.</p><p>The classic upgrade: a nested loop that searches for a partner becomes one loop that asks the map whether the partner already appeared.</p>
+<p><b>Analogy.</b> A coat check: you hand in a coat and get a ticket. Later you find the coat instantly by its ticket instead of searching every rack.</p>
+<div class="callout"><b>Key idea.</b> Decide the key (what you look up) and the value (what you need back).</div>
+<p><b>When you see… think of…</b></p><ul><li>"count occurrences / frequency" → Map from item to count</li><li>"seen before / duplicate" → Set</li><li>"find a pair that sums to target" → Map from value to index</li></ul>
+<p><b>Complexity.</b> Map/Set lookups are O(1) on average, so one pass with a map is O(n) time and O(n) space.</p>
+<p><b>Predict the output</b> (answer before you run anything):</p>
+<div style="break-inside:avoid"><p style="margin:4px 0">1. What gets logged?</p><pre>const m = new Map();
+for (const ch of "abca") {
+  m.set(ch, (m.get(ch) || 0) + 1);
+}
+console.log(m.get("a"));</pre><p class="small">Options: (a) 1   (b) 2   (c) 3   (d) undefined</p></div><div style="break-inside:avoid"><p style="margin:4px 0">2. What gets logged?</p><pre>const seen = new Set([1, 2, 2, 3, 3, 3]);
+console.log(seen.size);</pre><p class="small">Options: (a) 6   (b) 3   (c) 2   (d) 1</p></div><div style="break-inside:avoid"><p style="margin:4px 0">3. What gets logged?</p><pre>const nums = [3, 5, 2];
+const need = new Map();
+let ans = null;
+nums.forEach((x, i) =&gt; {
+  if (need.has(7 - x)) ans = [need.get(7 - x), i];
+  need.set(x, i);
+});
+console.log(ans);</pre><p class="small">Options: (a) [0, 1]   (b) [1, 2]   (c) [0, 2]   (d) null</p></div>
+<p class="small muted">Answers: 1. (b) "a" appears twice in "abca". 2. (b) A Set keeps only unique values: 1, 2, 3. 3. (b) At i=2 (x=2) we need 5, which was stored at index 1.</p>
+</div>
+<div class="sheet"><div class="h"><h3>T9. Sliding Window</h3><span class="pill">Namaste module 11</span></div>
+<p class="muted">Reuse the work from the previous window instead of starting over.</p>
+<p>For "contiguous subarray / substring" problems, a window [left, right] slides across the input. When it moves, add what enters and remove what leaves.</p><p>Fixed-size windows move both ends together. Variable windows grow on the right and shrink on the left when a rule breaks.</p>
+<p><b>Analogy.</b> Looking through a train window: as the train moves, one new tree appears on the right and one disappears on the left. You do not re-count the whole view.</p>
+<div class="callout"><b>Key idea.</b> Maintain a summary of the window (sum, counts) and update it in O(1) per move.</div>
+<p><b>When you see… think of…</b></p><ul><li>"contiguous subarray of size k" → fixed window</li><li>"longest substring such that..." → variable window + map/set</li><li>Brute force checks every subarray (O(n²)) → window makes it O(n)</li></ul>
+<p><b>Complexity.</b> Each element enters and leaves the window at most once: O(n) time.</p>
+<p><b>Predict the output</b> (answer before you run anything):</p>
+<div style="break-inside:avoid"><p style="margin:4px 0">1. What gets logged?</p><pre>const a = [2, 1, 5, 1, 3];
+let sum = a[0] + a[1] + a[2];
+sum = sum - a[0] + a[3];
+console.log(sum);</pre><p class="small">Options: (a) 8   (b) 7   (c) 9   (d) 10</p></div><div style="break-inside:avoid"><p style="margin:4px 0">2. What is l at the end?</p><pre>const s = "abca";
+const seen = new Set();
+let l = 0;
+for (let r = 0; r &lt; s.length; r++) {
+  while (seen.has(s[r])) seen.delete(s[l++]);
+  seen.add(s[r]);
+}
+console.log(l);</pre><p class="small">Options: (a) 0   (b) 1   (c) 2   (d) 3</p></div>
+<p class="small muted">Answers: 1. (b) Window [2,1,5]=8 slides to [1,5,1]: 8 - 2 + 1 = 7. 2. (b) When the second "a" arrives, the window drops the first "a" and l moves to 1.</p>
+</div>
+</section>
+<section class="week"><div class="week-head"><h2>Practice problems</h2><div class="muted">Numbered in the order the plan uses them. Solutions are in the next section.</div></div>
+<div class="prob"><div class="h"><h3>P1. Sum from 1 to N</h3><span class="pill">Loops &amp; Number Logic · level 2</span></div>
+<p>Return the sum of all whole numbers from 1 up to and including <code>n</code>. If <code>n</code> is 0, return 0.</p>
+<p class="small"><b>Write:</b> <code>function sumTo(…)</code></p>
+<p class="small" style="margin:2px 0"><b>Input:</b> <code>n = 4</code> → <b>Output:</b> <code>10</code> <span class="muted">(1 + 2 + 3 + 4)</span></p><p class="small" style="margin:2px 0"><b>Input:</b> <code>n = 1</code> → <b>Output:</b> <code>1</code></p>
+<p class="small muted">Constraints: 0 ≤ n ≤ 10⁴. Edge cases to test: n = 0 should give 0; n = 1 should give 1.</p>
+<p class="small"><b>Hints</b> (read one at a time, only after 5 minutes of trying):</p>
+<ol class="hints small"><li>You need one variable that grows as you go. What should it start at?</li><li>Loop i from 1 to n (inclusive) and add i to your total each time.</li><li>Pattern: accumulator. <code>let total = 0; for (let i = 1; i &lt;= n; i++) total += i;</code></li><li>Pseudocode: total ← 0; for i in 1..n: total ← total + i; return total.</li></ol>
+</div>
+<div class="prob"><div class="h"><h3>P2. Count Greater Than X</h3><span class="pill">Array Traversal · level 2</span></div>
+<p>Return how many numbers in <code>nums</code> are strictly greater than <code>x</code>.</p>
+<p class="small"><b>Write:</b> <code>function countGreater(…)</code></p>
+<p class="small" style="margin:2px 0"><b>Input:</b> <code>nums = [1, 5, 3, 7], x = 3</code> → <b>Output:</b> <code>2</code> <span class="muted">(5 and 7)</span></p>
+<p class="small muted">Constraints: 0 ≤ nums.length ≤ 10⁵. Edge cases to test: empty array; values equal to x.</p>
+<p class="small"><b>Hints</b> (read one at a time, only after 5 minutes of trying):</p>
+<ol class="hints small"><li>What do you need to remember while walking through the array?</li><li>A counter that starts at 0 and goes up by one when a condition is true.</li><li>Be careful with "strictly greater": equal values do not count.</li><li>Pseudocode: count ← 0; for v in nums: if v &gt; x: count++; return count.</li></ol>
+</div>
+<div class="prob"><div class="h"><h3>P3. Largest Element</h3><span class="pill">Array Traversal · level 2</span></div>
+<p>Return the largest number in a non-empty array <code>nums</code>. Do not use Math.max(...nums) or sort.</p>
+<p class="small"><b>Write:</b> <code>function findMax(…)</code></p>
+<p class="small" style="margin:2px 0"><b>Input:</b> <code>nums = [3, 8, 1, 9, 4]</code> → <b>Output:</b> <code>9</code></p><p class="small" style="margin:2px 0"><b>Input:</b> <code>nums = [-5, -2, -9]</code> → <b>Output:</b> <code>-2</code></p>
+<p class="small muted">Constraints: 1 ≤ nums.length ≤ 10⁵. Edge cases to test: all negative; single element; duplicates of the max.</p>
+<p class="small"><b>Hints</b> (read one at a time, only after 5 minutes of trying):</p>
+<ol class="hints small"><li>If you walk the array left to right, what single number would you need to remember?</li><li>Remember "the biggest so far". What should it start as? (Hint: 0 breaks for all-negative arrays.)</li><li>Start with best = nums[0], then for each x, if x &gt; best, best = x.</li><li>Pseudocode: best ← nums[0]; for x in nums: if x &gt; best: best ← x; return best.</li></ol>
+</div>
+<div class="prob"><div class="h"><h3>P4. Second Largest Distinct</h3><span class="pill">Array Traversal · level 3</span></div>
+<p>Return the second largest <strong>distinct</strong> value in <code>nums</code>. If it does not exist, return -1. Solve it in one pass without sorting.</p>
+<p class="small"><b>Write:</b> <code>function secondLargest(…)</code></p>
+<p class="small" style="margin:2px 0"><b>Input:</b> <code>nums = [12, 35, 1, 10, 34]</code> → <b>Output:</b> <code>34</code></p><p class="small" style="margin:2px 0"><b>Input:</b> <code>nums = [10, 10, 10]</code> → <b>Output:</b> <code>-1</code> <span class="muted">(Only one distinct value.)</span></p>
+<p class="small muted">Constraints: 1 ≤ nums.length ≤ 10⁵; Values are non-negative.. Edge cases to test: all equal; one element; max appears twice; second largest appears before the max.</p>
+<p class="small"><b>Hints</b> (read one at a time, only after 5 minutes of trying):</p>
+<ol class="hints small"><li>You know how to find the largest with one tracker. How many trackers might you need now?</li><li>Keep <code>first</code> and <code>second</code>. When you find a new largest, what happens to the old largest?</li><li>Three cases per element: x &gt; first (shift first down into second), x is between second and first (and not equal to first), or ignore.</li><li>Pseudocode: first ← -1, second ← -1; for x: if x &gt; first: second ← first, first ← x; else if x &gt; second and x ≠ first: second ← x; return second.</li></ol>
+</div>
+<div class="prob"><div class="h"><h3>P5. Count the Digits</h3><span class="pill">Loops &amp; Number Logic · level 2</span></div>
+<p>Return how many digits the integer <code>n</code> has. Negative numbers count digits without the sign. 0 has one digit.</p>
+<p class="small"><b>Write:</b> <code>function countDigits(…)</code></p>
+<p class="small" style="margin:2px 0"><b>Input:</b> <code>n = 4096</code> → <b>Output:</b> <code>4</code></p><p class="small" style="margin:2px 0"><b>Input:</b> <code>n = -75</code> → <b>Output:</b> <code>2</code></p><p class="small" style="margin:2px 0"><b>Input:</b> <code>n = 0</code> → <b>Output:</b> <code>1</code></p>
+<p class="small muted">Constraints: -10⁹ ≤ n ≤ 10⁹; Try it without converting to a string.. Edge cases to test: 0 → 1; negative numbers; a single digit.</p>
+<p class="small"><b>Hints</b> (read one at a time, only after 5 minutes of trying):</p>
+<ol class="hints small"><li>What does Math.floor(4096 / 10) give you? What happens if you keep doing that?</li><li>Each division by 10 removes exactly one digit. Count how many divisions until the number becomes 0.</li><li>Handle the sign first with Math.abs(n). And 0 is special: the loop would run zero times.</li><li>Pseudocode: if n == 0 return 1; n = |n|; count = 0; while n &gt; 0: n = floor(n/10); count++; return count.</li></ol>
+</div>
+<div class="prob"><div class="h"><h3>P6. Reverse a Number</h3><span class="pill">Loops &amp; Number Logic · level 3</span></div>
+<p>Return the digits of integer <code>n</code> in reverse order as a number. Keep the sign. Leading zeros disappear (1200 → 21).</p>
+<p class="small"><b>Write:</b> <code>function reverseNumber(…)</code></p>
+<p class="small" style="margin:2px 0"><b>Input:</b> <code>n = 1234</code> → <b>Output:</b> <code>4321</code></p><p class="small" style="margin:2px 0"><b>Input:</b> <code>n = -560</code> → <b>Output:</b> <code>-65</code></p>
+<p class="small muted">Constraints: -10⁹ ≤ n ≤ 10⁹. Edge cases to test: negative numbers; trailing zeros (1200); 0.</p>
+<p class="small"><b>Hints</b> (read one at a time, only after 5 minutes of trying):</p>
+<ol class="hints small"><li>You already know how to read the last digit (n % 10). Where should that digit go in the answer?</li><li>Build the answer step by step: rev = rev * 10 + lastDigit. Try it by hand with 123.</li><li>Remember the sign separately, work with Math.abs(n), and put the sign back at the end.</li><li>Pseudocode: sign = n &lt; 0 ? -1 : 1; n = |n|; rev = 0; while n &gt; 0: rev = rev*10 + n%10; n = floor(n/10); return sign*rev.</li></ol>
+</div>
+<div class="prob"><div class="h"><h3>P7. Palindrome Number</h3><span class="pill">Loops &amp; Number Logic · level 3</span></div>
+<p>Return <code>true</code> if the integer <code>n</code> reads the same forwards and backwards, otherwise <code>false</code>. Negative numbers are never palindromes.</p>
+<p class="small"><b>Write:</b> <code>function isPalindromeNumber(…)</code></p>
+<p class="small" style="margin:2px 0"><b>Input:</b> <code>n = 1221</code> → <b>Output:</b> <code>true</code></p><p class="small" style="margin:2px 0"><b>Input:</b> <code>n = 123</code> → <b>Output:</b> <code>false</code></p><p class="small" style="margin:2px 0"><b>Input:</b> <code>n = -121</code> → <b>Output:</b> <code>false</code> <span class="muted">("-121" backwards is "121-".)</span></p>
+<p class="small muted">Constraints: -10⁹ ≤ n ≤ 10⁹. Edge cases to test: negative numbers; single digit; numbers ending in 0 like 10.</p>
+<p class="small"><b>Hints</b> (read one at a time, only after 5 minutes of trying):</p>
+<ol class="hints small"><li>You just wrote a function that reverses a number. How could that help?</li><li>A number is a palindrome if it equals its own reverse.</li><li>Handle negatives first: return false.</li><li>Pseudocode: if n &lt; 0 return false; build rev of n with digit peeling; return rev === n.</li></ol>
+</div>
+<div class="prob"><div class="h"><h3>P8. Reverse an Array In Place</h3><span class="pill">Two Pointers · level 2</span></div>
+<p>Reverse the array <code>arr</code> <strong>in place</strong> (modify it, no new array) and return it.</p>
+<p class="small"><b>Write:</b> <code>function reverseInPlace(…)</code></p>
+<p class="small" style="margin:2px 0"><b>Input:</b> <code>arr = [1, 2, 3, 4]</code> → <b>Output:</b> <code>[4, 3, 2, 1]</code></p>
+<p class="small muted">Constraints: 0 ≤ arr.length ≤ 10⁵; O(1) extra space. Edge cases to test: empty array; odd length (middle stays); two elements.</p>
+<p class="small"><b>Hints</b> (read one at a time, only after 5 minutes of trying):</p>
+<ol class="hints small"><li>Which element should end up at index 0? Which at the last index?</li><li>Swap the first and last, then the second and second-to-last, and so on.</li><li>Use l = 0 and r = arr.length − 1, swap, then move both inward until they meet.</li><li>Pseudocode: l ← 0, r ← n−1; while l &lt; r: swap arr[l], arr[r]; l++; r--; return arr.</li></ol>
+</div>
+<div class="prob"><div class="h"><h3>P9. Compact a Sorted Array</h3><span class="pill">Two Pointers · level 4</span></div>
+<p><code>nums</code> is sorted ascending. Rewrite it in place so the first k elements are the unique values in order, and return k.</p>
+<p class="small"><b>Write:</b> <code>function compactSorted(…)</code></p>
+<p class="small" style="margin:2px 0"><b>Input:</b> <code>nums = [1, 1, 2, 3, 3]</code> → <b>Output:</b> <code>3</code> <span class="muted">(nums starts with [1, 2, 3])</span></p>
+<p class="small muted">Constraints: 0 ≤ nums.length ≤ 3 × 10⁴; O(1) extra space. Edge cases to test: empty; all the same; already unique.</p>
+<p class="small"><b>Hints</b> (read one at a time, only after 5 minutes of trying):</p>
+<ol class="hints small"><li>Because the array is sorted, where do duplicates of a value sit?</li><li>A value is "new" exactly when it differs from the last value you kept.</li><li>Keep a write pointer w. For each read index r, if nums[r] differs from nums[w − 1], write it at w.</li><li>Pseudocode: if n==0 return 0; w←1; for r in 1..n−1: if nums[r]≠nums[w−1]: nums[w]←nums[r]; w++; return w.</li></ol>
+</div>
+<div class="prob"><div class="h"><h3>P10. Zeros to the End</h3><span class="pill">Two Pointers · level 4</span></div>
+<p>Move every 0 in <code>nums</code> to the end <strong>in place</strong>, keeping the order of the non-zero values. Return the array.</p>
+<p class="small"><b>Write:</b> <code>function zerosToEnd(…)</code></p>
+<p class="small" style="margin:2px 0"><b>Input:</b> <code>nums = [0, 1, 0, 3, 12]</code> → <b>Output:</b> <code>[1, 3, 12, 0, 0]</code></p>
+<p class="small muted">Constraints: 1 ≤ nums.length ≤ 10⁴; O(1) extra space. Edge cases to test: no zeros; all zeros; zeros only at the start.</p>
+<p class="small"><b>Hints</b> (read one at a time, only after 5 minutes of trying):</p>
+<ol class="hints small"><li>Think of one pointer that reads every element and one that marks where the next non-zero should be written.</li><li>When the reader sees a non-zero, copy it to the writer position and advance the writer.</li><li>After the loop, everything from the writer position to the end should become 0.</li><li>Pseudocode: w←0; for r in 0..n−1: if nums[r]≠0: nums[w]←nums[r]; w++; for i in w..n−1: nums[i]←0; return nums.</li></ol>
+</div>
+<div class="prob"><div class="h"><h3>P11. Best Single Trade</h3><span class="pill">Array Traversal · level 5</span></div>
+<p><code>prices[i]</code> is the price of an item on day i. You may buy once and sell once on a later day. Return the maximum profit, or 0 if no profit is possible.</p>
+<p class="small"><b>Write:</b> <code>function bestProfit(…)</code></p>
+<p class="small" style="margin:2px 0"><b>Input:</b> <code>prices = [7, 1, 5, 3, 6, 4]</code> → <b>Output:</b> <code>5</code> <span class="muted">(Buy at 1, sell at 6.)</span></p><p class="small" style="margin:2px 0"><b>Input:</b> <code>prices = [7, 6, 4, 3, 1]</code> → <b>Output:</b> <code>0</code></p>
+<p class="small muted">Constraints: 1 ≤ prices.length ≤ 10⁵. Edge cases to test: prices only fall; one day; minimum appears after the maximum.</p>
+<p class="small"><b>Hints</b> (read one at a time, only after 5 minutes of trying):</p>
+<ol class="hints small"><li>If you decide to sell on day i, which buy day is the best one?</li><li>The best buy day for selling on day i is the cheapest day before i.</li><li>So walk once, remembering the minimum price seen so far, and check profit = price − min at every step.</li><li>Pseudocode: min ← prices[0], best ← 0; for p: min ← min(min, p); best ← max(best, p − min); return best.</li></ol>
+</div>
+<div class="prob"><div class="h"><h3>P12. Merge Two Sorted Lists of Numbers</h3><span class="pill">Two Pointers · level 5</span></div>
+<p>Given two sorted arrays <code>a</code> and <code>b</code>, return a new sorted array containing all elements of both. Do not use sort().</p>
+<p class="small"><b>Write:</b> <code>function mergeSorted(…)</code></p>
+<p class="small" style="margin:2px 0"><b>Input:</b> <code>a = [1, 4, 7], b = [2, 3, 9]</code> → <b>Output:</b> <code>[1, 2, 3, 4, 7, 9]</code></p>
+<p class="small muted">Constraints: 0 ≤ a.length, b.length ≤ 10⁴. Edge cases to test: one array empty; duplicates across arrays; all of a smaller than all of b.</p>
+<p class="small"><b>Hints</b> (read one at a time, only after 5 minutes of trying):</p>
+<ol class="hints small"><li>The smallest element overall must be either a[0] or b[0]. Why?</li><li>Keep one pointer in each array. Each step, take the smaller of the two current elements.</li><li>When one array runs out, copy the rest of the other one.</li><li>Pseudocode: i←0, j←0, out←[]; while i&lt;|a| and j&lt;|b|: push smaller, advance it; push remaining a[i..], b[j..]; return out.</li></ol>
+</div>
+<div class="prob"><div class="h"><h3>P13. Longest Run of Ones</h3><span class="pill">Array Traversal · level 4</span></div>
+<p>Given an array of 0s and 1s, return the length of the longest run of consecutive 1s.</p>
+<p class="small"><b>Write:</b> <code>function longestOnes(…)</code></p>
+<p class="small" style="margin:2px 0"><b>Input:</b> <code>bits = [1, 1, 0, 1, 1, 1]</code> → <b>Output:</b> <code>3</code></p><p class="small" style="margin:2px 0"><b>Input:</b> <code>bits = [0, 0]</code> → <b>Output:</b> <code>0</code></p>
+<p class="small muted">Constraints: 0 ≤ bits.length ≤ 10⁵. Edge cases to test: empty array; all zeros; longest run at the very end.</p>
+<p class="small"><b>Hints</b> (read one at a time, only after 5 minutes of trying):</p>
+<ol class="hints small"><li>Imagine walking the array with a finger. What do you need to know at each step?</li><li>Two numbers: the length of the run you are in right now, and the best run so far.</li><li>On a 1, extend the current run. On a 0, the run breaks.</li><li>Pseudocode: cur ← 0, best ← 0; for b: cur ← b === 1 ? cur + 1 : 0; best ← max(best, cur); return best.</li></ol>
+</div>
+<div class="prob"><div class="h"><h3>P14. The Missing Number</h3><span class="pill">Array Traversal · level 4</span></div>
+<p><code>nums</code> contains n distinct numbers taken from 0, 1, 2, …, n. Exactly one number from that range is missing. Return it.</p>
+<p class="small"><b>Write:</b> <code>function missingNumber(…)</code></p>
+<p class="small" style="margin:2px 0"><b>Input:</b> <code>nums = [3, 0, 1]</code> → <b>Output:</b> <code>2</code></p><p class="small" style="margin:2px 0"><b>Input:</b> <code>nums = [0, 1]</code> → <b>Output:</b> <code>2</code></p>
+<p class="small muted">Constraints: 1 ≤ n ≤ 10⁴; All values distinct.. Edge cases to test: missing 0; missing n (the largest).</p>
+<p class="small"><b>Hints</b> (read one at a time, only after 5 minutes of trying):</p>
+<ol class="hints small"><li>If nothing were missing, what would the numbers add up to?</li><li>The sum of 0..n is n(n+1)/2, where n = nums.length.</li><li>Missing = (sum you expected) − (sum you actually have).</li><li>Pseudocode: n ← length; expected ← n(n+1)/2; actual ← sum(nums); return expected − actual.</li></ol>
+</div>
+<div class="prob"><div class="h"><h3>P15. Factorial, Recursively</h3><span class="pill">Recursion Basics · level 2</span></div>
+<p>Return n! (n × (n−1) × … × 1) using recursion. 0! is 1.</p>
+<p class="small"><b>Write:</b> <code>function factorial(…)</code></p>
+<p class="small" style="margin:2px 0"><b>Input:</b> <code>n = 5</code> → <b>Output:</b> <code>120</code></p><p class="small" style="margin:2px 0"><b>Input:</b> <code>n = 0</code> → <b>Output:</b> <code>1</code></p>
+<p class="small muted">Constraints: 0 ≤ n ≤ 15. Edge cases to test: n = 0; n = 1.</p>
+<p class="small"><b>Hints</b> (read one at a time, only after 5 minutes of trying):</p>
+<ol class="hints small"><li>What is the smallest input whose answer you know without any work?</li><li>Base case: n === 0 returns 1.</li><li>If factorial(n − 1) is already correct, how do you get factorial(n) from it?</li><li>Pseudocode: if n == 0 return 1; return n × factorial(n − 1).</li></ol>
+</div>
+<div class="prob"><div class="h"><h3>P16. Sum an Array, Recursively</h3><span class="pill">Recursion Basics · level 3</span></div>
+<p>Return the sum of <code>nums</code> using recursion (no loops). An empty array sums to 0.</p>
+<p class="small"><b>Write:</b> <code>function sumArray(…)</code></p>
+<p class="small" style="margin:2px 0"><b>Input:</b> <code>nums = [2, 4, 6]</code> → <b>Output:</b> <code>12</code></p>
+<p class="small muted">Constraints: 0 ≤ nums.length ≤ 1000. Edge cases to test: empty array; negative numbers.</p>
+<p class="small"><b>Hints</b> (read one at a time, only after 5 minutes of trying):</p>
+<ol class="hints small"><li>What is the answer for an empty array (or once your index has passed the end)?</li><li>Use an index i. The sum from i to the end is nums[i] + (sum from i + 1 to the end).</li><li>Base case: i === nums.length → 0.</li><li>Pseudocode: sumArray(nums, i): if i == n return 0; return nums[i] + sumArray(nums, i + 1).</li></ol>
+</div>
+<div class="prob"><div class="h"><h3>P17. Is It a Power of Two?</h3><span class="pill">Recursion Basics · level 3</span></div>
+<p>Return <code>true</code> if <code>n</code> is a power of two (1, 2, 4, 8, …), otherwise <code>false</code>. Use recursion.</p>
+<p class="small"><b>Write:</b> <code>function isPowerOfTwo(…)</code></p>
+<p class="small" style="margin:2px 0"><b>Input:</b> <code>n = 16</code> → <b>Output:</b> <code>true</code></p><p class="small" style="margin:2px 0"><b>Input:</b> <code>n = 12</code> → <b>Output:</b> <code>false</code></p>
+<p class="small muted">Constraints: -2³¹ ≤ n ≤ 2³¹ − 1. Edge cases to test: 0; negative numbers; 1 (2⁰).</p>
+<p class="small"><b>Hints</b> (read one at a time, only after 5 minutes of trying):</p>
+<ol class="hints small"><li>Which tiny inputs can you answer directly? Think about 1, and anything ≤ 0.</li><li>If n is even, n is a power of two exactly when n / 2 is.</li><li>If n is odd and not 1, it cannot be a power of two.</li><li>Pseudocode: if n == 1 return true; if n &lt;= 0 or n is odd return false; return isPowerOfTwo(n / 2).</li></ol>
+</div>
+<div class="prob"><div class="h"><h3>P18. Classic Binary Search</h3><span class="pill">Binary Search · level 3</span></div>
+<p>Return the index of <code>target</code> in the sorted array <code>nums</code>, or -1 if it is not present. Aim for O(log n).</p>
+<p class="small"><b>Write:</b> <code>function binarySearch(…)</code></p>
+<p class="small" style="margin:2px 0"><b>Input:</b> <code>nums = [2, 5, 8, 12, 16], target = 12</code> → <b>Output:</b> <code>3</code></p>
+<p class="small muted">Constraints: 1 ≤ nums.length ≤ 10⁵; Values are distinct and sorted ascending.. Edge cases to test: target at either end; target missing; one element.</p>
+<p class="small"><b>Hints</b> (read one at a time, only after 5 minutes of trying):</p>
+<ol class="hints small"><li>Look at the middle element. If it is smaller than the target, can the target be on its left?</li><li>Keep lo and hi as the range where the target could still be. Start with the whole array.</li><li>mid = Math.floor((lo + hi) / 2). Smaller → lo = mid + 1. Bigger → hi = mid − 1. Loop while lo &lt;= hi.</li><li>Pseudocode: lo←0, hi←n−1; while lo≤hi: mid; if nums[mid]==t return mid; if nums[mid]&lt;t lo←mid+1 else hi←mid−1; return −1.</li></ol>
+</div>
+<div class="prob"><div class="h"><h3>P19. Count the Vowels</h3><span class="pill">Strings · level 2</span></div>
+<p>Return how many vowels (a, e, i, o, u — either case) appear in <code>s</code>.</p>
+<p class="small"><b>Write:</b> <code>function countVowels(…)</code></p>
+<p class="small" style="margin:2px 0"><b>Input:</b> <code>s = "Namaste World"</code> → <b>Output:</b> <code>4</code></p>
+<p class="small muted">Constraints: 0 ≤ s.length ≤ 10⁵. Edge cases to test: empty string; uppercase vowels; no vowels.</p>
+<p class="small"><b>Hints</b> (read one at a time, only after 5 minutes of trying):</p>
+<ol class="hints small"><li>This is the "count matching elements" pattern from arrays, applied to characters.</li><li>How can you quickly check whether one character is a vowel?</li><li>A string "aeiou" with .includes(ch.toLowerCase()) or a Set works well.</li><li>Pseudocode: count←0; for ch in s: if "aeiou" includes lower(ch): count++; return count.</li></ol>
+</div>
+<div class="prob"><div class="h"><h3>P20. First Repeated Value</h3><span class="pill">Hash Maps &amp; Sets · level 3</span></div>
+<p>Return the first value in <code>nums</code> that appears for the second time while scanning left to right. Return -1 if nothing repeats.</p>
+<p class="small"><b>Write:</b> <code>function firstRepeat(…)</code></p>
+<p class="small" style="margin:2px 0"><b>Input:</b> <code>nums = [3, 1, 4, 1, 3]</code> → <b>Output:</b> <code>1</code> <span class="muted">(The second 1 (index 3) comes before the second 3 (index 4).)</span></p>
+<p class="small muted">Constraints: 0 ≤ nums.length ≤ 10⁵. Edge cases to test: no repeats; empty array; repeat right away.</p>
+<p class="small"><b>Hints</b> (read one at a time, only after 5 minutes of trying):</p>
+<ol class="hints small"><li>As you walk left to right, what question do you ask about each number?</li><li>"Have I seen this before?" A Set answers that in O(1).</li><li>If it is in the set, you found the answer. Otherwise add it.</li><li>Pseudocode: seen←Set; for x in nums: if seen has x return x; seen.add(x); return −1.</li></ol>
+</div>
+<div class="prob"><div class="h"><h3>P21. Most Frequent Character</h3><span class="pill">Hash Maps &amp; Sets · level 2</span></div>
+<p>Return the character that appears most often in <code>s</code>. If there is a tie, return the one that appears <strong>first</strong> in <code>s</code>.</p>
+<p class="small"><b>Write:</b> <code>function mostFrequent(…)</code></p>
+<p class="small" style="margin:2px 0"><b>Input:</b> <code>s = "abracadabra"</code> → <b>Output:</b> <code>"a"</code></p><p class="small" style="margin:2px 0"><b>Input:</b> <code>s = "xyyx"</code> → <b>Output:</b> <code>"x"</code></p>
+<p class="small muted">Constraints: 1 ≤ s.length ≤ 10⁵. Edge cases to test: ties; single character.</p>
+<p class="small"><b>Hints</b> (read one at a time, only after 5 minutes of trying):</p>
+<ol class="hints small"><li>Before deciding which is most frequent, you need every character's count. Where can you store those?</li><li>A Map from character → count. First pass: fill it.</li><li>Second pass over s (in order!) picks the first character with the highest count — that handles ties.</li><li>Pseudocode: counts←Map; for ch: counts[ch]++; best←s[0]; for ch in s: if counts[ch] &gt; counts[best]: best←ch; return best.</li></ol>
+</div>
+<div class="prob"><div class="h"><h3>P22. Reverse Word Order</h3><span class="pill">Strings · level 3</span></div>
+<p>Return a string with the words of <code>s</code> in reverse order, separated by single spaces. Ignore leading, trailing and repeated spaces.</p>
+<p class="small"><b>Write:</b> <code>function reverseWords(…)</code></p>
+<p class="small" style="margin:2px 0"><b>Input:</b> <code>s = "  learn   solve remember "</code> → <b>Output:</b> <code>"remember solve learn"</code></p>
+<p class="small muted">Constraints: 1 ≤ s.length ≤ 10⁴. Edge cases to test: one word; many spaces between words; leading/trailing spaces.</p>
+<p class="small"><b>Hints</b> (read one at a time, only after 5 minutes of trying):</p>
+<ol class="hints small"><li>First get a clean list of words. What do extra spaces turn into if you split on " "?</li><li>Splitting "a  b" on " " gives ["a", "", "b"]. Filter out empty strings (or split on /\s+/ after trim).</li><li>Once you have the words array, this is the reverse-in-place problem.</li><li>Pseudocode: words ← s.trim().split(/\s+/); reverse words with two pointers; return words.join(" ").</li></ol>
+</div>
+<div class="prob"><div class="h"><h3>P23. Clean Palindrome Check</h3><span class="pill">Two Pointers · level 3</span></div>
+<p>Return <code>true</code> if <code>s</code> is a palindrome after ignoring case and every character that is not a letter or digit.</p>
+<p class="small"><b>Write:</b> <code>function isCleanPalindrome(…)</code></p>
+<p class="small" style="margin:2px 0"><b>Input:</b> <code>s = "Step on no pets!"</code> → <b>Output:</b> <code>true</code></p><p class="small" style="margin:2px 0"><b>Input:</b> <code>s = "race a car"</code> → <b>Output:</b> <code>false</code></p>
+<p class="small muted">Constraints: 0 ≤ s.length ≤ 2 × 10⁵. Edge cases to test: empty string; only punctuation; digits mixed with letters ("0P").</p>
+<p class="small"><b>Hints</b> (read one at a time, only after 5 minutes of trying):</p>
+<ol class="hints small"><li>Ignore the punctuation for a moment. How would you check "abba" with two pointers?</li><li>Now, when a pointer is on a non-alphanumeric character, just move it past that character.</li><li>A helper <code>isAlnum = (c) =&gt; /[a-z0-9]/i.test(c)</code> keeps the main loop clean. Compare lowercase letters.</li><li>Pseudocode: l←0, r←n−1; while l&lt;r: skip non-alnum on both sides; if lower(s[l]) ≠ lower(s[r]) return false; l++, r--; return true.</li></ol>
+</div>
+<div class="prob"><div class="h"><h3>P24. Shared Starting Letters</h3><span class="pill">Strings · level 5</span></div>
+<p>Return the longest prefix shared by every string in <code>words</code>. Return "" if there is none.</p>
+<p class="small"><b>Write:</b> <code>function commonPrefix(…)</code></p>
+<p class="small" style="margin:2px 0"><b>Input:</b> <code>words = ["interval", "internet", "interior"]</code> → <b>Output:</b> <code>"inter"</code></p><p class="small" style="margin:2px 0"><b>Input:</b> <code>words = ["map", "set"]</code> → <b>Output:</b> <code>""</code></p>
+<p class="small muted">Constraints: 1 ≤ words.length ≤ 200. Edge cases to test: one word; an empty string in the list; no common first letter.</p>
+<p class="small"><b>Hints</b> (read one at a time, only after 5 minutes of trying):</p>
+<ol class="hints small"><li>Compare the first letter of every word. Then the second letter. When do you stop?</li><li>Use the first word as a reference. For each index i, check words[k][i] for every other word.</li><li>Stop as soon as any word is too short or has a different character at position i.</li><li>Pseudocode: for i in 0..|w0|−1: ch←w0[i]; for w in words: if i≥|w| or w[i]≠ch: return w0.slice(0,i); return w0.</li></ol>
+</div>
+<div class="prob"><div class="h"><h3>P25. Same Letters, Different Order</h3><span class="pill">Hash Maps &amp; Sets · level 4</span></div>
+<p>Return <code>true</code> if <code>a</code> and <code>b</code> contain exactly the same characters with the same counts (anagrams), otherwise <code>false</code>.</p>
+<p class="small"><b>Write:</b> <code>function isAnagram(…)</code></p>
+<p class="small" style="margin:2px 0"><b>Input:</b> <code>a = "listen", b = "silent"</code> → <b>Output:</b> <code>true</code></p><p class="small" style="margin:2px 0"><b>Input:</b> <code>a = "rat", b = "car"</code> → <b>Output:</b> <code>false</code></p>
+<p class="small muted">Constraints: 1 ≤ a.length, b.length ≤ 5 × 10⁴. Edge cases to test: different lengths; same letters different counts ("aacc" vs "ccac").</p>
+<p class="small"><b>Hints</b> (read one at a time, only after 5 minutes of trying):</p>
+<ol class="hints small"><li>If the lengths differ, can they ever be anagrams?</li><li>Count each character of a in a map. What should happen to those counts as you walk through b?</li><li>Decrease the count for each character in b. If a count would go below zero, they are not anagrams.</li><li>Pseudocode: if |a|≠|b| return false; counts from a; for ch in b: if !counts[ch] return false; counts[ch]−−; return true.</li></ol>
+</div>
+<div class="prob"><div class="h"><h3>P26. Integer Square Root</h3><span class="pill">Binary Search · level 5</span></div>
+<p>Return the largest integer r such that r × r ≤ x. Do not use Math.sqrt or **.</p>
+<p class="small"><b>Write:</b> <code>function sqrtFloor(…)</code></p>
+<p class="small" style="margin:2px 0"><b>Input:</b> <code>x = 8</code> → <b>Output:</b> <code>2</code> <span class="muted">(2² = 4 ≤ 8 but 3² = 9 &gt; 8)</span></p><p class="small" style="margin:2px 0"><b>Input:</b> <code>x = 16</code> → <b>Output:</b> <code>4</code></p>
+<p class="small muted">Constraints: 0 ≤ x ≤ 2³¹ − 1. Edge cases to test: 0 and 1; perfect squares; very large x.</p>
+<p class="small"><b>Hints</b> (read one at a time, only after 5 minutes of trying):</p>
+<ol class="hints small"><li>There is no array here. What range could the answer possibly be in?</li><li>The answer is between 0 and x. For a guess m, m × m ≤ x tells you whether m is "small enough".</li><li>This is binary search on the answer: if m × m ≤ x, m is a candidate, try bigger (lo = m + 1). Otherwise try smaller.</li><li>Pseudocode: lo←0, hi←x, ans←0; while lo≤hi: m; if m*m≤x: ans←m; lo←m+1; else hi←m−1; return ans.</li></ol>
+</div>
+<div class="prob"><div class="h"><h3>P27. First Position of a Value</h3><span class="pill">Binary Search · level 4</span></div>
+<p><code>nums</code> is sorted and may contain duplicates. Return the index of the <strong>first</strong> occurrence of <code>target</code>, or -1. Aim for O(log n).</p>
+<p class="small"><b>Write:</b> <code>function firstOccurrence(…)</code></p>
+<p class="small" style="margin:2px 0"><b>Input:</b> <code>nums = [1, 2, 2, 2, 5], target = 2</code> → <b>Output:</b> <code>1</code></p>
+<p class="small muted">Constraints: 0 ≤ nums.length ≤ 10⁵. Edge cases to test: all elements equal target; empty array; target missing.</p>
+<p class="small"><b>Hints</b> (read one at a time, only after 5 minutes of trying):</p>
+<ol class="hints small"><li>Classic binary search stops at any match. Why is that not enough here?</li><li>When nums[mid] === target, remember mid as a candidate answer, but keep searching on the left.</li><li>Use a variable <code>ans = -1</code>. On a match: ans = mid; hi = mid − 1.</li><li>Pseudocode: lo, hi, ans←−1; while lo≤hi: mid; if nums[mid]==t: ans←mid; hi←mid−1; elif nums[mid]&lt;t: lo←mid+1; else hi←mid−1; return ans.</li></ol>
+</div>
+<div class="prob"><div class="h"><h3>P28. Pair With Target (Unsorted)</h3><span class="pill">Hash Maps &amp; Sets · level 5</span></div>
+<p>Return indexes <code>[i, j]</code> with i &lt; j such that <code>nums[i] + nums[j] === target</code>. Exactly one answer exists. The array is <strong>not</strong> sorted. Aim for O(n).</p>
+<p class="small"><b>Write:</b> <code>function twoSum(…)</code></p>
+<p class="small" style="margin:2px 0"><b>Input:</b> <code>nums = [3, 5, 2, 8], target = 7</code> → <b>Output:</b> <code>[1, 2]</code> <span class="muted">(5 + 2 = 7)</span></p>
+<p class="small muted">Constraints: 2 ≤ nums.length ≤ 10⁴. Edge cases to test: duplicate values ([3, 3]); negative numbers.</p>
+<p class="small"><b>Hints</b> (read one at a time, only after 5 minutes of trying):</p>
+<ol class="hints small"><li>For a number x, what partner value would complete the pair?</li><li>The partner is target − x. The question becomes: "have I already seen target − x?"</li><li>Store each value with its index in a Map as you go. Check the map before inserting the current value.</li><li>Pseudocode: seen←Map; for i: need←t−nums[i]; if seen has need return [seen[need], i]; seen[nums[i]]←i.</li></ol>
+</div>
+<div class="prob"><div class="h"><h3>P29. Pair With Target (Sorted)</h3><span class="pill">Two Pointers · level 4</span></div>
+<p><code>nums</code> is sorted ascending. Return the indexes <code>[i, j]</code> (i &lt; j) of two numbers that add up to <code>target</code>, or <code>[-1, -1]</code> if no pair exists. Use O(1) extra space.</p>
+<p class="small"><b>Write:</b> <code>function pairSumSorted(…)</code></p>
+<p class="small" style="margin:2px 0"><b>Input:</b> <code>nums = [1, 3, 4, 6, 8, 11], target = 10</code> → <b>Output:</b> <code>[2, 3]</code> <span class="muted">(4 + 6)</span></p>
+<p class="small muted">Constraints: 2 ≤ nums.length ≤ 10⁴; At most one valid pair.. Edge cases to test: no pair; negative numbers; pair at the two ends.</p>
+<p class="small"><b>Hints</b> (read one at a time, only after 5 minutes of trying):</p>
+<ol class="hints small"><li>Start with the smallest and largest numbers. If their sum is too big, which one should you drop?</li><li>Too big → move the right pointer left (smaller number). Too small → move the left pointer right.</li><li>Stop when the sum matches or the pointers meet.</li><li>Pseudocode: l←0, r←n−1; while l&lt;r: s←nums[l]+nums[r]; if s==t return [l,r]; if s&lt;t l++ else r--; return [-1,-1].</li></ol>
+</div>
+<div class="prob"><div class="h"><h3>P30. Best Window of Size K</h3><span class="pill">Sliding Window · level 3</span></div>
+<p>Return the largest sum of any <code>k</code> consecutive elements of <code>nums</code>.</p>
+<p class="small"><b>Write:</b> <code>function maxSumK(…)</code></p>
+<p class="small" style="margin:2px 0"><b>Input:</b> <code>nums = [2, 1, 5, 1, 3, 2], k = 3</code> → <b>Output:</b> <code>9</code> <span class="muted">([5, 1, 3])</span></p>
+<p class="small muted">Constraints: 1 ≤ k ≤ nums.length ≤ 10⁵. Edge cases to test: k equals the array length; all negative numbers.</p>
+<p class="small"><b>Hints</b> (read one at a time, only after 5 minutes of trying):</p>
+<ol class="hints small"><li>The brute force recomputes each window's sum from scratch. How do neighbouring windows differ?</li><li>Moving the window one step right adds one new element and removes one old element.</li><li>Compute the first window's sum. Then for i from k: sum += nums[i] − nums[i − k], and track the best.</li><li>Pseudocode: sum←Σ nums[0..k−1]; best←sum; for i in k..n−1: sum←sum+nums[i]−nums[i−k]; best←max(best,sum); return best.</li></ol>
+</div>
+<div class="prob"><div class="h"><h3>P31. Longest Stretch Without Repeats</h3><span class="pill">Sliding Window · level 5</span></div>
+<p>Return the length of the longest substring of <code>s</code> in which no character repeats.</p>
+<p class="small"><b>Write:</b> <code>function longestUnique(…)</code></p>
+<p class="small" style="margin:2px 0"><b>Input:</b> <code>s = "abcabcbb"</code> → <b>Output:</b> <code>3</code> <span class="muted">("abc")</span></p><p class="small" style="margin:2px 0"><b>Input:</b> <code>s = "pwwkew"</code> → <b>Output:</b> <code>3</code> <span class="muted">("wke")</span></p>
+<p class="small muted">Constraints: 0 ≤ s.length ≤ 5 × 10⁴. Edge cases to test: empty string; all the same character; repeat that is not at the left edge ("dvdf").</p>
+<p class="small"><b>Hints</b> (read one at a time, only after 5 minutes of trying):</p>
+<ol class="hints small"><li>Picture a window [left, right] that always contains unique characters. What breaks it?</li><li>Grow the window by moving right. If s[right] is already inside, shrink from the left until it is not.</li><li>A Set holds the characters currently in the window. Track the best window length after each step.</li><li>Pseudocode: set, l←0, best←0; for r: while set has s[r]: delete s[l], l++; add s[r]; best←max(best, r−l+1).</li></ol>
+</div>
+</section>
+<section class="week"><div class="week-head"><h2>Solutions</h2><div class="muted">Only after an honest attempt. If you needed this, re-solve the problem from memory in two days.</div></div>
+<div class="prob"><div class="h"><h3>P1. Sum from 1 to N</h3><span class="pill">Accumulator loop</span></div>
+<pre>function sumTo(n) {
+  let total = 0;
+  for (let i = 1; i &lt;= n; i++) {
+    total += i;
+  }
+  return total;
+}</pre>
+<p>Keep a running total and add each number once. (There is also the formula n(n+1)/2, but the loop is the skill being practised.)</p>
+<p class="small"><b>Complexity:</b> O(n) time, O(1) space. One loop of n steps and a single number of state.</p>
+<p class="small muted"><b>Common mistakes:</b> Using i &lt; n and missing n itself; Forgetting to return the total.</p>
+</div>
+<div class="prob"><div class="h"><h3>P2. Count Greater Than X</h3><span class="pill">Single pass with a counter</span></div>
+<pre>function countGreater(nums, x) {
+  let count = 0;
+  for (const v of nums) {
+    if (v &gt; x) count++;
+  }
+  return count;
+}</pre>
+<p>A counter is just an accumulator that adds 1 when a condition holds.</p>
+<p class="small"><b>Complexity:</b> O(n) time, O(1) space. One pass, one counter.</p>
+<p class="small muted"><b>Common mistakes:</b> Using &gt;= instead of &gt;.</p>
+</div>
+<div class="prob"><div class="h"><h3>P3. Largest Element</h3><span class="pill">Single pass with a tracker</span></div>
+<pre>function findMax(nums) {
+  let best = nums[0];
+  for (const x of nums) {
+    if (x &gt; best) best = x;
+  }
+  return best;
+}</pre>
+<p>Track the best value seen so far. Starting from nums[0] avoids the all-negative trap.</p>
+<p class="small"><b>Complexity:</b> O(n) time, O(1) space. Each element is looked at once.</p>
+<p class="small muted"><b>Common mistakes:</b> Starting best at 0; Returning inside the loop.</p>
+</div>
+<div class="prob"><div class="h"><h3>P4. Second Largest Distinct</h3><span class="pill">Single pass with two trackers</span></div>
+<pre>function secondLargest(nums) {
+  let first = -1, second = -1;
+  for (const x of nums) {
+    if (x &gt; first) {
+      second = first;
+      first = x;
+    } else if (x &gt; second &amp;&amp; x !== first) {
+      second = x;
+    }
+  }
+  return second;
+}</pre>
+<p>When a new maximum appears, the old maximum becomes the second. Duplicates of the max are skipped so the answer stays distinct.</p>
+<p class="small"><b>Complexity:</b> O(n) time, O(1) space. One pass with two variables.</p>
+<p class="small muted"><b>Common mistakes:</b> Forgetting to move first into second; Allowing a duplicate of the max as second.</p>
+</div>
+<div class="prob"><div class="h"><h3>P5. Count the Digits</h3><span class="pill">Digit peeling (% 10, / 10)</span></div>
+<pre>function countDigits(n) {
+  if (n === 0) return 1;
+  n = Math.abs(n);
+  let count = 0;
+  while (n &gt; 0) {
+    n = Math.floor(n / 10);
+    count++;
+  }
+  return count;
+}</pre>
+<p>Dividing by 10 and flooring drops the last digit. Count drops until nothing is left. 0 is handled up front because the loop would not run.</p>
+<p class="small"><b>Complexity:</b> O(d) time, O(1) space. d = number of digits, about log₁₀(n).</p>
+<p class="small muted"><b>Common mistakes:</b> Returning 0 for n = 0; Using n / 10 without Math.floor (gives decimals, loops for a long time); Infinite loop for negatives.</p>
+</div>
+<div class="prob"><div class="h"><h3>P6. Reverse a Number</h3><span class="pill">Digit peeling + building</span></div>
+<pre>function reverseNumber(n) {
+  const sign = n &lt; 0 ? -1 : 1;
+  n = Math.abs(n);
+  let rev = 0;
+  while (n &gt; 0) {
+    rev = rev * 10 + (n % 10);
+    n = Math.floor(n / 10);
+  }
+  return sign * rev;
+}</pre>
+<p>Peel digits from the right and push them onto the right of <code>rev</code>. Multiplying rev by 10 makes room for the next digit.</p>
+<p class="small"><b>Complexity:</b> O(d) time, O(1) space. One iteration per digit.</p>
+<p class="small muted"><b>Common mistakes:</b> Losing the sign; Using % on a negative number (gives negative digits).</p>
+</div>
+<div class="prob"><div class="h"><h3>P7. Palindrome Number</h3><span class="pill">Reverse and compare</span></div>
+<pre>function isPalindromeNumber(n) {
+  if (n &lt; 0) return false;
+  let x = n, rev = 0;
+  while (x &gt; 0) {
+    rev = rev * 10 + (x % 10);
+    x = Math.floor(x / 10);
+  }
+  return rev === n;
+}</pre>
+<p>Reuse the reverse-number idea on a copy, then compare with the original.</p>
+<p class="small"><b>Complexity:</b> O(d) time, O(1) space. One pass over the digits.</p>
+<p class="small muted"><b>Common mistakes:</b> Reversing n itself and then comparing with the destroyed value — copy n first.</p>
+</div>
+<div class="prob"><div class="h"><h3>P8. Reverse an Array In Place</h3><span class="pill">Opposite-end pointers + swap</span></div>
+<pre>function reverseInPlace(arr) {
+  let l = 0, r = arr.length - 1;
+  while (l &lt; r) {
+    [arr[l], arr[r]] = [arr[r], arr[l]];
+    l++;
+    r--;
+  }
+  return arr;
+}</pre>
+<p>Two pointers start at opposite ends and swap their way to the middle. The middle element of an odd-length array stays put.</p>
+<p class="small"><b>Complexity:</b> O(n) time, O(1) space. n/2 swaps, no extra array.</p>
+<p class="small muted"><b>Common mistakes:</b> Looping the full length (reverses twice, back to the original); Using arr.reverse() — fine in real life, but practise the pointers.</p>
+</div>
+<div class="prob"><div class="h"><h3>P9. Compact a Sorted Array</h3><span class="pill">Slow (write) + fast (read) pointers</span></div>
+<pre>function compactSorted(nums) {
+  if (nums.length === 0) return 0;
+  let w = 1;
+  for (let r = 1; r &lt; nums.length; r++) {
+    if (nums[r] !== nums[w - 1]) nums[w++] = nums[r];
+  }
+  return w;
+}</pre>
+<p>Sorted order puts duplicates side by side, so comparing with the last kept value is enough.</p>
+<p class="small"><b>Complexity:</b> O(n) time, O(1) space. Single pass with two indexes.</p>
+<p class="small muted"><b>Common mistakes:</b> Comparing with nums[r - 1] after overwriting (works here, but compare with the last kept value to be safe); Not handling empty input.</p>
+</div>
+<div class="prob"><div class="h"><h3>P10. Zeros to the End</h3><span class="pill">Slow (write) + fast (read) pointers</span></div>
+<pre>function zerosToEnd(nums) {
+  let w = 0;
+  for (let r = 0; r &lt; nums.length; r++) {
+    if (nums[r] !== 0) nums[w++] = nums[r];
+  }
+  for (let i = w; i &lt; nums.length; i++) nums[i] = 0;
+  return nums;
+}</pre>
+<p>The write pointer compacts the non-zero values to the front in order. The rest is filled with zeros.</p>
+<p class="small"><b>Complexity:</b> O(n) time, O(1) space. Two linear passes, no extra array.</p>
+<p class="small muted"><b>Common mistakes:</b> Removing with splice inside a loop (skips elements, O(n²)).</p>
+</div>
+<div class="prob"><div class="h"><h3>P11. Best Single Trade</h3><span class="pill">Track minimum so far</span></div>
+<pre>function bestProfit(prices) {
+  let min = prices[0], best = 0;
+  for (const p of prices) {
+    if (p &lt; min) min = p;
+    if (p - min &gt; best) best = p - min;
+  }
+  return best;
+}</pre>
+<p>Fix the selling day and the best buying day is the minimum before it. Carrying the running minimum makes that O(1) per day.</p>
+<p class="small"><b>Complexity:</b> O(n) time, O(1) space. One pass with min and best.</p>
+<p class="small muted"><b>Common mistakes:</b> Taking global max − global min (the max may come before the min).</p>
+</div>
+<div class="prob"><div class="h"><h3>P12. Merge Two Sorted Lists of Numbers</h3><span class="pill">One pointer per input</span></div>
+<pre>function mergeSorted(a, b) {
+  const out = [];
+  let i = 0, j = 0;
+  while (i &lt; a.length &amp;&amp; j &lt; b.length) {
+    if (a[i] &lt;= b[j]) out.push(a[i++]);
+    else out.push(b[j++]);
+  }
+  while (i &lt; a.length) out.push(a[i++]);
+  while (j &lt; b.length) out.push(b[j++]);
+  return out;
+}</pre>
+<p>Two pointers walk the inputs in parallel. This is the merge step of merge sort.</p>
+<p class="small"><b>Complexity:</b> O(n + m) time, O(n + m) space. Each element is copied once into the output.</p>
+<p class="small muted"><b>Common mistakes:</b> Forgetting leftovers; Using sort() without a comparator (sorts as strings).</p>
+</div>
+<div class="prob"><div class="h"><h3>P13. Longest Run of Ones</h3><span class="pill">Current streak + best streak</span></div>
+<pre>function longestOnes(bits) {
+  let cur = 0, best = 0;
+  for (const b of bits) {
+    cur = b === 1 ? cur + 1 : 0;
+    if (cur &gt; best) best = cur;
+  }
+  return best;
+}</pre>
+<p>The current streak resets on 0. Update best every step so a run that ends at the last element still counts.</p>
+<p class="small"><b>Complexity:</b> O(n) time, O(1) space. One pass, two counters.</p>
+<p class="small muted"><b>Common mistakes:</b> Only updating best when a 0 appears (misses runs at the end).</p>
+</div>
+<div class="prob"><div class="h"><h3>P14. The Missing Number</h3><span class="pill">Expected sum minus actual sum</span></div>
+<pre>function missingNumber(nums) {
+  const n = nums.length;
+  let expected = (n * (n + 1)) / 2;
+  for (const x of nums) expected -= x;
+  return expected;
+}</pre>
+<p>The gap between the full sum and the actual sum is exactly the missing value.</p>
+<p class="small"><b>Complexity:</b> O(n) time, O(1) space. One pass to subtract every value.</p>
+<p class="small muted"><b>Common mistakes:</b> Using nums.length - 1 as n; Assuming the array is sorted.</p>
+</div>
+<div class="prob"><div class="h"><h3>P15. Factorial, Recursively</h3><span class="pill">Base case + smaller self-call</span></div>
+<pre>function factorial(n) {
+  if (n === 0) return 1;
+  return n * factorial(n - 1);
+}</pre>
+<p>n! = n × (n−1)!, and 0! = 1 stops the recursion.</p>
+<p class="small"><b>Complexity:</b> O(n) time, O(n) space. n nested calls on the call stack.</p>
+<p class="small muted"><b>Common mistakes:</b> Missing base case → stack overflow; Base case returning 0 (makes everything 0).</p>
+</div>
+<div class="prob"><div class="h"><h3>P16. Sum an Array, Recursively</h3><span class="pill">Recursion over an index</span></div>
+<pre>function sumArray(nums, i = 0) {
+  if (i === nums.length) return 0;
+  return nums[i] + sumArray(nums, i + 1);
+}</pre>
+<p>Each call handles one element and delegates the rest. Passing an index avoids copying the array with slice.</p>
+<p class="small"><b>Complexity:</b> O(n) time, O(n) space. One call per element on the stack.</p>
+<p class="small muted"><b>Common mistakes:</b> Forgetting to pass nums along; Base case on i &gt; n instead of i === n.</p>
+</div>
+<div class="prob"><div class="h"><h3>P17. Is It a Power of Two?</h3><span class="pill">Recursive halving</span></div>
+<pre>function isPowerOfTwo(n) {
+  if (n === 1) return true;
+  if (n &lt;= 0 || n % 2 !== 0) return false;
+  return isPowerOfTwo(n / 2);
+}</pre>
+<p>Keep halving. You reach exactly 1 only if every step was even.</p>
+<p class="small"><b>Complexity:</b> O(log n) time, O(log n) space. n halves every call.</p>
+<p class="small muted"><b>Common mistakes:</b> Infinite recursion on 0 (0 / 2 is still 0).</p>
+</div>
+<div class="prob"><div class="h"><h3>P18. Classic Binary Search</h3><span class="pill">lo/hi/mid on sorted data</span></div>
+<pre>function binarySearch(nums, target) {
+  let lo = 0, hi = nums.length - 1;
+  while (lo &lt;= hi) {
+    const mid = Math.floor((lo + hi) / 2);
+    if (nums[mid] === target) return mid;
+    if (nums[mid] &lt; target) lo = mid + 1;
+    else hi = mid - 1;
+  }
+  return -1;
+}</pre>
+<p>Each comparison discards half of the remaining range. mid ± 1 guarantees progress, so the loop always ends.</p>
+<p class="small"><b>Complexity:</b> O(log n) time, O(1) space. The search range halves every iteration.</p>
+<p class="small muted"><b>Common mistakes:</b> lo = mid instead of mid + 1 (infinite loop); while lo &lt; hi (misses the last candidate).</p>
+</div>
+<div class="prob"><div class="h"><h3>P19. Count the Vowels</h3><span class="pill">Character scan with a membership check</span></div>
+<pre>function countVowels(s) {
+  const vowels = new Set(["a", "e", "i", "o", "u"]);
+  let count = 0;
+  for (const ch of s) {
+    if (vowels.has(ch.toLowerCase())) count++;
+  }
+  return count;
+}</pre>
+<p>Loop over characters and count those in the vowel set.</p>
+<p class="small"><b>Complexity:</b> O(n) time, O(1) space. The vowel set has a fixed size of 5.</p>
+<p class="small muted"><b>Common mistakes:</b> Forgetting uppercase.</p>
+</div>
+<div class="prob"><div class="h"><h3>P20. First Repeated Value</h3><span class="pill">Seen-set</span></div>
+<pre>function firstRepeat(nums) {
+  const seen = new Set();
+  for (const x of nums) {
+    if (seen.has(x)) return x;
+    seen.add(x);
+  }
+  return -1;
+}</pre>
+<p>The set remembers everything seen so far, so the first hit is the first repeat.</p>
+<p class="small"><b>Complexity:</b> O(n) time, O(n) space. The set may hold every element.</p>
+<p class="small muted"><b>Common mistakes:</b> Returning the value that repeats most, not first.</p>
+</div>
+<div class="prob"><div class="h"><h3>P21. Most Frequent Character</h3><span class="pill">Frequency map</span></div>
+<pre>function mostFrequent(s) {
+  const counts = new Map();
+  for (const ch of s) counts.set(ch, (counts.get(ch) || 0) + 1);
+  let best = s[0];
+  for (const ch of s) {
+    if (counts.get(ch) &gt; counts.get(best)) best = ch;
+  }
+  return best;
+}</pre>
+<p>Count first, decide second. Walking s in order for the decision makes "first in s" win ties.</p>
+<p class="small"><b>Complexity:</b> O(n) time, O(k) space. k distinct characters stored in the map.</p>
+<p class="small muted"><b>Common mistakes:</b> Iterating over the map and breaking ties by map order without thinking it through; Using &gt;= (changes tie-breaking).</p>
+</div>
+<div class="prob"><div class="h"><h3>P22. Reverse Word Order</h3><span class="pill">Split, transform, join</span></div>
+<pre>function reverseWords(s) {
+  const words = s.trim().split(/\s+/);
+  let l = 0, r = words.length - 1;
+  while (l &lt; r) {
+    [words[l], words[r]] = [words[r], words[l]];
+    l++;
+    r--;
+  }
+  return words.join(" ");
+}</pre>
+<p>Turn the string problem into an array problem, solve it with two pointers, then join back.</p>
+<p class="small"><b>Complexity:</b> O(n) time, O(n) space. The words array holds the whole string.</p>
+<p class="small muted"><b>Common mistakes:</b> Leaving empty strings from multiple spaces.</p>
+</div>
+<div class="prob"><div class="h"><h3>P23. Clean Palindrome Check</h3><span class="pill">Opposite-end pointers with skipping</span></div>
+<pre>function isCleanPalindrome(s) {
+  const ok = (c) =&gt; /[a-z0-9]/i.test(c);
+  let l = 0, r = s.length - 1;
+  while (l &lt; r) {
+    while (l &lt; r &amp;&amp; !ok(s[l])) l++;
+    while (l &lt; r &amp;&amp; !ok(s[r])) r--;
+    if (s[l].toLowerCase() !== s[r].toLowerCase()) return false;
+    l++;
+    r--;
+  }
+  return true;
+}</pre>
+<p>Same inward walk as reversing, but each pointer first skips characters that should be ignored.</p>
+<p class="small"><b>Complexity:</b> O(n) time, O(1) space. Each pointer only moves inward.</p>
+<p class="small muted"><b>Common mistakes:</b> Forgetting l &lt; r inside the skipping loops; Not lowercasing.</p>
+</div>
+<div class="prob"><div class="h"><h3>P24. Shared Starting Letters</h3><span class="pill">Column-by-column comparison</span></div>
+<pre>function commonPrefix(words) {
+  const first = words[0];
+  for (let i = 0; i &lt; first.length; i++) {
+    for (const w of words) {
+      if (i &gt;= w.length || w[i] !== first[i]) return first.slice(0, i);
+    }
+  }
+  return first;
+}</pre>
+<p>Scan columns left to right. The first mismatch or short word ends the common prefix.</p>
+<p class="small"><b>Complexity:</b> O(total characters) time, O(1) space. Each character is compared at most once.</p>
+<p class="small muted"><b>Common mistakes:</b> Not handling a word shorter than the first.</p>
+</div>
+<div class="prob"><div class="h"><h3>P25. Same Letters, Different Order</h3><span class="pill">Frequency map up and down</span></div>
+<pre>function isAnagram(a, b) {
+  if (a.length !== b.length) return false;
+  const counts = new Map();
+  for (const ch of a) counts.set(ch, (counts.get(ch) || 0) + 1);
+  for (const ch of b) {
+    const c = counts.get(ch) || 0;
+    if (c === 0) return false;
+    counts.set(ch, c - 1);
+  }
+  return true;
+}</pre>
+<p>Equal lengths + every character of b "uses up" a matching character of a means the counts are identical.</p>
+<p class="small"><b>Complexity:</b> O(n) time, O(k) space. k distinct characters in the map.</p>
+<p class="small muted"><b>Common mistakes:</b> Only checking that every char of b exists in a (ignores counts).</p>
+</div>
+<div class="prob"><div class="h"><h3>P26. Integer Square Root</h3><span class="pill">Binary search on the answer</span></div>
+<pre>function sqrtFloor(x) {
+  let lo = 0, hi = x, ans = 0;
+  while (lo &lt;= hi) {
+    const m = Math.floor((lo + hi) / 2);
+    if (m * m &lt;= x) {
+      ans = m;
+      lo = m + 1;
+    } else {
+      hi = m - 1;
+    }
+  }
+  return ans;
+}</pre>
+<p>The yes/no question "is m² ≤ x?" is true for small m and false for large m. Binary search finds the last "yes".</p>
+<p class="small"><b>Complexity:</b> O(log x) time, O(1) space. The candidate range halves each step.</p>
+<p class="small muted"><b>Common mistakes:</b> Returning lo instead of the last valid m; Off-by-one on perfect squares.</p>
+</div>
+<div class="prob"><div class="h"><h3>P27. First Position of a Value</h3><span class="pill">Binary search that keeps going left</span></div>
+<pre>function firstOccurrence(nums, target) {
+  let lo = 0, hi = nums.length - 1, ans = -1;
+  while (lo &lt;= hi) {
+    const mid = Math.floor((lo + hi) / 2);
+    if (nums[mid] === target) {
+      ans = mid;
+      hi = mid - 1;
+    } else if (nums[mid] &lt; target) {
+      lo = mid + 1;
+    } else {
+      hi = mid - 1;
+    }
+  }
+  return ans;
+}</pre>
+<p>A match is recorded, then the search continues left in case an earlier copy exists.</p>
+<p class="small"><b>Complexity:</b> O(log n) time, O(1) space. Still halves the range each step.</p>
+<p class="small muted"><b>Common mistakes:</b> Returning immediately on the first match; Walking left linearly after a match (O(n) worst case).</p>
+</div>
+<div class="prob"><div class="h"><h3>P28. Pair With Target (Unsorted)</h3><span class="pill">Complement lookup map</span></div>
+<pre>function twoSum(nums, target) {
+  const seen = new Map();
+  for (let i = 0; i &lt; nums.length; i++) {
+    const need = target - nums[i];
+    if (seen.has(need)) return [seen.get(need), i];
+    seen.set(nums[i], i);
+  }
+  return [-1, -1];
+}</pre>
+<p>The map turns "search for a partner" into a constant-time lookup. Checking before inserting prevents pairing an element with itself.</p>
+<p class="small"><b>Complexity:</b> O(n) time, O(n) space. One pass; the map can hold n entries.</p>
+<p class="small muted"><b>Common mistakes:</b> Inserting before checking (pairs x with itself when 2x = target); Sorting first (loses the original indexes).</p>
+</div>
+<div class="prob"><div class="h"><h3>P29. Pair With Target (Sorted)</h3><span class="pill">Opposite-end pointers on sorted data</span></div>
+<pre>function pairSumSorted(nums, target) {
+  let l = 0, r = nums.length - 1;
+  while (l &lt; r) {
+    const s = nums[l] + nums[r];
+    if (s === target) return [l, r];
+    if (s &lt; target) l++;
+    else r--;
+  }
+  return [-1, -1];
+}</pre>
+<p>Sorted order tells you which pointer to move: moving left up increases the sum, moving right down decreases it.</p>
+<p class="small"><b>Complexity:</b> O(n) time, O(1) space. Each step discards one candidate.</p>
+<p class="small muted"><b>Common mistakes:</b> Moving both pointers at once; Using l &lt;= r (pairs an element with itself).</p>
+</div>
+<div class="prob"><div class="h"><h3>P30. Best Window of Size K</h3><span class="pill">Fixed-size sliding window</span></div>
+<pre>function maxSumK(nums, k) {
+  let sum = 0;
+  for (let i = 0; i &lt; k; i++) sum += nums[i];
+  let best = sum;
+  for (let i = k; i &lt; nums.length; i++) {
+    sum += nums[i] - nums[i - k];
+    if (sum &gt; best) best = sum;
+  }
+  return best;
+}</pre>
+<p>Each slide is O(1): add the entering element and subtract the leaving one.</p>
+<p class="small"><b>Complexity:</b> O(n) time, O(1) space. Each element enters and leaves the window once.</p>
+<p class="small muted"><b>Common mistakes:</b> Starting best at 0 (wrong for all-negative input); Off-by-one on nums[i - k].</p>
+</div>
+<div class="prob"><div class="h"><h3>P31. Longest Stretch Without Repeats</h3><span class="pill">Variable sliding window + set</span></div>
+<pre>function longestUnique(s) {
+  const inWindow = new Set();
+  let l = 0, best = 0;
+  for (let r = 0; r &lt; s.length; r++) {
+    while (inWindow.has(s[r])) {
+      inWindow.delete(s[l]);
+      l++;
+    }
+    inWindow.add(s[r]);
+    best = Math.max(best, r - l + 1);
+  }
+  return best;
+}</pre>
+<p>The window grows on the right and shrinks on the left only as much as needed to stay valid.</p>
+<p class="small"><b>Complexity:</b> O(n) time, O(k) space. Each character is added and removed at most once; k = alphabet size.</p>
+<p class="small muted"><b>Common mistakes:</b> Resetting the window completely on a repeat (misses "dvdf"); Using if instead of while when shrinking.</p>
+</div>
+</section>
+<section class="week"><div class="week-head"><h2>Recall tracker</h2><div class="muted">Write the date you first solved it, then tick each from-memory re-solve: ✓ solved, ~ with a hint, ✗ couldn't.</div></div>
+<table class="track"><thead><tr><th>#</th><th>Problem</th><th>First solved</th><th>+1 day</th><th>+3 days</th><th>+7 days</th><th>+14 days</th></tr></thead><tbody><tr><td>P1</td><td>Sum from 1 to N</td><td></td><td></td><td></td><td></td><td></td></tr><tr><td>P2</td><td>Count Greater Than X</td><td></td><td></td><td></td><td></td><td></td></tr><tr><td>P3</td><td>Largest Element</td><td></td><td></td><td></td><td></td><td></td></tr><tr><td>P4</td><td>Second Largest Distinct</td><td></td><td></td><td></td><td></td><td></td></tr><tr><td>P5</td><td>Count the Digits</td><td></td><td></td><td></td><td></td><td></td></tr><tr><td>P6</td><td>Reverse a Number</td><td></td><td></td><td></td><td></td><td></td></tr><tr><td>P7</td><td>Palindrome Number</td><td></td><td></td><td></td><td></td><td></td></tr><tr><td>P8</td><td>Reverse an Array In Place</td><td></td><td></td><td></td><td></td><td></td></tr><tr><td>P9</td><td>Compact a Sorted Array</td><td></td><td></td><td></td><td></td><td></td></tr><tr><td>P10</td><td>Zeros to the End</td><td></td><td></td><td></td><td></td><td></td></tr><tr><td>P11</td><td>Best Single Trade</td><td></td><td></td><td></td><td></td><td></td></tr><tr><td>P12</td><td>Merge Two Sorted Lists of Numbers</td><td></td><td></td><td></td><td></td><td></td></tr><tr><td>P13</td><td>Longest Run of Ones</td><td></td><td></td><td></td><td></td><td></td></tr><tr><td>P14</td><td>The Missing Number</td><td></td><td></td><td></td><td></td><td></td></tr><tr><td>P15</td><td>Factorial, Recursively</td><td></td><td></td><td></td><td></td><td></td></tr><tr><td>P16</td><td>Sum an Array, Recursively</td><td></td><td></td><td></td><td></td><td></td></tr><tr><td>P17</td><td>Is It a Power of Two?</td><td></td><td></td><td></td><td></td><td></td></tr><tr><td>P18</td><td>Classic Binary Search</td><td></td><td></td><td></td><td></td><td></td></tr><tr><td>P19</td><td>Count the Vowels</td><td></td><td></td><td></td><td></td><td></td></tr><tr><td>P20</td><td>First Repeated Value</td><td></td><td></td><td></td><td></td><td></td></tr><tr><td>P21</td><td>Most Frequent Character</td><td></td><td></td><td></td><td></td><td></td></tr><tr><td>P22</td><td>Reverse Word Order</td><td></td><td></td><td></td><td></td><td></td></tr><tr><td>P23</td><td>Clean Palindrome Check</td><td></td><td></td><td></td><td></td><td></td></tr><tr><td>P24</td><td>Shared Starting Letters</td><td></td><td></td><td></td><td></td><td></td></tr><tr><td>P25</td><td>Same Letters, Different Order</td><td></td><td></td><td></td><td></td><td></td></tr><tr><td>P26</td><td>Integer Square Root</td><td></td><td></td><td></td><td></td><td></td></tr><tr><td>P27</td><td>First Position of a Value</td><td></td><td></td><td></td><td></td><td></td></tr><tr><td>P28</td><td>Pair With Target (Unsorted)</td><td></td><td></td><td></td><td></td><td></td></tr><tr><td>P29</td><td>Pair With Target (Sorted)</td><td></td><td></td><td></td><td></td><td></td></tr><tr><td>P30</td><td>Best Window of Size K</td><td></td><td></td><td></td><td></td><td></td></tr><tr><td>P31</td><td>Longest Stretch Without Repeats</td><td></td><td></td><td></td><td></td><td></td></tr></tbody></table>
+<p class="small muted" style="margin-top:14px">Also from Namaste DSA: add your own rows for lesson problems you re-solve.</p>
+<table class="track"><tbody><tr><td style="width:40%"></td><td></td><td></td><td></td><td></td><td></td></tr><tr><td style="width:40%"></td><td></td><td></td><td></td><td></td><td></td></tr><tr><td style="width:40%"></td><td></td><td></td><td></td><td></td><td></td></tr><tr><td style="width:40%"></td><td></td><td></td><td></td><td></td><td></td></tr><tr><td style="width:40%"></td><td></td><td></td><td></td><td></td><td></td></tr><tr><td style="width:40%"></td><td></td><td></td><td></td><td></td><td></td></tr><tr><td style="width:40%"></td><td></td><td></td><td></td><td></td><td></td></tr><tr><td style="width:40%"></td><td></td><td></td><td></td><td></td><td></td></tr><tr><td style="width:40%"></td><td></td><td></td><td></td><td></td><td></td></tr><tr><td style="width:40%"></td><td></td><td></td><td></td><td></td><td></td></tr><tr><td style="width:40%"></td><td></td><td></td><td></td><td></td><td></td></tr><tr><td style="width:40%"></td><td></td><td></td><td></td><td></td><td></td></tr></tbody></table>
+</section>
+</body></html>

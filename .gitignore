@@ -5,3 +5,5 @@ server/data/*.json
 !server/data/.gitkeep
 *.tsbuildinfo
 coverage
+__pycache__/
+crawled/

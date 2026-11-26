@@ -1,0 +1,1479 @@
+{
+ "source": "https://namastedev.com/learn/namaste-dsa",
+ "retrievedOn": "2026-11-26",
+ "note": "Public lesson titles and links only, as listed on the public course page. No paid course content is included.",
+ "modules": [
+  {
+   "order": 1,
+   "name": "Introduction",
+   "lessons": [
+    {
+     "title": "Introduction",
+     "slug": "introduction",
+     "url": "https://namastedev.com/learn/namaste-dsa/introduction"
+    },
+    {
+     "title": "Which language?",
+     "slug": "which-language",
+     "url": "https://namastedev.com/learn/namaste-dsa/which-language"
+    }
+   ]
+  },
+  {
+   "order": 2,
+   "name": "Warm Up",
+   "lessons": [
+    {
+     "title": "Warm Up - Introduction",
+     "slug": "warm-up-introduction",
+     "url": "https://namastedev.com/learn/namaste-dsa/warm-up-introduction"
+    },
+    {
+     "title": "Programming 101",
+     "slug": "programming-101",
+     "url": "https://namastedev.com/learn/namaste-dsa/programming-101"
+    },
+    {
+     "title": "Function, if-else",
+     "slug": "function-if-else",
+     "url": "https://namastedev.com/learn/namaste-dsa/function-if-else"
+    },
+    {
+     "title": "Loops 01",
+     "slug": "loops-01",
+     "url": "https://namastedev.com/learn/namaste-dsa/loops-01"
+    },
+    {
+     "title": "Loops 02",
+     "slug": "loops-02",
+     "url": "https://namastedev.com/learn/namaste-dsa/loops-02"
+    },
+    {
+     "title": "Second Largest",
+     "slug": "second-largest",
+     "url": "https://namastedev.com/learn/namaste-dsa/second-largest"
+    },
+    {
+     "title": "Loop in Loop",
+     "slug": "loop-in-loop",
+     "url": "https://namastedev.com/learn/namaste-dsa/loop-in-loop"
+    },
+    {
+     "title": "Star Pattern",
+     "slug": "star-pattern",
+     "url": "https://namastedev.com/learn/namaste-dsa/star-pattern"
+    },
+    {
+     "title": "Count Digit",
+     "slug": "count-digit",
+     "url": "https://namastedev.com/learn/namaste-dsa/count-digit"
+    },
+    {
+     "title": "Palindrome",
+     "slug": "palindrome",
+     "url": "https://namastedev.com/learn/namaste-dsa/palindrome"
+    },
+    {
+     "title": "Reverse Integer",
+     "slug": "reverse-integer",
+     "url": "https://namastedev.com/learn/namaste-dsa/reverse-integer"
+    }
+   ]
+  },
+  {
+   "order": 3,
+   "name": "Time/Space Complexity",
+   "lessons": [
+    {
+     "title": "Time & Space Complexity",
+     "slug": "time-space-complexity",
+     "url": "https://namastedev.com/learn/namaste-dsa/time-space-complexity"
+    }
+   ]
+  },
+  {
+   "order": 4,
+   "name": "Arrays - Easy/Medium",
+   "lessons": [
+    {
+     "title": "Remove Duplicates",
+     "slug": "remove-duplicates",
+     "url": "https://namastedev.com/learn/namaste-dsa/remove-duplicates"
+    },
+    {
+     "title": "Remove Element",
+     "slug": "remove-element",
+     "url": "https://namastedev.com/learn/namaste-dsa/remove-element"
+    },
+    {
+     "title": "Reverse String",
+     "slug": "reverse-string",
+     "url": "https://namastedev.com/learn/namaste-dsa/reverse-string"
+    },
+    {
+     "title": "Best Time to Buy and Sell Stocks",
+     "slug": "best-time-to-buy-and-sell-stocks",
+     "url": "https://namastedev.com/learn/namaste-dsa/best-time-to-buy-and-sell-stocks"
+    },
+    {
+     "title": "Merge Sorted Arrays",
+     "slug": "merge-sorted-arrays",
+     "url": "https://namastedev.com/learn/namaste-dsa/merge-sorted-arrays"
+    },
+    {
+     "title": "Move Zeros",
+     "slug": "move-zeros",
+     "url": "https://namastedev.com/learn/namaste-dsa/move-zeros"
+    },
+    {
+     "title": "Max Consecutive Ones",
+     "slug": "max-consecutive-ones",
+     "url": "https://namastedev.com/learn/namaste-dsa/max-consecutive-ones"
+    },
+    {
+     "title": "Missing Number",
+     "slug": "missing-number",
+     "url": "https://namastedev.com/learn/namaste-dsa/missing-number"
+    },
+    {
+     "title": "Single Number",
+     "slug": "single-number",
+     "url": "https://namastedev.com/learn/namaste-dsa/single-number"
+    }
+   ]
+  },
+  {
+   "order": 5,
+   "name": "Recursion - Easy/Medium",
+   "lessons": [
+    {
+     "title": "Recursion 101",
+     "slug": "recursion-101",
+     "url": "https://namastedev.com/learn/namaste-dsa/recursion-101"
+    },
+    {
+     "title": "Sum of first n numbers",
+     "slug": "sum-of-first-n-numbers",
+     "url": "https://namastedev.com/learn/namaste-dsa/sum-of-first-n-numbers"
+    },
+    {
+     "title": "Sum of all numbers in Array",
+     "slug": "sum-of-all-numbers-in-array",
+     "url": "https://namastedev.com/learn/namaste-dsa/sum-of-all-numbers-in-array"
+    },
+    {
+     "title": "Factorial of n",
+     "slug": "factorial-of-n",
+     "url": "https://namastedev.com/learn/namaste-dsa/factorial-of-n"
+    },
+    {
+     "title": "Power of Two",
+     "slug": "power-of-two",
+     "url": "https://namastedev.com/learn/namaste-dsa/power-of-two"
+    },
+    {
+     "title": "Recursion Masterclass",
+     "slug": "recursion-masterclass",
+     "url": "https://namastedev.com/learn/namaste-dsa/recursion-masterclass"
+    }
+   ]
+  },
+  {
+   "order": 6,
+   "name": "Searching & Sorting - Easy/Medium",
+   "lessons": [
+    {
+     "title": "Linear Search",
+     "slug": "linear-search",
+     "url": "https://namastedev.com/learn/namaste-dsa/linear-search"
+    },
+    {
+     "title": "Binary Search",
+     "slug": "binary-search",
+     "url": "https://namastedev.com/learn/namaste-dsa/binary-search"
+    },
+    {
+     "title": "Bubble Sort",
+     "slug": "bubble-sort",
+     "url": "https://namastedev.com/learn/namaste-dsa/bubble-sort"
+    },
+    {
+     "title": "Selection Sort",
+     "slug": "selection-sort",
+     "url": "https://namastedev.com/learn/namaste-dsa/selection-sort"
+    },
+    {
+     "title": "Insertion Sort",
+     "slug": "insertion-sort",
+     "url": "https://namastedev.com/learn/namaste-dsa/insertion-sort"
+    },
+    {
+     "title": "Merge Sort",
+     "slug": "merge-sort",
+     "url": "https://namastedev.com/learn/namaste-dsa/merge-sort"
+    }
+   ]
+  },
+  {
+   "order": 7,
+   "name": "Linked List - Easy/Medium",
+   "lessons": [
+    {
+     "title": "Introduction to Linked List",
+     "slug": "introduction-to-linked-list",
+     "url": "https://namastedev.com/learn/namaste-dsa/introduction-to-linked-list"
+    },
+    {
+     "title": "Design Linked List",
+     "slug": "design-linked-list",
+     "url": "https://namastedev.com/learn/namaste-dsa/design-linked-list"
+    },
+    {
+     "title": "Adding Nodes to Linked List",
+     "slug": "adding-nodes-to-linked-list",
+     "url": "https://namastedev.com/learn/namaste-dsa/adding-nodes-to-linked-list"
+    },
+    {
+     "title": "Deleting Nodes in Linked List",
+     "slug": "deleting-nodes-in-linked-list",
+     "url": "https://namastedev.com/learn/namaste-dsa/deleting-nodes-in-linked-list"
+    },
+    {
+     "title": "Middle of Linked List",
+     "slug": "middle-of-linked-list",
+     "url": "https://namastedev.com/learn/namaste-dsa/middle-of-linked-list"
+    },
+    {
+     "title": "Reverse Linked List",
+     "slug": "reverse-linked-list",
+     "url": "https://namastedev.com/learn/namaste-dsa/reverse-linked-list"
+    },
+    {
+     "title": "Linked List Cycle - Hash Table",
+     "slug": "linked-list-cycle-hash-table",
+     "url": "https://namastedev.com/learn/namaste-dsa/linked-list-cycle-hash-table"
+    },
+    {
+     "title": "Linked List Cycle - Floyd's Algorithm",
+     "slug": "linked-list-cycle-floyds-algorithm",
+     "url": "https://namastedev.com/learn/namaste-dsa/linked-list-cycle-floyds-algorithm"
+    },
+    {
+     "title": "Palindrome Linked List",
+     "slug": "palindrome-linked-list",
+     "url": "https://namastedev.com/learn/namaste-dsa/palindrome-linked-list"
+    },
+    {
+     "title": "Intersection of two Linked Lists",
+     "slug": "intersection-of-two-linked-lists",
+     "url": "https://namastedev.com/learn/namaste-dsa/intersection-of-two-linked-lists"
+    },
+    {
+     "title": "Remove Linked List Elements",
+     "slug": "remove-linked-list-elements",
+     "url": "https://namastedev.com/learn/namaste-dsa/remove-linked-list-elements"
+    },
+    {
+     "title": "Remove nth node from end of List - Two Pass",
+     "slug": "remove-nth-node-from-end-of-list-two-pass",
+     "url": "https://namastedev.com/learn/namaste-dsa/remove-nth-node-from-end-of-list-two-pass"
+    },
+    {
+     "title": "Remove nth Node from end - One Pass",
+     "slug": "remove-nth-node-from-end-one-pass",
+     "url": "https://namastedev.com/learn/namaste-dsa/remove-nth-node-from-end-one-pass"
+    },
+    {
+     "title": "Remove Duplicates from Sorted List",
+     "slug": "remove-duplicates-from-sorted-list",
+     "url": "https://namastedev.com/learn/namaste-dsa/remove-duplicates-from-sorted-list"
+    },
+    {
+     "title": "Odd Even Linked List",
+     "slug": "odd-even-linked-list",
+     "url": "https://namastedev.com/learn/namaste-dsa/odd-even-linked-list"
+    },
+    {
+     "title": "Add Two Numbers",
+     "slug": "add-two-numbers",
+     "url": "https://namastedev.com/learn/namaste-dsa/add-two-numbers"
+    },
+    {
+     "title": "Merge Two Sorted Lists",
+     "slug": "merge-two-sorted-lists",
+     "url": "https://namastedev.com/learn/namaste-dsa/merge-two-sorted-lists"
+    },
+    {
+     "title": "Rotate List",
+     "slug": "rotate-list",
+     "url": "https://namastedev.com/learn/namaste-dsa/rotate-list"
+    },
+    {
+     "title": "Swap Nodes in Pairs - Iterative Approach",
+     "slug": "swap-nodes-in-pairs-iterative-approach",
+     "url": "https://namastedev.com/learn/namaste-dsa/swap-nodes-in-pairs-iterative-approach"
+    },
+    {
+     "title": "Swap Nodes in Pair - Recursive Approach",
+     "slug": "swap-nodes-in-pair-recursive-approach",
+     "url": "https://namastedev.com/learn/namaste-dsa/swap-nodes-in-pair-recursive-approach"
+    }
+   ]
+  },
+  {
+   "order": 8,
+   "name": "Strings - Easy/Medium",
+   "lessons": [
+    {
+     "title": "Length of Last Word - Approach 1 - Two Loops",
+     "slug": "length-of-last-word-approach-1-two-loops",
+     "url": "https://namastedev.com/learn/namaste-dsa/length-of-last-word-approach-1-two-loops"
+    },
+    {
+     "title": "Length of Last Word - Approach 2 - One Loop",
+     "slug": "length-of-last-word-approach-2-one-loop",
+     "url": "https://namastedev.com/learn/namaste-dsa/length-of-last-word-approach-2-one-loop"
+    },
+    {
+     "title": "Find Words Containing Character",
+     "slug": "find-words-containing-character",
+     "url": "https://namastedev.com/learn/namaste-dsa/find-words-containing-character"
+    },
+    {
+     "title": "Jewels and Stones",
+     "slug": "jewels-and-stones",
+     "url": "https://namastedev.com/learn/namaste-dsa/jewels-and-stones"
+    },
+    {
+     "title": "Find Most Frequent Vowel and Consonant",
+     "slug": "find-most-frequent-vowel-and-consonant",
+     "url": "https://namastedev.com/learn/namaste-dsa/find-most-frequent-vowel-and-consonant"
+    },
+    {
+     "title": "Split a String in Balanced Strings",
+     "slug": "split-a-string-in-balanced-strings",
+     "url": "https://namastedev.com/learn/namaste-dsa/split-a-string-in-balanced-strings"
+    },
+    {
+     "title": "Reverse String II",
+     "slug": "reverse-string-ii",
+     "url": "https://namastedev.com/learn/namaste-dsa/reverse-string-ii"
+    },
+    {
+     "title": "Valid Palindrome - Approach 1 - Extra Space",
+     "slug": "valid-palindrome-approach-1-extra-space",
+     "url": "https://namastedev.com/learn/namaste-dsa/valid-palindrome-approach-1-extra-space"
+    },
+    {
+     "title": "Valid Palindrome - Approach 2 - Two Pointers",
+     "slug": "valid-palindrome-approach-2-two-pointers",
+     "url": "https://namastedev.com/learn/namaste-dsa/valid-palindrome-approach-2-two-pointers"
+    },
+    {
+     "title": "Largest Odd Number in a String",
+     "slug": "largest-odd-number-in-a-string",
+     "url": "https://namastedev.com/learn/namaste-dsa/largest-odd-number-in-a-string"
+    },
+    {
+     "title": "Longest Common Prefix",
+     "slug": "longest-common-prefix",
+     "url": "https://namastedev.com/learn/namaste-dsa/longest-common-prefix"
+    },
+    {
+     "title": "Valid Anagram",
+     "slug": "valid-anagram",
+     "url": "https://namastedev.com/learn/namaste-dsa/valid-anagram"
+    },
+    {
+     "title": "Isomorphic Strings",
+     "slug": "isomorphic-strings",
+     "url": "https://namastedev.com/learn/namaste-dsa/isomorphic-strings"
+    },
+    {
+     "title": "Group Anagrams - Approach 1 - Sorted Key",
+     "slug": "group-anagrams-approach-1-sorted-key",
+     "url": "https://namastedev.com/learn/namaste-dsa/group-anagrams-approach-1-sorted-key"
+    },
+    {
+     "title": "Group Anagrams - Approach 2 - Hashed Key",
+     "slug": "group-anagrams-approach-2-hashed-key",
+     "url": "https://namastedev.com/learn/namaste-dsa/group-anagrams-approach-2-hashed-key"
+    }
+   ]
+  },
+  {
+   "order": 9,
+   "name": "Stack and Queues",
+   "lessons": [
+    {
+     "title": "Introduction to Stacks & Queues",
+     "slug": "introduction-to-stacks-queues",
+     "url": "https://namastedev.com/learn/namaste-dsa/introduction-to-stacks-queues"
+    },
+    {
+     "title": "Playing with Stacks & Queues",
+     "slug": "playing-with-stacks-queues",
+     "url": "https://namastedev.com/learn/namaste-dsa/playing-with-stacks-queues"
+    },
+    {
+     "title": "Implement Stack using Two Queues",
+     "slug": "implement-stack-using-two-queues",
+     "url": "https://namastedev.com/learn/namaste-dsa/implement-stack-using-two-queues"
+    },
+    {
+     "title": "Implement Stack using One Queue",
+     "slug": "implement-stack-using-one-queue",
+     "url": "https://namastedev.com/learn/namaste-dsa/implement-stack-using-one-queue"
+    },
+    {
+     "title": "Implement Queue using Stacks",
+     "slug": "implement-queue-using-stacks",
+     "url": "https://namastedev.com/learn/namaste-dsa/implement-queue-using-stacks"
+    },
+    {
+     "title": "Valid Parentheses",
+     "slug": "valid-parentheses",
+     "url": "https://namastedev.com/learn/namaste-dsa/valid-parentheses"
+    },
+    {
+     "title": "Min Stack",
+     "slug": "min-stack",
+     "url": "https://namastedev.com/learn/namaste-dsa/min-stack"
+    },
+    {
+     "title": "Remove Outermost Parentheses - Using Stack",
+     "slug": "remove-outermost-parentheses-using-stack",
+     "url": "https://namastedev.com/learn/namaste-dsa/remove-outermost-parentheses-using-stack"
+    },
+    {
+     "title": "Remove Outermost Parentheses - without Stack",
+     "slug": "remove-outermost-parentheses-without-stack",
+     "url": "https://namastedev.com/learn/namaste-dsa/remove-outermost-parentheses-without-stack"
+    },
+    {
+     "title": "Evaluate Reverse Polish Notation",
+     "slug": "evaluate-reverse-polish-notation",
+     "url": "https://namastedev.com/learn/namaste-dsa/evaluate-reverse-polish-notation"
+    },
+    {
+     "title": "Next Greater Element",
+     "slug": "next-greater-element",
+     "url": "https://namastedev.com/learn/namaste-dsa/next-greater-element"
+    },
+    {
+     "title": "Daily Temperatures",
+     "slug": "daily-temperatures",
+     "url": "https://namastedev.com/learn/namaste-dsa/daily-temperatures"
+    },
+    {
+     "title": "Next Greater Element - II",
+     "slug": "next-greater-element-ii",
+     "url": "https://namastedev.com/learn/namaste-dsa/next-greater-element-ii"
+    },
+    {
+     "title": "Rotting Oranges",
+     "slug": "rotting-oranges",
+     "url": "https://namastedev.com/learn/namaste-dsa/rotting-oranges"
+    }
+   ]
+  },
+  {
+   "order": 10,
+   "name": "Binary Search Algorithm",
+   "lessons": [
+    {
+     "title": "Square Root of X",
+     "slug": "square-root-of-x",
+     "url": "https://namastedev.com/learn/namaste-dsa/square-root-of-x"
+    },
+    {
+     "title": "Best Practice - Finding Middle Element",
+     "slug": "best-practice-finding-middle-element",
+     "url": "https://namastedev.com/learn/namaste-dsa/best-practice-finding-middle-element"
+    },
+    {
+     "title": "Guess Higher or Lower",
+     "slug": "guess-higher-or-lower",
+     "url": "https://namastedev.com/learn/namaste-dsa/guess-higher-or-lower"
+    },
+    {
+     "title": "Search in Rotated Sorted Array",
+     "slug": "search-in-rotated-sorted-array",
+     "url": "https://namastedev.com/learn/namaste-dsa/search-in-rotated-sorted-array"
+    },
+    {
+     "title": "First Bad Version",
+     "slug": "first-bad-version",
+     "url": "https://namastedev.com/learn/namaste-dsa/first-bad-version"
+    },
+    {
+     "title": "Find Peak Element",
+     "slug": "find-peak-element",
+     "url": "https://namastedev.com/learn/namaste-dsa/find-peak-element"
+    },
+    {
+     "title": "Find Minimum in Rotated Sorted Array",
+     "slug": "find-minimum-in-rotated-sorted-array",
+     "url": "https://namastedev.com/learn/namaste-dsa/find-minimum-in-rotated-sorted-array"
+    },
+    {
+     "title": "Find First & Last Position in Sorted Array",
+     "slug": "find-first-last-position-in-sorted-array",
+     "url": "https://namastedev.com/learn/namaste-dsa/find-first-last-position-in-sorted-array"
+    },
+    {
+     "title": "Find First & Last Position in Sorted Array - Approach 2",
+     "slug": "find-first-last-position-in-sorted-array-approach-2",
+     "url": "https://namastedev.com/learn/namaste-dsa/find-first-last-position-in-sorted-array-approach-2"
+    },
+    {
+     "title": "Find Peak in a Mountain Array",
+     "slug": "find-peak-in-a-mountain-array",
+     "url": "https://namastedev.com/learn/namaste-dsa/find-peak-in-a-mountain-array"
+    },
+    {
+     "title": "Single Element in a Sorted Array",
+     "slug": "single-element-in-a-sorted-array",
+     "url": "https://namastedev.com/learn/namaste-dsa/single-element-in-a-sorted-array"
+    },
+    {
+     "title": "Find k Closest Elements",
+     "slug": "find-k-closest-elements",
+     "url": "https://namastedev.com/learn/namaste-dsa/find-k-closest-elements"
+    }
+   ]
+  },
+  {
+   "order": 11,
+   "name": "Two Pointers & Sliding Window",
+   "lessons": [
+    {
+     "title": "Two Sum",
+     "slug": "two-sum",
+     "url": "https://namastedev.com/learn/namaste-dsa/two-sum"
+    },
+    {
+     "title": "Two Sum II - Input Array Is Sorted",
+     "slug": "two-sum-ii-input-array-is-sorted",
+     "url": "https://namastedev.com/learn/namaste-dsa/two-sum-ii-input-array-is-sorted"
+    },
+    {
+     "title": "Is Subsequence",
+     "slug": "is-subsequence",
+     "url": "https://namastedev.com/learn/namaste-dsa/is-subsequence"
+    },
+    {
+     "title": "Find Index of First Occurrence in String",
+     "slug": "find-index-of-first-occurrence-in-string",
+     "url": "https://namastedev.com/learn/namaste-dsa/find-index-of-first-occurrence-in-string"
+    },
+    {
+     "title": "KMP (Knuth-Morris-Pratt) Algorithm",
+     "slug": "kmp-knuth-morris-pratt-algorithm",
+     "url": "https://namastedev.com/learn/namaste-dsa/kmp-knuth-morris-pratt-algorithm"
+    },
+    {
+     "title": "Intersection of Two Linked Lists - Two Pointers",
+     "slug": "intersection-of-two-linked-lists-two-pointers",
+     "url": "https://namastedev.com/learn/namaste-dsa/intersection-of-two-linked-lists-two-pointers"
+    },
+    {
+     "title": "Container with Most Water",
+     "slug": "container-with-most-water",
+     "url": "https://namastedev.com/learn/namaste-dsa/container-with-most-water"
+    },
+    {
+     "title": "Three Sum",
+     "slug": "three-sum",
+     "url": "https://namastedev.com/learn/namaste-dsa/three-sum"
+    },
+    {
+     "title": "Trapping Rain Water",
+     "slug": "trapping-rain-water",
+     "url": "https://namastedev.com/learn/namaste-dsa/trapping-rain-water"
+    },
+    {
+     "title": "Longest Substring Without Repeating Characters",
+     "slug": "longest-substring-without-repeating-characters",
+     "url": "https://namastedev.com/learn/namaste-dsa/longest-substring-without-repeating-characters"
+    },
+    {
+     "title": "Longest Repeating Character Replacement",
+     "slug": "longest-repeating-character-replacement",
+     "url": "https://namastedev.com/learn/namaste-dsa/longest-repeating-character-replacement"
+    },
+    {
+     "title": "Permutation in String",
+     "slug": "permutation-in-string",
+     "url": "https://namastedev.com/learn/namaste-dsa/permutation-in-string"
+    },
+    {
+     "title": "Sliding Window Maximum",
+     "slug": "sliding-window-maximum",
+     "url": "https://namastedev.com/learn/namaste-dsa/sliding-window-maximum"
+    }
+   ]
+  },
+  {
+   "order": 12,
+   "name": "Binary Tree",
+   "lessons": [
+    {
+     "title": "Introduction to Trees",
+     "slug": "introduction-to-trees",
+     "url": "https://namastedev.com/learn/namaste-dsa/introduction-to-trees"
+    },
+    {
+     "title": "Binary Tree - Traversals Explained",
+     "slug": "binary-tree-traversals-explained",
+     "url": "https://namastedev.com/learn/namaste-dsa/binary-tree-traversals-explained"
+    },
+    {
+     "title": "Preorder Traversal - Recursive Approach",
+     "slug": "preorder-traversal-recursive-approach",
+     "url": "https://namastedev.com/learn/namaste-dsa/preorder-traversal-recursive-approach"
+    },
+    {
+     "title": "Inorder & PostOrder - Recursive Approach",
+     "slug": "inorder-postorder-recursive-approach",
+     "url": "https://namastedev.com/learn/namaste-dsa/inorder-postorder-recursive-approach"
+    },
+    {
+     "title": "Preorder Traversal - Iterative Approach",
+     "slug": "preorder-traversal-iterative-approach",
+     "url": "https://namastedev.com/learn/namaste-dsa/preorder-traversal-iterative-approach"
+    },
+    {
+     "title": "Inorder Traversal - Iterative Approach",
+     "slug": "inorder-traversal-iterative-approach",
+     "url": "https://namastedev.com/learn/namaste-dsa/inorder-traversal-iterative-approach"
+    },
+    {
+     "title": "Postorder - Iterative Approach - 2 Stacks",
+     "slug": "postorder-iterative-approach-2-stacks",
+     "url": "https://namastedev.com/learn/namaste-dsa/postorder-iterative-approach-2-stacks"
+    },
+    {
+     "title": "Postorder - Iterative Approach - One Stack",
+     "slug": "postorder-iterative-approach-one-stack",
+     "url": "https://namastedev.com/learn/namaste-dsa/postorder-iterative-approach-one-stack"
+    },
+    {
+     "title": "DFS and BFS in Binary Tree",
+     "slug": "dfs-and-bfs-in-binary-tree",
+     "url": "https://namastedev.com/learn/namaste-dsa/dfs-and-bfs-in-binary-tree"
+    },
+    {
+     "title": "Level Order Traversal - Queue - BFS",
+     "slug": "level-order-traversal-queue-bfs",
+     "url": "https://namastedev.com/learn/namaste-dsa/level-order-traversal-queue-bfs"
+    },
+    {
+     "title": "Level Order Traversal - Recursive Approach",
+     "slug": "level-order-traversal-recursive-approach",
+     "url": "https://namastedev.com/learn/namaste-dsa/level-order-traversal-recursive-approach"
+    },
+    {
+     "title": "Maximum Depth of Binary Tree",
+     "slug": "maximum-depth-of-binary-tree",
+     "url": "https://namastedev.com/learn/namaste-dsa/maximum-depth-of-binary-tree"
+    },
+    {
+     "title": "Path Sum",
+     "slug": "path-sum",
+     "url": "https://namastedev.com/learn/namaste-dsa/path-sum"
+    },
+    {
+     "title": "Symmetric Tree - Recursive Approach",
+     "slug": "symmetric-tree-recursive-approach",
+     "url": "https://namastedev.com/learn/namaste-dsa/symmetric-tree-recursive-approach"
+    },
+    {
+     "title": "Symmetric Tree - Iterative Approach",
+     "slug": "symmetric-tree-iterative-approach",
+     "url": "https://namastedev.com/learn/namaste-dsa/symmetric-tree-iterative-approach"
+    },
+    {
+     "title": "Invert a Binary Tree",
+     "slug": "invert-a-binary-tree",
+     "url": "https://namastedev.com/learn/namaste-dsa/invert-a-binary-tree"
+    },
+    {
+     "title": "Same Tree",
+     "slug": "same-tree",
+     "url": "https://namastedev.com/learn/namaste-dsa/same-tree"
+    },
+    {
+     "title": "Balanced Binary Tree",
+     "slug": "balanced-binary-tree",
+     "url": "https://namastedev.com/learn/namaste-dsa/balanced-binary-tree"
+    },
+    {
+     "title": "Diameter of a Binary Tree",
+     "slug": "diameter-of-a-binary-tree",
+     "url": "https://namastedev.com/learn/namaste-dsa/diameter-of-a-binary-tree"
+    },
+    {
+     "title": "Zigzag Level Order Traversal",
+     "slug": "zigzag-level-order-traversal",
+     "url": "https://namastedev.com/learn/namaste-dsa/zigzag-level-order-traversal"
+    },
+    {
+     "title": "Subtree of another Tree",
+     "slug": "subtree-of-another-tree",
+     "url": "https://namastedev.com/learn/namaste-dsa/subtree-of-another-tree"
+    },
+    {
+     "title": "Lowest Common Ancestor",
+     "slug": "lowest-common-ancestor",
+     "url": "https://namastedev.com/learn/namaste-dsa/lowest-common-ancestor"
+    },
+    {
+     "title": "Binary Tree Right Side View",
+     "slug": "binary-tree-right-side-view",
+     "url": "https://namastedev.com/learn/namaste-dsa/binary-tree-right-side-view"
+    },
+    {
+     "title": "Count Good Nodes in Binary Tree",
+     "slug": "count-good-nodes-in-binary-tree",
+     "url": "https://namastedev.com/learn/namaste-dsa/count-good-nodes-in-binary-tree"
+    },
+    {
+     "title": "Populating Next Right Pointers in Each Node",
+     "slug": "populating-next-right-pointers-in-each-node",
+     "url": "https://namastedev.com/learn/namaste-dsa/populating-next-right-pointers-in-each-node"
+    },
+    {
+     "title": "Binary Tree Maximum Path Sum",
+     "slug": "binary-tree-maximum-path-sum",
+     "url": "https://namastedev.com/learn/namaste-dsa/binary-tree-maximum-path-sum"
+    }
+   ]
+  },
+  {
+   "order": 13,
+   "name": "Binary Search Tree",
+   "lessons": [
+    {
+     "title": "Binary Search Tree - Introduction",
+     "slug": "binary-search-tree-introduction",
+     "url": "https://namastedev.com/learn/namaste-dsa/binary-search-tree-introduction"
+    },
+    {
+     "title": "Valid Binary Search Tree",
+     "slug": "valid-binary-search-tree",
+     "url": "https://namastedev.com/learn/namaste-dsa/valid-binary-search-tree"
+    },
+    {
+     "title": "Search in a BST",
+     "slug": "search-in-a-bst",
+     "url": "https://namastedev.com/learn/namaste-dsa/search-in-a-bst"
+    },
+    {
+     "title": "Insert into a BST",
+     "slug": "insert-into-a-bst",
+     "url": "https://namastedev.com/learn/namaste-dsa/insert-into-a-bst"
+    },
+    {
+     "title": "Kth Smallest Element",
+     "slug": "kth-smallest-element",
+     "url": "https://namastedev.com/learn/namaste-dsa/kth-smallest-element"
+    },
+    {
+     "title": "Lowest Common Ancestor of a BST",
+     "slug": "lowest-common-ancestor-of-a-bst",
+     "url": "https://namastedev.com/learn/namaste-dsa/lowest-common-ancestor-of-a-bst"
+    }
+   ]
+  },
+  {
+   "order": 14,
+   "name": "Heap / Priority Queue",
+   "lessons": [
+    {
+     "title": "Introduction to Heaps",
+     "slug": "introduction-to-heaps",
+     "url": "https://namastedev.com/learn/namaste-dsa/introduction-to-heaps"
+    },
+    {
+     "title": "Creating a Heap",
+     "slug": "creating-a-heap",
+     "url": "https://namastedev.com/learn/namaste-dsa/creating-a-heap"
+    },
+    {
+     "title": "Inserting a node in Heap",
+     "slug": "inserting-a-node-in-heap",
+     "url": "https://namastedev.com/learn/namaste-dsa/inserting-a-node-in-heap"
+    },
+    {
+     "title": "Extracting Values in Heap & HeapifyDown",
+     "slug": "extracting-values-in-heap-heapifydown",
+     "url": "https://namastedev.com/learn/namaste-dsa/extracting-values-in-heap-heapifydown"
+    },
+    {
+     "title": "Heap Sort Algorithm",
+     "slug": "heap-sort-algorithm",
+     "url": "https://namastedev.com/learn/namaste-dsa/heap-sort-algorithm"
+    },
+    {
+     "title": "Heap Sort Code",
+     "slug": "heap-sort-code",
+     "url": "https://namastedev.com/learn/namaste-dsa/heap-sort-code"
+    },
+    {
+     "title": "Heap Sort - Dive Deep",
+     "slug": "heap-sort-dive-deep",
+     "url": "https://namastedev.com/learn/namaste-dsa/heap-sort-dive-deep"
+    },
+    {
+     "title": "Priority Queues - Introduction",
+     "slug": "priority-queues-introduction",
+     "url": "https://namastedev.com/learn/namaste-dsa/priority-queues-introduction"
+    },
+    {
+     "title": "Priority Queue Code",
+     "slug": "priority-queue-code",
+     "url": "https://namastedev.com/learn/namaste-dsa/priority-queue-code"
+    },
+    {
+     "title": "Kth Largest Element in an Array",
+     "slug": "kth-largest-element-in-an-array",
+     "url": "https://namastedev.com/learn/namaste-dsa/kth-largest-element-in-an-array"
+    },
+    {
+     "title": "Kth Largest Element in a Stream",
+     "slug": "kth-largest-element-in-a-stream",
+     "url": "https://namastedev.com/learn/namaste-dsa/kth-largest-element-in-a-stream"
+    },
+    {
+     "title": "Last Stone Weight",
+     "slug": "last-stone-weight",
+     "url": "https://namastedev.com/learn/namaste-dsa/last-stone-weight"
+    },
+    {
+     "title": "Top K Frequent Elements",
+     "slug": "top-k-frequent-elements",
+     "url": "https://namastedev.com/learn/namaste-dsa/top-k-frequent-elements"
+    },
+    {
+     "title": "Kth Smallest Element in a Sorted Matrix",
+     "slug": "kth-smallest-element-in-a-sorted-matrix",
+     "url": "https://namastedev.com/learn/namaste-dsa/kth-smallest-element-in-a-sorted-matrix"
+    }
+   ]
+  },
+  {
+   "order": 15,
+   "name": "Hashing",
+   "lessons": [
+    {
+     "title": "Linked List Cycle - Hash Table",
+     "slug": "linked-list-cycle-hash-table",
+     "url": "https://namastedev.com/learn/namaste-dsa/linked-list-cycle-hash-table"
+    },
+    {
+     "title": "Palindrome Linked List",
+     "slug": "palindrome-linked-list",
+     "url": "https://namastedev.com/learn/namaste-dsa/palindrome-linked-list"
+    },
+    {
+     "title": "Intersection of Two Linked Lists - Two Pointers",
+     "slug": "intersection-of-two-linked-lists-two-pointers",
+     "url": "https://namastedev.com/learn/namaste-dsa/intersection-of-two-linked-lists-two-pointers"
+    },
+    {
+     "title": "Remove Duplicates from Sorted List",
+     "slug": "remove-duplicates-from-sorted-list",
+     "url": "https://namastedev.com/learn/namaste-dsa/remove-duplicates-from-sorted-list"
+    },
+    {
+     "title": "Find Words Containing Character",
+     "slug": "find-words-containing-character",
+     "url": "https://namastedev.com/learn/namaste-dsa/find-words-containing-character"
+    },
+    {
+     "title": "Jewels and Stones",
+     "slug": "jewels-and-stones",
+     "url": "https://namastedev.com/learn/namaste-dsa/jewels-and-stones"
+    },
+    {
+     "title": "Find Most Frequent Vowel and Consonant",
+     "slug": "find-most-frequent-vowel-and-consonant",
+     "url": "https://namastedev.com/learn/namaste-dsa/find-most-frequent-vowel-and-consonant"
+    },
+    {
+     "title": "Valid Palindrome - Approach 1 - Extra Space",
+     "slug": "valid-palindrome-approach-1-extra-space",
+     "url": "https://namastedev.com/learn/namaste-dsa/valid-palindrome-approach-1-extra-space"
+    },
+    {
+     "title": "Valid Anagram",
+     "slug": "valid-anagram",
+     "url": "https://namastedev.com/learn/namaste-dsa/valid-anagram"
+    },
+    {
+     "title": "Isomorphic Strings",
+     "slug": "isomorphic-strings",
+     "url": "https://namastedev.com/learn/namaste-dsa/isomorphic-strings"
+    },
+    {
+     "title": "Group Anagrams - Approach 1 - Sorted Key",
+     "slug": "group-anagrams-approach-1-sorted-key",
+     "url": "https://namastedev.com/learn/namaste-dsa/group-anagrams-approach-1-sorted-key"
+    },
+    {
+     "title": "Group Anagrams - Approach 2 - Hashed Key",
+     "slug": "group-anagrams-approach-2-hashed-key",
+     "url": "https://namastedev.com/learn/namaste-dsa/group-anagrams-approach-2-hashed-key"
+    },
+    {
+     "title": "Next Greater Element",
+     "slug": "next-greater-element",
+     "url": "https://namastedev.com/learn/namaste-dsa/next-greater-element"
+    },
+    {
+     "title": "Two Sum II - Input Array Is Sorted",
+     "slug": "two-sum-ii-input-array-is-sorted",
+     "url": "https://namastedev.com/learn/namaste-dsa/two-sum-ii-input-array-is-sorted"
+    },
+    {
+     "title": "Find Index of First Occurrence in String",
+     "slug": "find-index-of-first-occurrence-in-string",
+     "url": "https://namastedev.com/learn/namaste-dsa/find-index-of-first-occurrence-in-string"
+    },
+    {
+     "title": "KMP (Knuth-Morris-Pratt) Algorithm",
+     "slug": "kmp-knuth-morris-pratt-algorithm",
+     "url": "https://namastedev.com/learn/namaste-dsa/kmp-knuth-morris-pratt-algorithm"
+    },
+    {
+     "title": "Permutation in String",
+     "slug": "permutation-in-string",
+     "url": "https://namastedev.com/learn/namaste-dsa/permutation-in-string"
+    },
+    {
+     "title": "Longest Substring Without Repeating Characters",
+     "slug": "longest-substring-without-repeating-characters",
+     "url": "https://namastedev.com/learn/namaste-dsa/longest-substring-without-repeating-characters"
+    },
+    {
+     "title": "Sliding Window Maximum",
+     "slug": "sliding-window-maximum",
+     "url": "https://namastedev.com/learn/namaste-dsa/sliding-window-maximum"
+    }
+   ]
+  },
+  {
+   "order": 16,
+   "name": "Backtracking",
+   "lessons": [
+    {
+     "title": "Introduction to Backtracking",
+     "slug": "introduction-to-backtracking",
+     "url": "https://namastedev.com/learn/namaste-dsa/introduction-to-backtracking"
+    },
+    {
+     "title": "Subsets - The Power Set",
+     "slug": "subsets-the-power-set",
+     "url": "https://namastedev.com/learn/namaste-dsa/subsets-the-power-set"
+    },
+    {
+     "title": "Combinations",
+     "slug": "combinations",
+     "url": "https://namastedev.com/learn/namaste-dsa/combinations"
+    },
+    {
+     "title": "Permutations",
+     "slug": "permutations",
+     "url": "https://namastedev.com/learn/namaste-dsa/permutations"
+    },
+    {
+     "title": "Subset - II",
+     "slug": "subset-ii",
+     "url": "https://namastedev.com/learn/namaste-dsa/subset-ii"
+    },
+    {
+     "title": "Combination Sum",
+     "slug": "combination-sum",
+     "url": "https://namastedev.com/learn/namaste-dsa/combination-sum"
+    },
+    {
+     "title": "Combination Sum - II",
+     "slug": "combination-sum-ii",
+     "url": "https://namastedev.com/learn/namaste-dsa/combination-sum-ii"
+    },
+    {
+     "title": "Combination Sum - III",
+     "slug": "combination-sum-iii",
+     "url": "https://namastedev.com/learn/namaste-dsa/combination-sum-iii"
+    },
+    {
+     "title": "Letter Combinations of a Phone Number",
+     "slug": "letter-combinations-of-a-phone-number",
+     "url": "https://namastedev.com/learn/namaste-dsa/letter-combinations-of-a-phone-number"
+    },
+    {
+     "title": "Permutations - II",
+     "slug": "permutations-ii",
+     "url": "https://namastedev.com/learn/namaste-dsa/permutations-ii"
+    },
+    {
+     "title": "Palindrome Partitioning",
+     "slug": "palindrome-partitioning",
+     "url": "https://namastedev.com/learn/namaste-dsa/palindrome-partitioning"
+    },
+    {
+     "title": "Word Search",
+     "slug": "word-search",
+     "url": "https://namastedev.com/learn/namaste-dsa/word-search"
+    },
+    {
+     "title": "N Queens",
+     "slug": "n-queens",
+     "url": "https://namastedev.com/learn/namaste-dsa/n-queens"
+    }
+   ]
+  },
+  {
+   "order": 17,
+   "name": "Greedy Algorithm",
+   "lessons": [
+    {
+     "title": "Introduction to Greedy Algorithm",
+     "slug": "introduction-to-greedy-algorithm",
+     "url": "https://namastedev.com/learn/namaste-dsa/introduction-to-greedy-algorithm"
+    },
+    {
+     "title": "Two City Scheduling",
+     "slug": "two-city-scheduling",
+     "url": "https://namastedev.com/learn/namaste-dsa/two-city-scheduling"
+    },
+    {
+     "title": "Assign Cookies",
+     "slug": "assign-cookies",
+     "url": "https://namastedev.com/learn/namaste-dsa/assign-cookies"
+    },
+    {
+     "title": "Lemonade Change",
+     "slug": "lemonade-change",
+     "url": "https://namastedev.com/learn/namaste-dsa/lemonade-change"
+    },
+    {
+     "title": "Best Time to Buy and Sell Stock - II",
+     "slug": "best-time-to-buy-and-sell-stock-ii",
+     "url": "https://namastedev.com/learn/namaste-dsa/best-time-to-buy-and-sell-stock-ii"
+    },
+    {
+     "title": "Insert Interval",
+     "slug": "insert-interval",
+     "url": "https://namastedev.com/learn/namaste-dsa/insert-interval"
+    },
+    {
+     "title": "Merge Intervals",
+     "slug": "merge-intervals",
+     "url": "https://namastedev.com/learn/namaste-dsa/merge-intervals"
+    },
+    {
+     "title": "Partition Labels",
+     "slug": "partition-labels",
+     "url": "https://namastedev.com/learn/namaste-dsa/partition-labels"
+    },
+    {
+     "title": "Non Overlapping Intervals",
+     "slug": "non-overlapping-intervals",
+     "url": "https://namastedev.com/learn/namaste-dsa/non-overlapping-intervals"
+    },
+    {
+     "title": "Task Scheduler",
+     "slug": "task-scheduler",
+     "url": "https://namastedev.com/learn/namaste-dsa/task-scheduler"
+    },
+    {
+     "title": "Gas Station",
+     "slug": "gas-station",
+     "url": "https://namastedev.com/learn/namaste-dsa/gas-station"
+    },
+    {
+     "title": "Car Pooling",
+     "slug": "car-pooling",
+     "url": "https://namastedev.com/learn/namaste-dsa/car-pooling"
+    },
+    {
+     "title": "Candy - Two Pass - O(n) Space",
+     "slug": "candy-two-pass-on-space",
+     "url": "https://namastedev.com/learn/namaste-dsa/candy-two-pass-on-space"
+    },
+    {
+     "title": "Candy - One Pass - O(1) Space",
+     "slug": "candy-one-pass-o1-space",
+     "url": "https://namastedev.com/learn/namaste-dsa/candy-one-pass-o1-space"
+    }
+   ]
+  },
+  {
+   "order": 18,
+   "name": "Dynamic Programming",
+   "lessons": [
+    {
+     "title": "Introduction to Dynamic Programming",
+     "slug": "introduction-to-dynamic-programming",
+     "url": "https://namastedev.com/learn/namaste-dsa/introduction-to-dynamic-programming"
+    },
+    {
+     "title": "Fibonacci Numbers using DP",
+     "slug": "fibonacci-numbers-using-dp",
+     "url": "https://namastedev.com/learn/namaste-dsa/fibonacci-numbers-using-dp"
+    },
+    {
+     "title": "Top Down & Bottom Up - DP approach",
+     "slug": "top-down-bottom-up-dp-approach",
+     "url": "https://namastedev.com/learn/namaste-dsa/top-down-bottom-up-dp-approach"
+    },
+    {
+     "title": "Climbing Stairs",
+     "slug": "climbing-stairs",
+     "url": "https://namastedev.com/learn/namaste-dsa/climbing-stairs"
+    },
+    {
+     "title": "Minimum Cost Climbing Stairs",
+     "slug": "minimum-cost-climbing-stairs",
+     "url": "https://namastedev.com/learn/namaste-dsa/minimum-cost-climbing-stairs"
+    },
+    {
+     "title": "House Robber",
+     "slug": "house-robber",
+     "url": "https://namastedev.com/learn/namaste-dsa/house-robber"
+    },
+    {
+     "title": "House Robber II",
+     "slug": "house-robber-ii",
+     "url": "https://namastedev.com/learn/namaste-dsa/house-robber-ii"
+    },
+    {
+     "title": "Coin Change - Top Down - Recursive",
+     "slug": "coin-change-top-down-recursive",
+     "url": "https://namastedev.com/learn/namaste-dsa/coin-change-top-down-recursive"
+    },
+    {
+     "title": "Coin Change - Bottom Up - Iterative",
+     "slug": "coin-change-bottom-up-iterative",
+     "url": "https://namastedev.com/learn/namaste-dsa/coin-change-bottom-up-iterative"
+    },
+    {
+     "title": "Palindromic Substrings",
+     "slug": "palindromic-substrings",
+     "url": "https://namastedev.com/learn/namaste-dsa/palindromic-substrings"
+    },
+    {
+     "title": "Longest Palindromic Substring",
+     "slug": "longest-palindromic-substring",
+     "url": "https://namastedev.com/learn/namaste-dsa/longest-palindromic-substring"
+    },
+    {
+     "title": "Decode Ways",
+     "slug": "decode-ways",
+     "url": "https://namastedev.com/learn/namaste-dsa/decode-ways"
+    },
+    {
+     "title": "Maximum Subarray - Kadane's Algorithm",
+     "slug": "maximum-subarray-kadanes-algorithm",
+     "url": "https://namastedev.com/learn/namaste-dsa/maximum-subarray-kadanes-algorithm"
+    },
+    {
+     "title": "Maximum Product Subarray - Approach 1",
+     "slug": "maximum-product-subarray-approach-1",
+     "url": "https://namastedev.com/learn/namaste-dsa/maximum-product-subarray-approach-1"
+    },
+    {
+     "title": "Maximum Product Subarray - Approach 2",
+     "slug": "maximum-product-subarray-approach-2",
+     "url": "https://namastedev.com/learn/namaste-dsa/maximum-product-subarray-approach-2"
+    },
+    {
+     "title": "Word Break",
+     "slug": "word-break",
+     "url": "https://namastedev.com/learn/namaste-dsa/word-break"
+    },
+    {
+     "title": "Longest Increasing Subsequence",
+     "slug": "longest-increasing-subsequence",
+     "url": "https://namastedev.com/learn/namaste-dsa/longest-increasing-subsequence"
+    },
+    {
+     "title": "Partition Equal Subset Sum",
+     "slug": "partition-equal-subset-sum",
+     "url": "https://namastedev.com/learn/namaste-dsa/partition-equal-subset-sum"
+    },
+    {
+     "title": "Coin Change II",
+     "slug": "coin-change-ii",
+     "url": "https://namastedev.com/learn/namaste-dsa/coin-change-ii"
+    },
+    {
+     "title": "Unique Paths",
+     "slug": "unique-paths",
+     "url": "https://namastedev.com/learn/namaste-dsa/unique-paths"
+    }
+   ]
+  },
+  {
+   "order": 19,
+   "name": "Graphs",
+   "lessons": [
+    {
+     "title": "Introduction to Graphs",
+     "slug": "introduction-to-graphs",
+     "url": "https://namastedev.com/learn/namaste-dsa/introduction-to-graphs"
+    },
+    {
+     "title": "Breadth First Search (BFS)",
+     "slug": "breadth-first-search-bfs",
+     "url": "https://namastedev.com/learn/namaste-dsa/breadth-first-search-bfs"
+    },
+    {
+     "title": "Depth First Search (DFS)",
+     "slug": "depth-first-search-dfs",
+     "url": "https://namastedev.com/learn/namaste-dsa/depth-first-search-dfs"
+    },
+    {
+     "title": "Find if Path Exists - BFS",
+     "slug": "find-if-path-exists-bfs",
+     "url": "https://namastedev.com/learn/namaste-dsa/find-if-path-exists-bfs"
+    },
+    {
+     "title": "DFS Recursive",
+     "slug": "dfs-recursive",
+     "url": "https://namastedev.com/learn/namaste-dsa/dfs-recursive"
+    },
+    {
+     "title": "All Paths from Source to Target",
+     "slug": "all-paths-from-source-to-target",
+     "url": "https://namastedev.com/learn/namaste-dsa/all-paths-from-source-to-target"
+    },
+    {
+     "title": "Reconstruct Itinerary",
+     "slug": "reconstruct-itinerary",
+     "url": "https://namastedev.com/learn/namaste-dsa/reconstruct-itinerary"
+    },
+    {
+     "title": "Detect Cycle in Undirected Connected Graph",
+     "slug": "detect-cycle-in-undirected-connected-graph",
+     "url": "https://namastedev.com/learn/namaste-dsa/detect-cycle-in-undirected-connected-graph"
+    },
+    {
+     "title": "Topological Sort - DFS",
+     "slug": "topological-sort-dfs",
+     "url": "https://namastedev.com/learn/namaste-dsa/topological-sort-dfs"
+    },
+    {
+     "title": "Kahn's Algorithm - Topological Sort - BFS",
+     "slug": "kahns-algorithm-topological-sort-bfs",
+     "url": "https://namastedev.com/learn/namaste-dsa/kahns-algorithm-topological-sort-bfs"
+    },
+    {
+     "title": "Shortest Path Algorithms in Graphs",
+     "slug": "shortest-path-algorithms-in-graphs",
+     "url": "https://namastedev.com/learn/namaste-dsa/shortest-path-algorithms-in-graphs"
+    },
+    {
+     "title": "Shortest Path in Unweighted Graph - BFS",
+     "slug": "shortest-path-in-unweighted-graph-bfs",
+     "url": "https://namastedev.com/learn/namaste-dsa/shortest-path-in-unweighted-graph-bfs"
+    },
+    {
+     "title": "Dijkstra's Algorithm - Shortest Path Weighted Graph",
+     "slug": "dijkstras-algorithm-shortest-path-weighted-graph",
+     "url": "https://namastedev.com/learn/namaste-dsa/dijkstras-algorithm-shortest-path-weighted-graph"
+    },
+    {
+     "title": "Dijkstra's Algorithm - Code",
+     "slug": "dijkstras-algorithm-code",
+     "url": "https://namastedev.com/learn/namaste-dsa/dijkstras-algorithm-code"
+    },
+    {
+     "title": "Bellman Ford Algorithm - Shortest Path with Negative Weights",
+     "slug": "bellman-ford-algorithm-shortest-path-with-negative-weights",
+     "url": "https://namastedev.com/learn/namaste-dsa/bellman-ford-algorithm-shortest-path-with-negative-weights"
+    },
+    {
+     "title": "Bellman Ford Algorithm - Code",
+     "slug": "bellman-ford-algorithm-code",
+     "url": "https://namastedev.com/learn/namaste-dsa/bellman-ford-algorithm-code"
+    },
+    {
+     "title": "Floyd Warshall Algorithm - All Pairs Shortest Path",
+     "slug": "floyd-warshall-algorithm-all-pairs-shortest-path",
+     "url": "https://namastedev.com/learn/namaste-dsa/floyd-warshall-algorithm-all-pairs-shortest-path"
+    },
+    {
+     "title": "Floyd Warshall - Code",
+     "slug": "floyd-warshall-code",
+     "url": "https://namastedev.com/learn/namaste-dsa/floyd-warshall-code"
+    },
+    {
+     "title": "Comparing all Shortest Path Graph Algorithms",
+     "slug": "comparing-all-shortest-path-graph-algorithms",
+     "url": "https://namastedev.com/learn/namaste-dsa/comparing-all-shortest-path-graph-algorithms"
+    },
+    {
+     "title": "Minimum Spanning Tree",
+     "slug": "minimum-spanning-tree",
+     "url": "https://namastedev.com/learn/namaste-dsa/minimum-spanning-tree"
+    },
+    {
+     "title": "Prim's Algorithm",
+     "slug": "prims-algorithm",
+     "url": "https://namastedev.com/learn/namaste-dsa/prims-algorithm"
+    },
+    {
+     "title": "Prim's Algorithm - Code",
+     "slug": "prims-algorithm-code",
+     "url": "https://namastedev.com/learn/namaste-dsa/prims-algorithm-code"
+    },
+    {
+     "title": "Disjoint Set - Union Find",
+     "slug": "disjoint-set-union-find",
+     "url": "https://namastedev.com/learn/namaste-dsa/disjoint-set-union-find"
+    },
+    {
+     "title": "Kruskal's Algorithm",
+     "slug": "kruskals-algorithm",
+     "url": "https://namastedev.com/learn/namaste-dsa/kruskals-algorithm"
+    },
+    {
+     "title": "Kruskal + Union Find - Code",
+     "slug": "kruskal-union-find-code",
+     "url": "https://namastedev.com/learn/namaste-dsa/kruskal-union-find-code"
+    },
+    {
+     "title": "Comparison - Prim\u2019s vs Kruskal Algorithm",
+     "slug": "comparison-prims-vs-kruskal-algorithm",
+     "url": "https://namastedev.com/learn/namaste-dsa/comparison-prims-vs-kruskal-algorithm"
+    },
+    {
+     "title": "Number of Operations to Make Network Connected",
+     "slug": "number-of-operations-to-make-network-connected",
+     "url": "https://namastedev.com/learn/namaste-dsa/number-of-operations-to-make-network-connected"
+    },
+    {
+     "title": "Cheapest Flight with K Stops",
+     "slug": "cheapest-flight-with-k-stops",
+     "url": "https://namastedev.com/learn/namaste-dsa/cheapest-flight-with-k-stops"
+    },
+    {
+     "title": "Number of Ways to Arrive at Destination",
+     "slug": "number-of-ways-to-arrive-at-destination",
+     "url": "https://namastedev.com/learn/namaste-dsa/number-of-ways-to-arrive-at-destination"
+    },
+    {
+     "title": "Min Cost to Connect All Points",
+     "slug": "min-cost-to-connect-all-points",
+     "url": "https://namastedev.com/learn/namaste-dsa/min-cost-to-connect-all-points"
+    }
+   ]
+  },
+  {
+   "order": 20,
+   "name": "Tries",
+   "lessons": [
+    {
+     "title": "Introduction to Tries",
+     "slug": "introduction-to-tries",
+     "url": "https://namastedev.com/learn/namaste-dsa/introduction-to-tries"
+    },
+    {
+     "title": "Trie and TrieNode Structure",
+     "slug": "trie-and-trienode-structure",
+     "url": "https://namastedev.com/learn/namaste-dsa/trie-and-trienode-structure"
+    },
+    {
+     "title": "Insert, Search, PrefixFind - Trie Code",
+     "slug": "insert-search-prefixfind-trie-code",
+     "url": "https://namastedev.com/learn/namaste-dsa/insert-search-prefixfind-trie-code"
+    },
+    {
+     "title": "Time & Space Complexity in Tries",
+     "slug": "time-space-complexity-in-tries",
+     "url": "https://namastedev.com/learn/namaste-dsa/time-space-complexity-in-tries"
+    }
+   ]
+  },
+  {
+   "order": 21,
+   "name": "Searching & Sorting - Advanced",
+   "lessons": [
+    {
+     "title": "Quick Sort",
+     "slug": "quick-sort",
+     "url": "https://namastedev.com/learn/namaste-dsa/quick-sort"
+    },
+    {
+     "title": "Counting Sort",
+     "slug": "counting-sort",
+     "url": "https://namastedev.com/learn/namaste-dsa/counting-sort"
+    },
+    {
+     "title": "Counting Sort - Stable - Logic",
+     "slug": "counting-sort-stable-logic",
+     "url": "https://namastedev.com/learn/namaste-dsa/counting-sort-stable-logic"
+    },
+    {
+     "title": "Counting Sort - Stable - Code",
+     "slug": "counting-sort-stable-code",
+     "url": "https://namastedev.com/learn/namaste-dsa/counting-sort-stable-code"
+    },
+    {
+     "title": "Radix Sort",
+     "slug": "radix-sort",
+     "url": "https://namastedev.com/learn/namaste-dsa/radix-sort"
+    },
+    {
+     "title": "Bucket Sort",
+     "slug": "bucket-sort",
+     "url": "https://namastedev.com/learn/namaste-dsa/bucket-sort"
+    },
+    {
+     "title": "Interview Cheatsheet",
+     "slug": "interview-cheatsheet",
+     "url": "https://namastedev.com/learn/namaste-dsa/interview-cheatsheet"
+    }
+   ]
+  },
+  {
+   "order": 22,
+   "name": "DP and Arrays - Advanced",
+   "lessons": []
+  },
+  {
+   "order": 23,
+   "name": "Strings - Advanced",
+   "lessons": []
+  },
+  {
+   "order": 24,
+   "name": "Bonus",
+   "lessons": [
+    {
+     "title": "Bonus - Salary Negotiation Masterclass",
+     "slug": "bonus-salary-negotiation-masterclass",
+     "url": "https://namastedev.com/learn/namaste-dsa/bonus-salary-negotiation-masterclass"
+    },
+    {
+     "title": "Bonus - Resume Masterclass",
+     "slug": "bonus-resume-masterclass",
+     "url": "https://namastedev.com/learn/namaste-dsa/bonus-resume-masterclass"
+    },
+    {
+     "title": "Bonus - Personal Branding Masterclass",
+     "slug": "bonus-personal-branding-masterclass",
+     "url": "https://namastedev.com/learn/namaste-dsa/bonus-personal-branding-masterclass"
+    },
+    {
+     "title": "Bonus - LinkedIn Masterclass",
+     "slug": "bonus-linkedin-masterclass",
+     "url": "https://namastedev.com/learn/namaste-dsa/bonus-linkedin-masterclass"
+    }
+   ]
+  }
+ ]
+}
