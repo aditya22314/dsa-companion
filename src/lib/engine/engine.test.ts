@@ -1,7 +1,6 @@
 import { buildDailyPlan } from './planner';
 import { recommendProblem, suggestOutcome, diagnosePrerequisites } from './adaptive';
 import { topicLevel } from './mastery';
-import { buildWeekPlan, isIncomplete, suggestReschedule } from './weekly';
 import { parseLessonImport, problemsForLesson, lessonDemonstrated, publicSyllabusLessons } from './course';
 import { initialState } from '../../store/initial';
 import type { Attempt, LearnerState } from '../../store/types';
@@ -98,30 +97,6 @@ describe('daily plan', () => {
     expect(plan.comeback).toBe(true);
     expect(plan.primary.kind).toBe('comeback');
     expect(plan.items.filter((i) => i.kind === 'review').length).toBeLessThanOrEqual(1);
-  });
-});
-
-describe('weekly plan and missed sessions', () => {
-  const settings = { days: [1, 3, 5], time: '19:00', duration: 25, timeZone: 'Asia/Kolkata', reminderMinutes: [15], calendarMode: 'dedicated' as const, checkAvailability: false };
-  it('schedules at most one session per preferred day with stable keys', () => {
-    const plan = buildWeekPlan(base(), settings, '2026-11-30'); // Monday
-    expect(plan.map((p) => p.date)).toEqual(['2026-11-30', '2026-12-02', '2026-12-04']);
-    expect(new Set(plan.map((p) => p.key)).size).toBe(plan.length);
-    expect(plan[0].title).toMatch(/^DSA Study: /);
-  });
-  it('pulls reviews into study days instead of adding extra events', () => {
-    const s = base();
-    s.reviews['find-max'] = { problemId: 'find-max', stage: 0, intervalDays: 1, ease: 2.5, due: '2026-12-01', lastReviewed: '2026-11-30', lapses: 0, history: [] };
-    const plan = buildWeekPlan(s, settings, '2026-11-30');
-    expect(plan.find((p) => p.date === '2026-12-02')!.reviewIds).toContain('find-max');
-  });
-  it('does not treat a passed session as completed', () => {
-    const [first] = buildWeekPlan(base(), settings, '2026-11-30');
-    const approved = { ...first, status: 'approved' as const };
-    expect(isIncomplete(approved, '2026-11-30', '20:00')).toBe(true);
-    expect(isIncomplete({ ...approved, status: 'completed' }, '2026-12-01', '10:00')).toBe(false);
-    const slot = suggestReschedule(approved, settings, '2026-11-30', '20:00', ['2026-11-30']);
-    expect(slot.date > '2026-11-30').toBe(true);
   });
 });
 

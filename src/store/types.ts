@@ -94,26 +94,6 @@ export interface ScheduleSettings {
   duration: number; // minutes
   timeZone: string;
   reminderMinutes: number[];
-  calendarMode: 'dedicated' | 'existing';
-  checkAvailability: boolean;
-}
-
-export type SessionKind = 'new' | 'practice' | 'challenge' | 'review' | 'recovery';
-
-export interface PlannedSession {
-  key: string; // stable de-duplication key, e.g. study:2026-12-01
-  date: string;
-  time: string;
-  duration: number;
-  kind: SessionKind;
-  title: string;
-  objective: string;
-  prep: string;
-  link: string; // app path
-  reviewIds: string[];
-  status: 'draft' | 'approved' | 'completed' | 'skipped';
-  synced?: { eventId: string; at: string };
-  rescheduledFrom?: string;
 }
 
 export interface Reflection {
@@ -135,7 +115,10 @@ export interface LearnerState {
   courseLessons: CourseLesson[];
   lessonStatus: Record<string, LessonStatus>;
   schedule: ScheduleSettings;
-  sessions: PlannedSession[];
+  /** Daily plan: day number → date it was finished. */
+  planDone: Record<number, string>;
+  /** Daily plan step checkboxes, keyed `day:stepIndex`. */
+  planChecks: Record<string, boolean>;
   reflections: Reflection[];
   activity: Record<string, number>; // date → minutes
   lastActiveDate?: string;

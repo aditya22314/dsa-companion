@@ -30,24 +30,3 @@ export const OUTCOMES: { id: Outcome; label: string; short: string }[] = [
 export type Level = 0 | 1 | 2 | 3 | 4 | 5 | 6;
 
 export type StudyMode = 'minimum' | 'normal' | 'deep';
-
-export interface CalendarEventInput {
-  /** Stable app key, e.g. "review:two-pointers:2026-12-01". Used for de-duplication. */
-  key: string;
-  summary: string;
-  description: string;
-  /** ISO local date-time without offset, e.g. 2026-12-01T19:00:00 */
-  startLocal: string;
-  endLocal: string;
-  timeZone: string;
-  reminderMinutes: number[];
-  /** Deep link into the app. */
-  link: string;
-}
-
-export interface SyncResult {
-  key: string;
-  action: 'created' | 'updated' | 'unchanged' | 'deleted' | 'failed';
-  eventId?: string;
-  error?: string;
-}

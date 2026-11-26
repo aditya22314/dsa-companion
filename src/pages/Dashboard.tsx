@@ -3,10 +3,11 @@ import { Link } from 'react-router-dom';
 import { useStore } from '../store';
 import { buildDailyPlan, MODE_INFO, type SessionItem } from '../lib/engine/planner';
 import { topicLevel, LEVEL_NAMES } from '../lib/engine/mastery';
-import { isIncomplete } from '../lib/engine/weekly';
-import { addDays, timeIn, weekday } from '../lib/dates';
+import { DAILY_PLAN, planDayByNumber } from '../content/dailyPlan';
+import { addDays, weekday } from '../lib/dates';
 import { topicById } from '../content/topics';
 import { Card, LevelDots, Meter, cx } from '../components/ui';
+import { DayCard, currentPlanDay } from './DailyPlan';
 import type { StudyMode } from '../../shared/types';
 
 const KIND_LABEL: Record<SessionItem['kind'], string> = {
@@ -27,8 +28,8 @@ export default function Dashboard() {
   const topic = topicById(plan.topic);
   const level = topicLevel(s, plan.topic);
   const minutesToday = s.activity[today] ?? 0;
-  const now = timeIn(s.schedule.timeZone);
-  const missed = s.sessions.filter((x) => isIncomplete(x, today, now));
+  const planDayNo = currentPlanDay(s.planDone);
+  const planDay = planDayByNumber(planDayNo);
 
   // Gentle habit view: this week's study days, no streak counter.
   const startOfWeek = addDays(today, -((weekday(today) + 6) % 7));
@@ -63,22 +64,35 @@ export default function Dashboard() {
 
       <div className="grid gap-6 lg:grid-cols-[1.6fr_1fr]">
         <div className="space-y-4">
-          <Card className="relative overflow-hidden border-accent/40 p-6">
-            <div className="pointer-events-none absolute -right-20 -top-20 h-56 w-56 rounded-full bg-accent/20 blur-3xl" />
-            <div className="text-xs font-medium uppercase tracking-wide text-accent">Today's main task · {KIND_LABEL[plan.primary.kind]}</div>
+          {planDay ? (
+            <DayCard day={planDay} />
+          ) : (
+            <Card className="border-good/40">
+              <h2 className="h2">All {DAILY_PLAN.length} plan days done.</h2>
+              <p className="mt-1 text-sm text-muted">
+                Keep going with the remaining Namaste DSA modules. <Link to="/plan" className="text-accent hover:underline">See what's next →</Link>
+              </p>
+            </Card>
+          )}
+          <Link to="/plan" className="inline-block text-sm text-accent hover:underline">
+            See the whole plan →
+          </Link>
+
+          <Card className="relative overflow-hidden">
+            <div className="text-xs font-medium uppercase tracking-wide text-muted">Extra practice picked for you · {KIND_LABEL[plan.primary.kind]}</div>
             <h2 className="mt-2 text-xl font-semibold">{plan.primary.title}</h2>
             <p className="mt-1 text-sm text-muted">{plan.primary.detail}</p>
             <div className="mt-5 flex items-center gap-3">
               <Link to={plan.primary.path} className="btn-primary px-5 py-2.5" onClick={() => s.setResume(plan.primary.path, plan.primary.title)}>
                 Start · {plan.primary.minutes} min
               </Link>
-              <span className="text-xs text-muted">That is enough for a {MODE_INFO[mode].label.toLowerCase()}. Everything below is optional.</span>
+              <span className="text-xs text-muted">Optional. Based on your recent attempts and what you are forgetting.</span>
             </div>
           </Card>
 
           {plan.items.length > 1 && (
             <Card>
-              <h3 className="h2 mb-3">Then, if you have time</h3>
+              <h3 className="h2 mb-3">More extra practice</h3>
               <ol className="space-y-2">
                 {plan.items.slice(1).map((it, idx) => (
                   <li key={it.id}>
@@ -103,11 +117,6 @@ export default function Dashboard() {
             </p>
           )}
 
-          {missed.length > 0 && (
-            <Link to="/schedule" className="block rounded-xl border border-warn/40 bg-warn/5 p-3 text-sm">
-              <span className="font-medium text-warn">A planned session didn't happen.</span> <span className="text-muted">That's fine. Pick a new time in one click →</span>
-            </Link>
-          )}
         </div>
 
         <div className="space-y-4">
@@ -155,7 +164,7 @@ export default function Dashboard() {
             {[
               ['/course', 'Namaste DSA'],
               ['/journal', 'Mistakes'],
-              ['/schedule', 'Schedule'],
+              ['/progress', 'Progress'],
               ['/settings', 'Settings'],
             ].map(([to, l]) => (
               <Link key={to} to={to} className="btn-ghost">

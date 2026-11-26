@@ -14,18 +14,18 @@ import Settings from './pages/Settings';
 const Playground = lazy(() => import('./pages/Playground'));
 const ReviewSession = lazy(() => import('./pages/ReviewSession'));
 const Progress = lazy(() => import('./pages/Progress'));
-const Schedule = lazy(() => import('./pages/Schedule'));
+import DailyPlan from './pages/DailyPlan';
 const Course = lazy(() => import('./pages/Course'));
 
 const NAV = [
   { to: '/', label: 'Today', icon: '◎' },
+  { to: '/plan', label: 'Daily plan', icon: '▦' },
   { to: '/learn', label: 'Learn', icon: '◇' },
   { to: '/practice', label: 'Practice', icon: '{}' },
   { to: '/review', label: 'Revise', icon: '↻' },
   { to: '/course', label: 'Namaste DSA', icon: '▤' },
   { to: '/journal', label: 'Mistakes', icon: '✎' },
   { to: '/progress', label: 'Progress', icon: '▥' },
-  { to: '/schedule', label: 'Schedule', icon: '▦' },
   { to: '/settings', label: 'Settings', icon: '⚙' },
 ];
 
@@ -90,14 +90,15 @@ export default function App() {
             <Route path="/course" element={<Course />} />
             <Route path="/journal" element={<Journal />} />
             <Route path="/progress" element={<Progress />} />
-            <Route path="/schedule" element={<Schedule />} />
+            <Route path="/plan" element={<DailyPlan />} />
+            <Route path="/schedule" element={<Navigate to="/plan" replace />} />
             <Route path="/settings" element={<Settings />} />
             <Route path="*" element={<Navigate to="/" replace />} />
           </Routes>
           </Suspense>
         </main>
         <nav className="fixed inset-x-0 bottom-0 z-40 flex justify-around border-t border-line bg-surface/95 px-1 py-1.5 backdrop-blur md:hidden" aria-label="Mobile">
-          {NAV.filter((n) => ['/', '/learn', '/practice', '/review', '/progress'].includes(n.to)).map((n) => (
+          {NAV.filter((n) => ['/', '/plan', '/learn', '/practice', '/review'].includes(n.to)).map((n) => (
             <NavLink key={n.to} to={n.to} end={n.to === '/'} className={({ isActive }) => cx('flex flex-col items-center rounded-lg px-3 py-1 text-[11px]', isActive ? 'text-accent' : 'text-muted')}>
               <span className="font-mono text-sm" aria-hidden>
                 {n.icon}

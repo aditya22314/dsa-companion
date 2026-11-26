@@ -1,13 +1,10 @@
 import { useRef } from 'react';
-import { Link } from 'react-router-dom';
 import { useStore, STORAGE_KEY } from '../store';
-import { useHealth } from '../lib/useHealth';
 import { Card, PageHeader, cx } from '../components/ui';
 import type { LearnerState } from '../store/types';
 
 export default function Settings() {
   const s = useStore();
-  const health = useHealth();
   const fileRef = useRef<HTMLInputElement>(null);
 
   const exportData = () => {
@@ -51,17 +48,8 @@ export default function Settings() {
       </Card>
 
       <Card className="space-y-2 text-sm">
-        <h2 className="h2">Server features</h2>
-        <p>
-          Backend: <strong>{health.loading ? 'checking…' : health.ok ? 'running' : 'not running (static mode)'}</strong>
-        </p>
-        <p>
-          Google Calendar: <strong>{health.googleConfigured ? 'configured' : 'needs Google OAuth credentials'}</strong> · <Link to="/schedule" className="text-accent hover:underline">Schedule</Link>
-        </p>
-        <p>
-          AI tutor: <strong>{health.aiConfigured ? `on (${health.aiModel})` : 'off (scripted mentor in use)'}</strong>
-        </p>
-        <p className="text-muted">All learning progress is stored in this browser. Tokens and API keys live only on the server.</p>
+        <h2 className="h2">Where your data lives</h2>
+        <p className="text-muted">Everything is stored in this browser. Nothing is sent anywhere. Export a backup now and then so you never lose your history.</p>
       </Card>
 
       <Card className="space-y-3">

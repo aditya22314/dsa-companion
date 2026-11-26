@@ -12,7 +12,6 @@ import type {
   Draft,
   LearnerState,
   MistakeCategory,
-  PlannedSession,
   Profile,
   Reflection,
   ScheduleSettings,
@@ -40,12 +39,8 @@ export interface Actions {
   importLessons: (lessons: CourseLesson[], mode: 'replace' | 'merge') => void;
   resetLessons: () => void;
   updateSchedule: (s: Partial<ScheduleSettings>) => void;
-  setDraftPlan: (sessions: PlannedSession[]) => void;
-  updateSession: (key: string, patch: Partial<PlannedSession>) => void;
-  approvePlan: () => void;
-  removeSession: (key: string) => void;
-  completeSession: (key: string) => void;
-  rescheduleSession: (key: string, date: string, time: string) => PlannedSession | undefined;
+  togglePlanStep: (day: number, step: number) => void;
+  setPlanDayDone: (day: number, done: boolean) => void;
   addReflection: (r: Omit<Reflection, 'at'>) => void;
   logMinutes: (minutes: number) => void;
   setResume: (path: string, label: string) => void;
@@ -156,29 +151,21 @@ export const useStore = create<Store>()(
       resetLessons: () => set({ courseLessons: publicSyllabusLessons() }),
 
       updateSchedule: (patch) => set((s) => ({ schedule: { ...s.schedule, ...patch } })),
-      setDraftPlan: (plan) =>
+      togglePlanStep: (day, step) =>
         set((s) => {
-          const keys = new Set(plan.map((p) => p.key));
-          const dates = new Set(plan.map((p) => p.date));
-          // Keep everything outside the planned week, plus approved/completed sessions that the new plan does not replace.
-          const keep = s.sessions.filter((x) => !keys.has(x.key) && (!dates.has(x.date) || x.status !== 'draft'));
-          const merged = plan.map((p) => {
-            const old = s.sessions.find((x) => x.key === p.key);
-            return old && old.status !== 'draft' ? { ...p, status: old.status === 'completed' ? 'completed' : ('draft' as const), synced: old.synced } : p;
-          });
-          return { sessions: [...keep, ...merged].sort((a, b) => (a.date + a.time).localeCompare(b.date + b.time)) as PlannedSession[] };
+          const key = `${day}:${step}`;
+          const planChecks = { ...s.planChecks };
+          if (planChecks[key]) delete planChecks[key];
+          else planChecks[key] = true;
+          return { planChecks };
         }),
-      updateSession: (key, patch) => set((s) => ({ sessions: s.sessions.map((x) => (x.key === key ? { ...x, ...patch } : x)) })),
-      approvePlan: () => set((s) => ({ sessions: s.sessions.map((x) => (x.status === 'draft' ? { ...x, status: 'approved' } : x)) })),
-      removeSession: (key) => set((s) => ({ sessions: s.sessions.filter((x) => x.key !== key) })),
-      completeSession: (key) => set((s) => ({ sessions: s.sessions.map((x) => (x.key === key ? { ...x, status: 'completed' } : x)) })),
-      rescheduleSession: (key, date, time) => {
-        const old = get().sessions.find((x) => x.key === key);
-        if (!old) return undefined;
-        const moved: PlannedSession = { ...old, key: `study:${date}`, date, time, status: 'approved', rescheduledFrom: old.rescheduledFrom ?? key };
-        set((s) => ({ sessions: [...s.sessions.filter((x) => x.key !== key && x.key !== moved.key), moved].sort((a, b) => (a.date + a.time).localeCompare(b.date + b.time)) }));
-        return { ...moved, rescheduledFrom: key };
-      },
+      setPlanDayDone: (day, done) =>
+        set((s) => {
+          const planDone = { ...s.planDone };
+          if (done) planDone[day] = get().today();
+          else delete planDone[day];
+          return { planDone, lastActiveDate: done ? get().today() : s.lastActiveDate };
+        }),
 
       addReflection: (r) => set((s) => ({ reflections: [{ ...r, at: new Date().toISOString() }, ...s.reflections.filter((x) => x.weekOf !== r.weekOf)] })),
       logMinutes: (minutes) => {
@@ -202,7 +189,9 @@ export const useStore = create<Store>()(
       },
       merge: (persisted, current) => {
         const p = (persisted ?? {}) as Partial<LearnerState>;
-        return { ...current, ...p, courseLessons: p.courseLessons?.length ? p.courseLessons : current.courseLessons, schedule: { ...current.schedule, ...p.schedule } };
+        const { sessions: _old, ...rest } = p as Partial<LearnerState> & { sessions?: unknown };
+        void _old;
+        return { ...current, ...rest, courseLessons: p.courseLessons?.length ? p.courseLessons : current.courseLessons, schedule: { ...current.schedule, ...p.schedule } };
       },
     },
   ),
