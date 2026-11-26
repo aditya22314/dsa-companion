@@ -20,7 +20,9 @@ No accounts, API keys or server. Everything runs in the browser and progress is 
 
 Every fifth day is a review day. Ticking a lesson marks it watched in the Namaste DSA tracker. Days are numbered, not dated, so missing a day never puts you behind. A downloadable `.ics` adds one repeating reminder to any calendar app.
 
-Regenerate the doc after editing `src/content/dailyPlan.ts` with `npm run plan:doc`.
+**Printable version:** [docs/DSA-Daily-Plan.pdf](docs/DSA-Daily-Plan.pdf) (64 pages) has the whole plan with checkboxes, topic sheets, all 31 problems with hints, full solutions at the back, and a recall tracker. It works without the app.
+
+After editing `src/content/dailyPlan.ts`, regenerate with `npm run plan:doc` (markdown) and `npm run plan:pdf` (PDF, needs Playwright's Chromium).
 
 ## Features
 - **Dashboard** answers "what should I do today?" with one primary task, Minimum 10 / Normal 25 / Deep 45–60 modes, resume of your last draft, and a gentle comeback session after 3+ days away.

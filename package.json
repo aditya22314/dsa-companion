@@ -10,7 +10,8 @@
     "typecheck": "tsc -b --noEmit",
     "test": "vitest run",
     "test:watch": "vitest",
-    "plan:doc": "tsx scripts/plan-doc.ts > docs/DAILY_PLAN.md"
+    "plan:doc": "tsx scripts/plan-doc.ts > docs/DAILY_PLAN.md",
+    "plan:pdf": "tsx scripts/plan-pdf-html.ts > docs/DSA-Daily-Plan.html && node scripts/plan-pdf.cjs"
   },
   "dependencies": {
     "@codemirror/lang-javascript": "^6.2.5",
