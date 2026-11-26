@@ -22,6 +22,8 @@ Every fifth day is a review day. Ticking a lesson marks it watched in the Namast
 
 **Printable version:** [docs/DSA-Daily-Plan.pdf](docs/DSA-Daily-Plan.pdf) (64 pages) has the whole plan with checkboxes, topic sheets, all 31 problems with hints, full solutions at the back, and a recall tracker. It works without the app.
 
+**What to watch and read:** [docs/DSA_RESOURCE_ROADMAP.md](docs/DSA_RESOURCE_ROADMAP.md) (also as [PDF](docs/DSA-Resource-Roadmap.pdf)) pairs every Namaste DSA module with free, checked videos and articles (with timestamps), from basic to advanced. [docs/CRAWL4AI_SETUP.md](docs/CRAWL4AI_SETUP.md) shows how to run Crawl4AI locally to collect more resources (`tools/crawl_resources.py`).
+
 After editing `src/content/dailyPlan.ts`, regenerate with `npm run plan:doc` (markdown) and `npm run plan:pdf` (PDF, needs Playwright's Chromium).
 
 ## Features
